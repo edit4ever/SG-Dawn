@@ -1,1 +1,50 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "163424943823a26eab": {
+      "type": "collection-list",
+      "blocks": {
+        "163424943823a26eab-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "163424943823a26eab-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "163424943823a26eab-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "163424943823a26eab-0",
+        "163424943823a26eab-1",
+        "163424943823a26eab-2"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "grid",
+        "image_ratio": "square",
+        "color_scheme": "accent-2",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163424943823a26eab"
+  ]
+}
