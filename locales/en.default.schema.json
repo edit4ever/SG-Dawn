@@ -399,13 +399,13 @@
                     "label": "Heading"
                 },
                 "layout": {
-                    "label": "Layout",
                     "options__1": {
                         "label": "Grid"
                     },
                     "options__2": {
                         "label": "List"
-                    }
+                    },
+                    "label": "Layout"
                 },
                 "image_ratio": {
                     "label": "Image ratio",
