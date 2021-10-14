@@ -11,26 +11,33 @@
         "163424943823a26eab-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "diy-kits"
           }
         },
         "163424943823a26eab-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "planter"
           }
         },
         "163424943823a26eab-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "classes-workshops"
+          }
+        },
+        "e779fcb7-978a-4bc2-9c72-200fd1464ccb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-inventory"
           }
         }
       },
       "block_order": [
         "163424943823a26eab-0",
         "163424943823a26eab-1",
-        "163424943823a26eab-2"
+        "163424943823a26eab-2",
+        "e779fcb7-978a-4bc2-9c72-200fd1464ccb"
       ],
       "settings": {
         "title": "",
