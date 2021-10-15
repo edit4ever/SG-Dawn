@@ -97,12 +97,12 @@
     height: auto;
   }
 
-  /*
+
   .banner:not(.banner--mobile-bottom) .banner__box {
     background-color: transparent;
     --color-foreground: 255, 255, 255;
-    --color-button: 255, 255, 255;
-    --color-button-text: 0, 0, 0;
+/*    --color-button: 255, 255, 255;
+    --color-button-text: 0, 0, 0; */
   }
 
   .banner:not(.banner--mobile-bottom) .button--secondary {
@@ -110,7 +110,7 @@
   	--color-button-text: 255, 255, 255;
   	--alpha-button-background: 0;
   }
-  */
+
 
   .banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content  {
     position: absolute;
