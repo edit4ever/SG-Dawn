@@ -226,6 +226,9 @@ option {
   .list-view-item__variant-column {
     margin-top: 2rem;
   }
+  .list-view-item__variant-column form input {
+    margin-top: 10px;
+  }
   
 }
 
