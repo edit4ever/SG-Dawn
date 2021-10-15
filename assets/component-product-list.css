@@ -232,7 +232,7 @@ option {
   .list-view-item__variant-column .btn {
     padding: 11px;
     -webkit-appearance: none;
-   -moz-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     
   }
@@ -244,6 +244,9 @@ option {
   .list-view-item__variant-column form select {
     font-size: 110%;
     width: 45%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   
 }
