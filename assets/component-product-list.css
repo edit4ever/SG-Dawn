@@ -199,7 +199,7 @@ option {
   .list-view-item__variant-column .btn {
   margin-top: 0;
     width: auto;
-    margin-left: 1rem;
+    margin: 0 1rem;
   }
   
 }
