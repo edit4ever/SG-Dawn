@@ -233,6 +233,10 @@ option {
   .list-view-item__variant-column .btn {
     padding: 11px;
   }
+  .full-width-link {
+    bottom: 50%;
+    right: 0;
+  }
   
 }
 
