@@ -98,6 +98,7 @@
     },
     "16343293493d60a5f4": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% if product.tags contains \"wholesale\" %}\n{% render 'library-nav',\nprev_product: collection.previous_product,next_product: collection.next_product\nproduct: product\n%}\n{% endif %}"
       }
