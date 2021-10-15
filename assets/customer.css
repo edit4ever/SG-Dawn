@@ -732,6 +732,9 @@ li[data-address] > h2 {
   margin-top: 1.5rem;
 }
 
+.customer .password {
+  margin-top: 2rem;
+}
 
 .customer a.btn {
     cursor: pointer;
