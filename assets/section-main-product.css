@@ -816,3 +816,7 @@ a.product__text {
   .meta-title {
     font-style: italic;
   }
+  
+  .meta-field {
+    font-style: normal;
+  }
