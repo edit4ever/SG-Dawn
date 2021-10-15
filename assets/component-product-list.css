@@ -178,7 +178,7 @@ option {
     align-items: center;
   }
   .list-view-item__variant-column form input {
-    width: 100%;
+    width: 50%;
   }
   
 }
