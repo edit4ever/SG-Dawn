@@ -53,11 +53,11 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
+          "887fe1ba-0e10-4d52-8dd8-0d74e342790c": {
+            "type": "text",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Follow",
+              "subtext": "<p><br\/>          <br\/>  <br\/>    <a href=\"https:\/\/twitter.com\/succulentgard\" target=\"_blank\" title=\"Succulent Gardens on Twitter\"><br\/>      <br\/>    <\/a><br\/>  <br\/><br\/>  <br\/>    <a href=\"https:\/\/www.facebook.com\/Succulent.Gardens.Nursery\" target=\"_blank\" title=\"Succulent Gardens on Facebook\"><br\/>      <br\/>    <\/a><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/>    <a href=\"http:\/\/instagram.com\/succulentgardens\" target=\"_blank\" title=\"Succulent Gardens on Instagram\"><br\/>      <br\/>    <\/a><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/><br\/>  <br\/>    <a href=\"mailto:info@sgplants.com\" target=\"_blank\" title=\"Email Succulent Gardens\"><br\/>      <br\/>    <\/a><br\/>  <br\/><\/p>"
             }
           },
           "footer-1": {
@@ -69,7 +69,7 @@
           }
         },
         "block_order": [
-          "footer-0",
+          "887fe1ba-0e10-4d52-8dd8-0d74e342790c",
           "footer-1"
         ],
         "settings": {
