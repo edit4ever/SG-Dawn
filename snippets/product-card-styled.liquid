@@ -14,7 +14,7 @@
 
 <div class="library-nav page-width">
   <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
-    <li class="collection-list__item grid__item">
+    <li class="collection-list__item grid__item" style="text-align:left;">
       <a href="{{ prev_product.url }}"
          class="card animate-arrow{% if prev_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
@@ -49,12 +49,12 @@
           <div class="overlay-card"></div>
           <div class="card__text-spacing card__text-hover">
             <h2 class="h1">
-              {{- prev_product.title -}}{%- if prev_product.description == blank -%}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endif %}
+              <span class="icon-wrap"></span>
             </h2>
 
             {%- if prev_product.description != blank -%}
             <p>
-              {{- prev_product.description | strip_html | truncatewords: 12 -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{{- prev_product.description | strip_html | truncatewords: 12 -}}
             </p>
             {%- endif -%}
           </div>
@@ -62,7 +62,7 @@
         </div>
       </a>
     </li>
-    <li class="collection-list__item grid__item">
+    <li class="collection-list__item grid__item" style="text-align:center;">
       <a href="{{ collection.url }}"
          class="card animate-arrow{% if collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
