@@ -228,7 +228,7 @@ option {
   }
   .list-view-item__variant-column form input {
     margin-top: 10px;
-    height: 100%;
+    min-height: 10rem;
   }
   .list-view-item__variant-column .btn {
     padding: 11px;
