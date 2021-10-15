@@ -175,6 +175,7 @@ option {
   .list-view-item__variant-column form {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   
