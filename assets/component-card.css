@@ -297,3 +297,7 @@
     transition: background-color var(--duration-long) ease;
   }
 }
+
+.library-nav li {
+  text-align: center;
+}
