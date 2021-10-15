@@ -18,7 +18,11 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 <div class="card-wrapper">
+  {%- if product.tags contains "wholesale" -%}
+  <a href="{{ product_card_product.type }}/products/{{ product_card_product.handle}}" class="full-unstyled-link">
+  {%- else -%}
   <a href="{{ product_card_product.url | within: product_collection  }}" class="full-unstyled-link">
+  {%- endif -%}
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
 
     <div class="card card--product{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
