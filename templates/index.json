@@ -141,7 +141,7 @@
         "adapt_height_first_image": false,
         "min_height": 60,
         "image_overlay_color": "#000000",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 30,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "color_scheme": "background-1",
