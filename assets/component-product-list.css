@@ -190,6 +190,7 @@ option {
   }
   .list-view-item__image {
     width: 100%;
+    margin-top: 1rem;
   }
   
 }
