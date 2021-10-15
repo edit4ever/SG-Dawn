@@ -234,7 +234,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sg1705-327.jpg",
         "parallax": true,
-        "parallax_speed": -5,
+        "parallax_speed": -10,
         "adapt_height_first_image": false,
         "min_height": 40,
         "image_overlay_color": "#121212",
