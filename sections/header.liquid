@@ -152,6 +152,14 @@
                           </a>
                         {%- endif -%}
                       </li>
+                    {%- else -%}
+                      {%- if customer.tags contains "wholesale" -%}
+                    <li>
+                    	<a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                          {{ link.title | escape }}
+                    	</a>
+                    </li>
+                    {%- endif -%}
                     {%- endunless -%}
                     {%- endfor -%}
                   </ul>
