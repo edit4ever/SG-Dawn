@@ -14,7 +14,7 @@
 
 <div class="library-nav page-width">
   <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
-    <li class="collection-list__item grid__item" style="text-align:left;">
+    <li class="collection-list__item grid__item">
       <a href="{{ prev_product.url }}"
          class="card animate-arrow{% if prev_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
@@ -62,7 +62,7 @@
         </div>
       </a>
     </li>
-    <li class="collection-list__item grid__item" style="text-align:center;">
+    <li class="collection-list__item grid__item">
       <a href="{{ collection.url }}"
          class="card animate-arrow{% if collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
@@ -110,7 +110,7 @@
         </div>
       </a>
     </li>
-    <li class="collection-list__item grid__item" style="text-align: right;">
+    <li class="collection-list__item grid__item">
       <a href="{{ next_product.url }}"
          class="card animate-arrow{% if next_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
