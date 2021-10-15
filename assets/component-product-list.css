@@ -183,6 +183,10 @@ option {
   }
   .list-view-item__image-column {
     vertical-align: top;
+    width: 15%;
+  }
+  .list-view-item__image-wrapper {
+    margin-right: 10px;
   }
   
 }
