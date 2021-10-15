@@ -123,8 +123,8 @@
             "button_label_1": "Get Started",
             "button_link_1": "shopify:\/\/pages\/wholesale-inventory",
             "button_style_secondary_1": false,
-            "button_label_2": "Wholesale Inventory",
-            "button_link_2": "shopify:\/\/collections\/wholesale-inventory",
+            "button_label_2": "",
+            "button_link_2": "",
             "button_style_secondary_2": false
           }
         }
