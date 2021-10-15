@@ -152,7 +152,7 @@
     "16343190312a7c8af8": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "",
         "blog": "news",
         "post_limit": 3,
         "show_image": true,
