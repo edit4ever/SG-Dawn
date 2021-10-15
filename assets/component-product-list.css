@@ -230,6 +230,9 @@ option {
   .list-view-item__variant-column form input {
     margin-top: 10px;
   }
+  .list-view-item__variant-column .btn {
+    padding: 11px;
+  }
   
 }
 
