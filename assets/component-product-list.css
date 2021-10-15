@@ -179,7 +179,7 @@ option {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
   }
   .list-view-item__variant-column form select {
     width: 100% !important;
