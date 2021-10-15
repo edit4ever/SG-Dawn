@@ -79,9 +79,9 @@
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
-            <h2 class="product__title" {{ block.shopify_attributes }}>
+            <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
-            </h2>
+            </h1>
           {%- when 'price' -%}
         {%- unless product.tags contains "wholesale" -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
