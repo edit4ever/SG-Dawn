@@ -217,7 +217,7 @@
         "1634321013de552146-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "About Us",
+            "button_label_1": "Visit Us",
             "button_link_1": "shopify:\/\/pages\/about-us",
             "button_style_secondary_1": false,
             "button_label_2": "",
