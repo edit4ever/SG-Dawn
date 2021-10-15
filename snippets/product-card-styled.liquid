@@ -109,7 +109,8 @@
           {%- endif -%}
         </div>
       </a>
-    </li>    <li class="collection-list__item grid__item">
+    </li>
+    <li class="collection-list__item grid__item" style="text-align: right;">
       <a href="{{ next_product.url }}"
          class="card animate-arrow{% if next_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
