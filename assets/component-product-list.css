@@ -188,6 +188,9 @@ option {
   .list-view-item__image-wrapper {
     margin-right: 10px;
   }
+  .list-view-item__image {
+    width: 100%;
+  }
   
 }
 
