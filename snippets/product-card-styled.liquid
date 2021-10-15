@@ -54,7 +54,7 @@
 
             {%- if prev_product.description != blank -%}
             <p>
-              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{{- prev_product.description | strip_html | truncatewords: 12 -}}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow-rev' %}</span>{{- prev_product.description | strip_html | truncatewords: 12 -}}
             </p>
             {%- endif -%}
           </div>
