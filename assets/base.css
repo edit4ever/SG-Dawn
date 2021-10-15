@@ -1208,6 +1208,12 @@ deferred-media {
   display: flex;
   width: 100%;
 }
+  
+.button--half-width {
+  display: flex;
+  width: 50%;
+}
+
 
 .button.loading {
   color: transparent;
