@@ -5,6 +5,12 @@
       "settings": {
       }
     },
+    "16343197887c9e26c9": {
+      "type": "page",
+      "settings": {
+        "page": "visit-us"
+      }
+    },
     "163424943823a26eab": {
       "type": "collection-list",
       "blocks": {
@@ -59,6 +65,7 @@
   },
   "order": [
     "main",
+    "16343197887c9e26c9",
     "163424943823a26eab"
   ]
 }
