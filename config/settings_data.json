@@ -53,29 +53,29 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "887fe1ba-0e10-4d52-8dd8-0d74e342790c": {
-            "type": "text",
-            "settings": {
-              "heading": "Follow",
-              "subtext": "<p>SOCIAL MEDIA LINKS HERE<\/p><p>CONTACT<br\/>2133 Elkhorn Road, Castroville, CA 95012<br\/>(831) 632-0482<\/p><p><a href=\"mailto:info@sgplants.com\">info@sgplants.com<\/a><\/p>"
-            }
-          },
           "footer-1": {
             "type": "text",
             "settings": {
               "heading": "SUBSCRIBE TO OUR NEWSLETTER",
-              "subtext": "<p>Get our monthly newsletter to get special deals, follow all the happenings in the succulent world, and get announcements of nursery events. We won't email you very often, and we'll never share your email address with anyone!<br\/><br\/><br\/>© 2021 <a href=\"https:\/\/sgplants.com\/\">Succulent Gardens<\/a>.<\/p>"
+              "subtext": "<p>Get our monthly newsletter to get special deals, follow all the happenings in the succulent world, and get announcements of nursery events. We won't email you very often, and we'll never share your email address with anyone!<\/p>"
+            }
+          },
+          "887fe1ba-0e10-4d52-8dd8-0d74e342790c": {
+            "type": "text",
+            "settings": {
+              "heading": "CONTACT",
+              "subtext": "<p>2133 Elkhorn Road, Castroville, CA 95012<br\/>(831) 632-0482<\/p><p><a href=\"mailto:info@sgplants.com\">info@sgplants.com<\/a><\/p>"
             }
           }
         },
         "block_order": [
-          "887fe1ba-0e10-4d52-8dd8-0d74e342790c",
-          "footer-1"
+          "footer-1",
+          "887fe1ba-0e10-4d52-8dd8-0d74e342790c"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-2",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
