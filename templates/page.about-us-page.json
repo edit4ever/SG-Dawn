@@ -13,6 +13,7 @@
     },
     "163424943823a26eab": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "163424943823a26eab-0": {
           "type": "featured_collection",
