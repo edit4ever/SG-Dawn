@@ -1,0 +1,162 @@
+{% comment %}
+    Renders a product card
+
+    Accepts:
+    - product: {Object} Product Liquid object
+	- prev_product: {Object} Previous Product Liquid object
+	- next_product: {Object} Next Product Liquid object
+
+    Usage:
+    {% render 'product-card-styled', show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+
+{{ 'component-rating.css' | asset_url | stylesheet_tag }}
+
+<div class="library-nav page-width">
+  <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
+    <li class="collection-list__item grid__item" style="text-align:left;">
+      <a href="{{ prev_product.url }}"
+         class="card animate-arrow{% if prev_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
+         >
+        <div class="card--stretch card-colored color-accent-2">
+          {%- if prev_product.featured_media != blank -%}
+          <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
+            {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
+            <div class="media media--square media--hover-effect overflow-hidden"
+                 {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: prev_product.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
+
+              <img
+                   srcset="{%- if prev_product.featured_media.width >= 165 -%}{{ prev_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
+                           {%- if prev_product.featured_media.width >= 360 -%}{{ prev_product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
+                           {%- if prev_product.featured_media.width >= 535 -%}{{ prev_product.featured_media | img_url: '535x' }} 535w,{%- endif -%}
+                           {%- if prev_product.featured_media.width >= 750 -%}{{ prev_product.featured_media | img_url: '750x' }} 750w,{%- endif -%}
+                           {%- if prev_product.featured_media.width >= 1000 -%}{{ prev_product.featured_media | img_url: '1000x' }} 1000w,{%- endif -%}
+                           {%- if prev_product.featured_media.width >= 1500 -%}{{ prev_product.featured_media | img_url: '1500x' }} 1500w,{%- endif -%}"
+                   src="{{ prev_product.featured_media | img_url: '1500x' }}"
+                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
+                   alt="{{ prev_product.title | escape }}"
+                   height="{{ prev_product.featured_media.height }}"
+                   width="{{ prev_product.featured_media.width }}"
+                   loading="lazy"
+                   >
+            </div>
+          </div>
+          <div class="card__text card__text-spacing card__text-hover">
+            {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
+            <h2 class="h3"><span class="icon-wrap">{% render 'icon-arrow-rev' %}&nbsp;</span>{{- prev_product.title -}}</h2>
+          </div>
+          {%- else -%}
+          <div class="overlay-card"></div>
+          <div class="card__text-spacing card__text-hover">
+            <h2 class="h1">
+              {%- if prev_product.description == blank -%}<span class="icon-wrap"></span>{% endif %}{{- next_product.title -}}
+            </h2>
+
+            {%- if prev_product.description != blank -%}
+            <p>
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow-rev' %}</span>{{- prev_product.description | strip_html | truncatewords: 12 -}}
+            </p>
+            {%- endif -%}
+          </div>
+          {%- endif -%}
+        </div>
+      </a>
+    </li>
+    <li class="collection-list__item grid__item" style="text-align:center;">
+      <a href="{{ collection.url }}"
+         class="card animate-arrow{% if collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
+         >
+        <div class="card--stretch card-colored color-accent-2">
+          {%- if collection.featured_image != blank -%}
+          <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
+            {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
+            <div class="media media--square media--hover-effect overflow-hidden"
+                 {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
+
+              <img
+                   srcset="{%- if collection.featured_image.width >= 165 -%}{{ collection.featured_image | img_url: '165x' }} 165w,{%- endif -%}
+                           {%- if collection.featured_image.width >= 360 -%}{{ collection.featured_image | img_url: '360x' }} 360w,{%- endif -%}
+                           {%- if collection.featured_image.width >= 535 -%}{{ collection.featured_image | img_url: '535x' }} 535w,{%- endif -%}
+                           {%- if collection.featured_image.width >= 750 -%}{{ collection.featured_image | img_url: '750x' }} 750w,{%- endif -%}
+                           {%- if collection.featured_image.width >= 1000 -%}{{ collection.featured_image | img_url: '1000x' }} 1000w,{%- endif -%}
+                           {%- if collection.featured_image.width >= 1500 -%}{{ collection.featured_image | img_url: '1500x' }} 1500w,{%- endif -%}"
+                   src="{{ collection.featured_image | img_url: '1500x' }}"
+                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
+                   alt="{{ collection.title | escape }}"
+                   height="{{ collection.featured_image.height }}"
+                   width="{{ collection.featured_image.width }}"
+                   loading="lazy"
+                   >
+            </div>
+          </div>
+          <div class="card__text card__text-spacing card__text-hover">
+            {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
+            <h2 class="h3">See All&nbsp;{{- collection.title -}}</h2>
+          </div>
+          {%- else -%}
+          <div class="overlay-card"></div>
+          <div class="card__text-spacing card__text-hover">
+            <h2 class="h1">
+              {{- collection.title -}}{%- if collection.description == blank -%}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endif %}
+            </h2>
+
+            {%- if collection.description != blank -%}
+            <p>
+              {{- collection.description | strip_html | truncatewords: 12 -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+            </p>
+            {%- endif -%}
+          </div>
+          {%- endif -%}
+        </div>
+      </a>
+    </li>
+    <li class="collection-list__item grid__item" style="text-align: right;">
+      <a href="{{ next_product.url }}"
+         class="card animate-arrow{% if next_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
+         >
+        <div class="card--stretch card-colored color-accent-2">
+          {%- if next_product.featured_media != blank -%}
+          <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
+            {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
+            <div class="media media--square media--hover-effect overflow-hidden"
+                 {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: prev_product.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
+
+              <img
+                   srcset="{%- if next_product.featured_media.width >= 165 -%}{{ next_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
+                           {%- if next_product.featured_media.width >= 360 -%}{{ next_product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
+                           {%- if next_product.featured_media.width >= 535 -%}{{ next_product.featured_media | img_url: '535x' }} 535w,{%- endif -%}
+                           {%- if next_product.featured_media.width >= 750 -%}{{ next_product.featured_media | img_url: '750x' }} 750w,{%- endif -%}
+                           {%- if next_product.featured_media.width >= 1000 -%}{{ next_product.featured_media | img_url: '1000x' }} 1000w,{%- endif -%}
+                           {%- if next_product.featured_media.width >= 1500 -%}{{ next_product.featured_media | img_url: '1500x' }} 1500w,{%- endif -%}"
+                   src="{{ next_product.featured_media | img_url: '1500x' }}"
+                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
+                   alt="{{ next_product.title | escape }}"
+                   height="{{ next_product.featured_media.height }}"
+                   width="{{ next_product.featured_media.width }}"
+                   loading="lazy"
+                   >
+            </div>
+          </div>
+          <div class="card__text card__text-spacing card__text-hover">
+            {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
+            <h2 class="h3">{{- next_product.title -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></h2>
+          </div>
+          {%- else -%}
+          <div class="overlay-card"></div>
+          <div class="card__text-spacing card__text-hover">
+            <h2 class="h1">
+              {%- if next_product.description == blank -%}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endif %}{{- next_product.title -}}
+            </h2>
+
+            {%- if next_product.description != blank -%}
+            <p>
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{{- next_product.description | strip_html | truncatewords: 12 -}}
+            </p>
+            {%- endif -%}
+          </div>
+          {%- endif -%}
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
