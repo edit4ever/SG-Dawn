@@ -208,7 +208,6 @@ option {
   .list-view-item__link {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
   .list-view-item__title-column {
     width: 85%;
