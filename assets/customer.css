@@ -755,3 +755,8 @@ li[data-address] > h2 {
     box-shadow: 0 0 0 .2rem rgba(var(--color-button),var(--alpha-button-border));
     background-color: rgba(var(--color-button),.75);
 }
+
+.customer::focus-visible {
+  outline: none;
+  box-shadow: none;
+}
