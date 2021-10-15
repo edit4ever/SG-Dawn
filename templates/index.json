@@ -197,6 +197,54 @@
         "full_width": true
       }
     },
+    "1634321013de552146": {
+      "type": "image-parallax-banner",
+      "blocks": {
+        "1634321013de552146-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WE ARE OPEN!",
+            "heading_size": "medium"
+          }
+        },
+        "1634321013de552146-1": {
+          "type": "text",
+          "settings": {
+            "text": "Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. Updated Business Hours:Monday - Sunday9:00am - 3:00pmNew Guidelines: -Everyone must be wearing a mask when visiting, whether inside or outside of the greenhouse-We are NOT ACCEPTING CASH (Credit or Debit Cards only)-Please maintain a distance of 6 feet between yourself, others and staff while exploring our nursery-We will not be permitting the use of our carts or baskets, so please bring your own or we will provide you with boxes to hold your selectionsThank you for working with us as we navigate these strange times!\"To plant a garden is to believe in a better tomorrow\"-Audrey Hepburn"
+          }
+        },
+        "1634321013de552146-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "About Us",
+            "button_link_1": "shopify:\/\/pages\/about-us",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1634321013de552146-0",
+        "1634321013de552146-1",
+        "1634321013de552146-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sg1705-327.jpg",
+        "parallax": true,
+        "parallax_speed": -5,
+        "adapt_height_first_image": false,
+        "min_height": 40,
+        "image_overlay_color": "#7fa39c",
+        "image_overlay_opacity": 60,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "color_scheme": "accent-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -220,6 +268,7 @@
     "16342335048d2e7306",
     "16343190312a7c8af8",
     "rich_text",
+    "1634321013de552146",
     "featured_products"
   ]
 }
