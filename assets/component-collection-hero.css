@@ -50,10 +50,7 @@
 }
 
 @media screen and (min-width: 750px) {
-  .collection-hero__title {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-  }
+
 
   .collection-hero__description {
     max-width: 100%;
