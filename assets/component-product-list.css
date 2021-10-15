@@ -25,14 +25,7 @@
   box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
   background-color: rgba(var(--color-button),.75); }
 
-.collection-hero__title {
-  text-align: center; }
 
-.collection-hero__title+.collection-hero__description {
-  font-size: 1.8rem; }
-
-.collection-hero__title+.collection-hero__description p {
-  font-size: 1.6rem; }
 
 .collection-grid-section .collection-filters {
   border-top: .1rem solid rgba(var(--color-foreground),.08);
