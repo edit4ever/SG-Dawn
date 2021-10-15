@@ -44,7 +44,7 @@
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
@@ -145,8 +145,8 @@
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "16343190312a7c8af8": {
@@ -242,8 +242,8 @@
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "color_scheme": "accent-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "featured_products": {
