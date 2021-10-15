@@ -223,6 +223,9 @@ option {
     width: 100%;
     margin-top: .5rem;
   }
+  .list-view-item__variant-column {
+    margin-top: 2rem;
+  }
   
 }
 
