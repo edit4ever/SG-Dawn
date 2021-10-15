@@ -19,7 +19,7 @@
 
 <div class="card-wrapper">
   {%- if product.tags contains "wholesale" -%}
-  <a href="{{ product_card_product.url | within: product_collection  }}" class="full-unstyled-link">
+  <a href="{{ product_card_product.type }}" class="full-unstyled-link">
   {%- else -%}
   <a href="{{ product_card_product.url | within: product_collection  }}" class="full-unstyled-link">
   {%- endif -%}
