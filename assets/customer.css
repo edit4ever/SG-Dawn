@@ -756,7 +756,7 @@ li[data-address] > h2 {
     background-color: rgba(var(--color-button),.75);
 }
 
-.customer::focus-visible {
+.customer :focus-visible {
   outline: none;
   box-shadow: none;
 }
