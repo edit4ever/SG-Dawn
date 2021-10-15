@@ -337,12 +337,12 @@ h5,
 }
 
 .h0 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 @media only screen and (min-width: 750px) {
   .h0 {
-    font-size: 5.2rem;
+    font-size: 4rem;
   }
 }
 
