@@ -13,6 +13,14 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  
+  .banner__media.media img.rellax {
+    display: none;
+  }
+  
+  .banner__media.media img.mobile {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 750px) {
