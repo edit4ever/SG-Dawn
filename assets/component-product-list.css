@@ -177,7 +177,7 @@ option {
   }
   .list-view-item__variant-column form {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .list-view-item__variant-column form select {
