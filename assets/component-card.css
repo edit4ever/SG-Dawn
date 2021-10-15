@@ -301,3 +301,11 @@
 .library-nav li {
   text-align: center;
 }
+
+.grid__item.prev {
+  text-align: left;
+}
+
+.grid__item.next {
+  text-align: right;
+}
