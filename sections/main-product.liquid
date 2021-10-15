@@ -83,7 +83,7 @@
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
-        {%- unless product.tags contains "wholesale" -%}
+          {%- unless product.tags contains "wholesale" -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
@@ -93,7 +93,22 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
+          {%- else -%}
+          {%- if customer.tags contains "wholesale" -%}
+            <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
+              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+            </div>
+            <div {{ block.shopify_attributes }}>
+              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                {{ form | payment_terms }}
+              {%- endform -%}
+            </div>
+          {%- endif -%}
           {%- endunless -%}
+        
+        
+        
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
