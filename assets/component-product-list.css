@@ -228,6 +228,9 @@ option {
   }
   .list-view-item__variant-column form input {
     margin-top: 10px;
+     -webkit-appearance: none;
+   -moz-appearance: none;
+    appearance: none;
   }
   .list-view-item__variant-column .btn {
     padding: 11px;
