@@ -168,14 +168,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "WE ARE OPEN!",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. <br\/><br\/><em>Updated Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em>New Guidelines: <\/em><br\/>-Everyone <strong>must be wearing a mask<\/strong> when visiting, whether inside or outside of the greenhouse<br\/>-We are NOT ACCEPTING CASH (Credit or Debit Cards only)<br\/>-Please maintain a distance of 6 feet between yourself, others and staff while exploring our nursery<br\/>-We will not be permitting the use of our carts or baskets, so please bring your own or we will provide you with boxes to hold your selections<br\/><br\/>Thank you for working with us as we navigate these strange times!<\/p><p><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>"
           }
         },
         "button": {
