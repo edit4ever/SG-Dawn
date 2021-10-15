@@ -179,7 +179,6 @@ option {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
   }
   .list-view-item__variant-column form select {
     width: 100% !important;
@@ -196,6 +195,9 @@ option {
   .list-view-item__image {
     width: 100%;
     margin-top: .5rem;
+  }
+  .list-view-item__variant-column .btn {
+  margin-top: 0;
   }
   
 }
