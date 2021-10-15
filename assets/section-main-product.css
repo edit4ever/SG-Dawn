@@ -809,3 +809,10 @@ a.product__text {
   .next_product {
     text-align: right;
      }
+  
+ 
+ /* Metafields Section */
+  
+  .meta-title {
+    font-style: italic;
+  }
