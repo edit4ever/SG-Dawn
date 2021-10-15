@@ -178,7 +178,7 @@ option {
     align-items: center;
   }
   .list-view-item__variant-column form > * {
-    width: 50% !important;
+    width: 75% !important;
     max-width: none !important;
   }
   
