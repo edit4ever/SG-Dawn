@@ -91,6 +91,7 @@
     },
     "163363760092d1d96b": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{%- if product.tags contains \"wholesale\" -%}\n{%- if  collection.previous_product or collection.next_product -%}\n<div class=\"page-width prev_next\">\n<div class=\"libnav prev_product\">{%- if  collection.previous_product  -%}\n<a href={{ collection.previous_product }}><img src=\"{{ collection.previous_product.featured_image  | img_url: '100%', crop:center }}\" alt=\"{{ collection.previous_product.title }}\"><div>&larr; {{ collection.previous_product.title }}<\/div><\/a>{%- endif -%}<\/div>\n<div class=\"libnav product_collection\"><a href={{ collection.url }}><img src=\"{{ collection.featured_image  | img_url: '100%', crop:center }}\" alt=\"{{ collection.title }}\"><div>See all {{ collection.title }}<\/div><\/a><\/div>\n<div class=\"libnav next_product\">{%- if  collection.next_product  -%}<a href={{ collection.next_product }}><img src=\"{{ collection.next_product.featured_image  | img_url: '100%', crop:center }}\" alt=\"{{ collection.next_product.title }}\"><div>{{ collection.next_product.title }} &rarr;<\/div><\/a>{%- endif -%}<\/div>\n<\/div>\n{%- endif -%}\n{%- endif -%}"
       }
@@ -98,7 +99,7 @@
     "16343293493d60a5f4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{product.type}}\n{% for collection in product.collections %}\n{% if collection.title == product.type %}{{ collection.title }}\n{% assign CurCollection = collection %}\n{% endif %}{% endfor %}\n\n\n\n{% render 'product-card-styled',\nprev_product: collection.previous_product,next_product: collection.next_product\nproduct: product\n%}"
+        "custom_liquid": "{% render 'product-card-styled',\nprev_product: collection.previous_product,next_product: collection.next_product\nproduct: product\n%}"
       }
     },
     "product-recommendations": {
