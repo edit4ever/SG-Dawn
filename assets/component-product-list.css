@@ -181,6 +181,9 @@ option {
     width: 75% !important;
     max-width: none !important;
   }
+  .list-view-item__image-column {
+    vertical-align: top;
+  }
   
 }
 
