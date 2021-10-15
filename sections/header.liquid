@@ -342,7 +342,7 @@
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
-          {%- unless link.title contains "Wholesale" and customer.tags contains "wholesale" -%} 
+          {%- unless link.title contains "Wholesale" -%} 
             <li>
               {%- if link.links != blank -%}
                 <details-disclosure>
@@ -385,8 +385,16 @@
                   <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                 </a>
               {%- endif -%}
-            </li>
-          {%- endunless -%}
+            </li> 
+          {%- else -%}
+                  {%- if customer.tags contains "wholesale" -%}
+                  <li>
+                    <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                      <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                	</a>
+                      </li>
+                    {%- endif -%}
+          		{%- endunless -%}
           {%- endfor -%}
         </ul>
       </nav>
