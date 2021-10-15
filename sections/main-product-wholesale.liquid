@@ -17,7 +17,7 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section class="page-width test">
+<section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">
@@ -83,7 +83,7 @@
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
-        {%- unless product.tags contains "wholesale" -%}
+        {%- if customer.tags contains "wholesale" -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
@@ -93,7 +93,7 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
-          {%- endunless -%}
+          {%- endif -%}
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
@@ -121,7 +121,7 @@
               </details>
             </div>
           {%- when 'quantity_selector' -%}
-        {%- unless product.tags contains "wholesale" -%}
+        {%- if customer.tags contains "wholesale" -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
@@ -146,7 +146,7 @@
                 </button>
               </quantity-input>
             </div>
-        {%- endunless -%}
+        {%- endif -%}
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
@@ -190,7 +190,7 @@
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
-        {%- unless product.tags contains "wholesale" -%}
+        {%- if customer.tags contains "wholesale" -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
@@ -310,9 +310,9 @@
                 </div>
               </div>
             </noscript>
-        {%- endunless -%}
+        {%- endif -%}
           {%- when 'buy_buttons' -%}
-        {%- unless product.tags contains "wholesale" -%}
+        {%- if customer.tags contains "wholesale" -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -368,7 +368,7 @@
                 </template>
               </pickup-availability>
             </div>
-              {%- endunless -%}
+              {%- endif -%}
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
