@@ -174,7 +174,6 @@ option {
 @media only screen and (min-width: 750px) and (max-width: 1023px) {
   .list-view-item__variant-column form {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
   .list-view-item__variant-column form select {
