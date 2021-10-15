@@ -180,6 +180,7 @@ option {
   .list-view-item__variant-column form select {
     width: 75% !important;
     max-width: none !important;
+    margin-bottom: 5px;
   }
   .list-view-item__image-column {
     vertical-align: top;
