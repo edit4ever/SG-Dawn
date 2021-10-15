@@ -181,8 +181,8 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "About Us",
+            "button_link": "shopify:\/\/pages\/about-us",
             "button_style_secondary": false
           }
         }
