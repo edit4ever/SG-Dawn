@@ -53,7 +53,7 @@
       </slider-component>
       {%- if first_3d_model -%}
         <button
-          class="button button--full-width product__xr-button"
+          class="button button--half-width product__xr-button"
           type="button"
           aria-label="{{ 'products.product.xr_button_label' | t }}"
           data-shopify-xr
@@ -331,7 +331,7 @@
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                      class="product-form__submit button button--half-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         {%- if product.selected_or_first_available_variant.available -%}
