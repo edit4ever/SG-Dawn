@@ -205,7 +205,7 @@
             <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
             <div class="product-form__input variant-qty">
               <form id="form-{{ product.id }}" name="wholesale_add" action="/cart/add" method="post" style="text-align:center;">
-                <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="select__select var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
+                <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
                   <option value="" class="select__select" disabled selected hidden>Select Size</option>
                   {% for variant in product.variants %}
                     {%- if variant.title == "2 in" -%}
@@ -218,17 +218,17 @@
                       {%- assign flatAvail = variant.inventory_quantity -%}
                     {%- endif -%}
                     {% if flatAvail > 0 %}
-                    <option value="{{ variant.id }}" title="{{ variant.title }}" class="select__select" stock="{{ flatAvail }}">{{ variant.title }} - {{ variant.price | money }}</option>
+                    <option value="{{ variant.id }}" title="{{ variant.title }}" stock="{{ flatAvail }}">{{ variant.title }} - {{ variant.price | money }}</option>
                     {% else %}
                     <option disabled="disabled" class="select__select" style="color:var(--color-btn-social-focus);">{{ variant.title }} - Sold Out</option>
                     {% endif %}
                   {% endfor %}
                 </select>
                 <div class="qtyMultiplier">
-                <select id="option{{product.id }}" name="option" title="option-{{ product.id }}" class="select__select opt" onchange="myFunction2({{ product.id }})">
+                <select id="option{{product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }})">
                   <option value="whole" title="Flat">Whole Flat</option>
                 </select>
-                <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="quantity__input qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
+                <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
                 <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
                 </div>
               </form>
