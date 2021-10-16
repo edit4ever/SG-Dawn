@@ -59,36 +59,3 @@ if (!customElements.get('product-form')) {
   });
 }
 
-
-function myFunction(product, section, loop) {
-  var selectOption = "Option-" + section + " - " + loop;
-  var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
-  var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
-  var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
-  var selectMult = 1;
-  var inputOption = "option" + product;
-  var length = document.getElementById(inputOption).length;
-  for (i = length-1; i >= 0; i--) {
-    document.getElementById(inputOption).remove(i);
-  }
-  if (selectTitle == "2 in" ) {
-    selectMult = 64;
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('¼ Flat', 'quarter');
-  }
-  else if (selectTitle == "4 in") {
-    selectMult = 15;
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅔ Flat', '2third');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅓ Flat', 'third');
-  }
-  else if (selectTitle == "6 in") {
-    selectMult = 6;
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half'); 
-  }
-  else {
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
-  }
-}
