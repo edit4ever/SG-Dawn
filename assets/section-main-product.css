@@ -847,11 +847,11 @@ a.product__text {
   .wholesale .variant-qty form {
     display: flex;
     flex-wrap: wrap;
-    font-size: inherit;
   }
   
   .wholesale .variant-qty form select {
     padding: 10px;
+    font-size: inherit;
   }
   
   .wholesale .variant-qty form select.var {
