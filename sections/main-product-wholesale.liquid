@@ -122,6 +122,8 @@
             </div>
           {%- when 'quantity_selector' -%}
         {%- if customer.tags contains "wholesale" -%}
+        
+        {% comment %}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
@@ -146,6 +148,7 @@
                 </button>
               </quantity-input>
             </div>
+        {% endcomment %}
         {%- endif -%}
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
