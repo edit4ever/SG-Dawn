@@ -122,17 +122,6 @@
             </div>
           {%- when 'quantity_selector' -%}
         {%- if customer.tags contains "wholesale" -%}
-        	<div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
-              <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt select__select" onchange="myFunction2({{ product.id }})">
-              {%- if product.selected_or_first_available_variant.title == "2 in" -%}
-             	<option value="whole" title="Flat">Whole Flat</option>
-				<option value="half" title="Flat">½ Flat</option>
-				<option value="quarter" title="Flat">¼ Flat</option>
-              {%- else -%}
-             	<option value="whole" title="Flat">Individual</option>
-              {%- endif -%}
-            </select>
-        </div>
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               
             <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt select__select" onchange="myFunction2({{ product.id }})">
@@ -249,6 +238,7 @@
                           class="select__select"
                           name="options[{{ option.name | escape }}]"
                           form="product-form-{{ section.id }}"
+                          onchange="myFunction2({{ product.id }})
                         >
                           {%- for variant in product.variants -%}
                             <option value="{{ variant.title }}" {% if variant.available == false %}disabled class="sold-out"{% endif %} {% if variant.selected %}selected="selected"{% endif %}>
