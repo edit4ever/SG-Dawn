@@ -60,8 +60,8 @@ if (!customElements.get('product-form')) {
 }
 
 
-function myFunction(product, variant) {
-  var selectOption = "Option-" + variant;
+function myFunction(product, section, loop) {
+  var selectOption = "Option-" + section + " - " + loop;
   var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
   var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
   var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
