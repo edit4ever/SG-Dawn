@@ -820,6 +820,10 @@ a.product__text {
   
   /* wholesale product page */
   
+  :focus-visible {
+    outline: 0;
+    box-shadow: none;
+  }
   .wholesale .product-form__input.product-form__quantity {
     display: flex;
     flex-wrap: wrap;
