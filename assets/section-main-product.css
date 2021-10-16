@@ -834,3 +834,6 @@ a.product__text {
     width: 35%;
     margin-right: 5%;
   }
+  
+  .wholesale .sold-out {
+    color: rgba(var(--color-foreground),.35)
