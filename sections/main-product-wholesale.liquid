@@ -234,7 +234,7 @@
                           form="product-form-{{ section.id }}"
                         >
                           {%- for variant in product.variants -%}
-                            <option value="{{ variant.title }}" {% if variant.available == false %}disabled{% endif %} {% if variant.selected %}selected="selected"{% endif %}>
+                            <option value="{{ variant.title }}" {% if variant.available == false %}disabled class="sold-out"{% endif %} {% if variant.selected %}selected="selected"{% endif %}>
                               {{ variant.title }}
                             </option>
                           {%- endfor -%}
