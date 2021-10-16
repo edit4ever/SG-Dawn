@@ -470,8 +470,8 @@
   
   
     <script type="text/javascript">
-    function myFunction(product) {
-      var selectOption = "variant" + product;
+    function myFunction(product, option) {
+      var selectOption = option;
       var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].title;
       var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
       var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
