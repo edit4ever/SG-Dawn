@@ -177,7 +177,7 @@
 }
 
 .card-information__wrapper > .price {
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-base-outline-button-labels));
 }
 
 .card-information__wrapper > .rating {
