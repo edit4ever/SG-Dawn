@@ -473,23 +473,23 @@
       var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
       if (selectVariant2 == "half") {
         document.getElementById("var-quantity-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .5);
-        document.getElementById("var-quantity-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("var-quantity-" + product).querySelector('input[name="Quantity-" + quantity]').setAttribute("class", "hidden");
       }
       else if (selectVariant2 == "quarter") {
         document.getElementById("var-quantity-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .25);
-        document.getElementById("var-quantity-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("var-quantity-" + product).querySelector('input[name="Quantity-" + quantity]').setAttribute("class", "hidden");
       }
       else if (selectVariant2 == "third") {
         document.getElementById("var-quantity-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .33);
-        document.getElementById("var-quantity-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("var-quantity-" + product).querySelector('input[name="Quantity-" + quantity]').setAttribute("class", "hidden");
       }
       else if (selectVariant2 == "2third") {
         document.getElementById("var-quantity-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .67);
-        document.getElementById("var-quantity-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("var-quantity-" + product).querySelector('input[name="Quantity-" + quantity]').setAttribute("class", "hidden");
       }
       else {
         document.getElementById("var-quantity-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
-        document.getElementById("var-quantity-" + product).querySelector('input[name="quantity"]').value = variantMult;
+        document.getElementById("var-quantity-" + product).querySelector('input[name="Quantity-" + quantity]').value = variantMult;
       }
     }
   </script>
