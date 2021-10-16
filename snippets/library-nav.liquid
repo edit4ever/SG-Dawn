@@ -25,7 +25,7 @@
   <h2 class="library_nav__heading">Explore more in the {{ collection.title }} library</h2>
   <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
     <li class="collection-list__item grid__item prev">
-      <a href="{{ prev_product.url }}"
+      <a href="{{ prev_product.handle }}"
          class="card animate-arrow{% if prev_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
         <div class="card--stretch card-colored color-accent-2">
