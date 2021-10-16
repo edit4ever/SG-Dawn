@@ -472,7 +472,7 @@
     <script type="text/javascript">
     function myFunction(product, option) {
       var selectOption = option;
-      var selectTitle = document.getElementById(selectOption).value;
+      var selectTitle = document.getElementById(selectOption).selectedIndex;
       var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
       var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
       var selectMult = 1;
