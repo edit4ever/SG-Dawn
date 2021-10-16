@@ -124,7 +124,7 @@
         {%- if customer.tags contains "wholesale" -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               
-            <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt select__select" onchange="myFunction2({{ product.id }})">
+            <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt select__select">
               {%- if product.selected_or_first_available_variant.title == "2 in" -%}
              	<option value="whole" title="Flat">Whole Flat</option>
 				<option value="half" title="Flat">½ Flat</option>
