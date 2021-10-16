@@ -851,6 +851,7 @@ a.product__text {
   
   .wholesale .variant-qty form select, .wholesale .variant-qty form input {
     padding: 10px;
+    font-size: inherit;
   }
   
   .wholesale .variant-qty form select.var {
