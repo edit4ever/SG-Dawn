@@ -4,6 +4,7 @@
     Accepts:
     - product: {Object} Product Liquid object
 	- prev_product: {Object} Previous Product Liquid object
+	- prev_product_url: Previous Product url
 	- next_product: {Object} Next Product Liquid object
 
     Usage:
@@ -120,7 +121,7 @@
       </a>
     </li>
     <li class="collection-list__item grid__item next">
-      <a href="{{ next_product.url }}"
+      <a href="{{ next_product.type }}/products/{{ next_product.handle}}"
          class="card animate-arrow{% if next_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
         <div class="card--stretch card-colored color-accent-2">
