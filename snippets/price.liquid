@@ -105,11 +105,11 @@
         {{ target.inventory_quantity }} available
       </span>
     {%- else -%}
-      {%- if variant.title == "2 in" -%}
+      {%- if target.title == "2 in" -%}
       	{%- assign flatAvail = target.inventory_quantity | divided_by: 64 -%}
-      {%- elsif variant.title == "4 in" -%}
+      {%- elsif target.title == "4 in" -%}
      	 {%- assign flatAvail = target.inventory_quantity | divided_by: 15 -%}
-      {%- elsif variant.title == "6 in" -%}
+      {%- elsif target.title == "6 in" -%}
      	 {%- assign flatAvail = target.inventory_quantity | divided_by: 6  -%}
       {%- else -%}
       	{%- assign flatAvail = target.inventory_quantity -%}
