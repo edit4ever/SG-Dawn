@@ -830,5 +830,6 @@ a.product__text {
   }
   
   .wholesale .product-form__input.product-form__quantity select.opt {
-    width: 45%;
+    width: 35%;
+    margin-right: 5%;
   }
