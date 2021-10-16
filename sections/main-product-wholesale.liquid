@@ -126,6 +126,10 @@
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
+              
+            <select id="option{{ product_card_product.id }}" name="option" title="option-{{ product_card_product.id }}" class="opt select__select" onchange="myFunction2({{ product_card_product.id }})">
+              <option value="whole" title="Flat">Whole Flat</option>
+            </select>
 
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
@@ -210,9 +214,6 @@
                 <option disabled="disabled" style="color:rgba(var(--color-foreground),.35);">{{ variant.title }} - Sold Out</option>
                 {% endif %}
               {% endfor %}
-            </select>
-            <select id="option{{ product_card_product.id }}" name="option" title="option-{{ product_card_product.id }}" class="opt select__select" onchange="myFunction2({{ product_card_product.id }})">
-              <option value="whole" title="Flat">Whole Flat</option>
             </select>
             <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product_card_product.id }})">
             <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
