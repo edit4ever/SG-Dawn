@@ -192,7 +192,7 @@
           {%- when 'variant_picker' -%}
         {%- if customer.tags contains "wholesale" -%}
         <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-            <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
+            <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var select__select" placeholder="Select Size" onchange="myFunction({{ product.id }})">
               <option value="" disabled selected hidden>Select Size</option>
               {% for variant in product.variants %}
                 {%- if variant.title == "2 in" -%}
