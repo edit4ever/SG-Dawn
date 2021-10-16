@@ -97,6 +97,9 @@
             "label": "Background 1"
           },
           "options__2": {
+            "label": "Background 2"
+          },
+          "options__3": {
             "label": "Inverse"
           },
           "label": "Sold out badge color scheme"
