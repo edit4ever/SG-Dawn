@@ -847,6 +847,7 @@ a.product__text {
   .wholesale .variant-qty form {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
   
   .wholesale .variant-qty form select, .wholesale .variant-qty form input {
