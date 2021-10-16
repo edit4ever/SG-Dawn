@@ -865,6 +865,7 @@ a.product__text {
   
   .wholesale .variant-qty form select.var {
     width: 75%;
+    margin-bottom: 1rem;
   }
   
   .wholesale .variant-qty form select.opt {
@@ -873,5 +874,6 @@ a.product__text {
   
   .wholesale .variant-qty form input.qty {
     width: 25%;
+    margin: 1rem;
   }
   
