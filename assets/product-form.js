@@ -91,28 +91,4 @@ function myFunction(product,variant) {
   else {
     document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
   }
-  document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("multiplier", selectMult);
-  document.getElementById("form-" + product).querySelector('input[name="quantity"]').setAttribute("title", selectVariant);
-  document.getElementById("form-" + product).querySelector('input[name="quantity"]').max = selectMax * selectMult;
-  document.getElementById("form-" + product).querySelector('input[name="var-mult"]').max = selectMax;
-  document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = "";
-  document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "1";
-
-  var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
-  if (selectVariant2 == "half") {
-    document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .5);
-  }
-  else if (selectVariant2 == "quarter") {
-    document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .25);
-  }
-  else if (selectVariant2 == "third") {
-    document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .33);
-  }
-  else if (selectVariant2 == "2third") {
-    document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .67);
-  }
-  else {
-    document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
-    document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = selectMult;
-  }
 }
