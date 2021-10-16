@@ -846,11 +846,7 @@ a.product__text {
   
   .wholesale .variant-qty form select {
     padding: 10px;
-    font-family: var(--font-body-family);
-    font-style: var(--font-body-style);
-    font-weight: var(--font-body-weight);
-    font-size: 1.2rem;
-    color: rgba(var(--color-foreground),.75);
+
   }
   
   :focus-visible {
