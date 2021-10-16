@@ -156,7 +156,7 @@
             "label": "t:settings_schema.styles.settings.sold_out_badge_color_scheme.options__1.label"
           },
           {
-            "value": "accent-2",
+            "value": "accent-1",
             "label": "t:settings_schema.styles.settings.sold_out_badge_color_scheme.options__2.label"
           },
           {
