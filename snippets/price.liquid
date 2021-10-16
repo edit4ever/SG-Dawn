@@ -115,8 +115,7 @@
       	{%- assign flatAvail = target.inventory_quantity -%}
       {%- endif -%}
 	  {%- if flatAvail > 1 %-}{%- assign unitSize = "flats" -%}{%- else -%}{%- assign unitSize = "flats" -%}{%- endif -%}
-  
-        <span class="badge price__badge-qty color-accent-2" aria-hidden="true">
+      <span class="badge price__badge-qty color-accent-2" aria-hidden="true">
         {{ flatAvail }} {{ unitSize }} available
       </span>
     {%- endunless -%}
