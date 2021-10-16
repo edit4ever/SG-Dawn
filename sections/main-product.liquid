@@ -229,7 +229,7 @@
                         >
                           {%- for value in option.values -%}
                             <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-                              {{ value }}<span class="optionQTY"> - {{ value.varient.inventory_quantity }}</span>
+                              {{ value }}{%- if value.inventory_quantity -%}<span class="optionQTY"> - {{ value.inventory_quantity }}</span>{%- endif -%}
                             </option>
                           {%- endfor -%}
                         </select>
