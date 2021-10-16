@@ -155,7 +155,7 @@
                 </button>
               </quantity-input>
             </div>
-			<input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product_card_product.id }})">
+			<input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty hidden" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product_card_product.id }})">
             <input id="Quantity-{{ section.id }}" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0" product-form-{{ section.id }}>
         {%- endif -%}
           {%- when 'popup' -%}
