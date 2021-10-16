@@ -99,7 +99,7 @@
     "16343293493d60a5f4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if product.tags contains \"wholesale\" %}\n{% render 'library-nav',\nprev_product: collection.previous_product,next_product: collection.next_product\nproduct: product\n%}\n{% endif %}"
+        "custom_liquid": "{% for collectionList in product.collections %}\n{% if collectionList.title == product.type %}\n{% for productList in collectionList.products %}\n{% if productList.title ==  product.title %}\n{{ productList.title }}\n{{ forloop.index }}\n{% assign productIndex = forloop.index | minus:1 %}\n{% assign productNew = collectionList.products[productIndex] %}\n{% endif %}\n{% endfor %}\n\n{% endif %}\n{% endfor %}\n\n{{productNew.title}}\n\n{% render 'library-nav',\nprev_product: productNew.previous_product,next_product: productNew.next_product\nproduct: productNew\n%}"
       }
     },
     "product-recommendations": {
