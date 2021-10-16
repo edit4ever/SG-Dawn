@@ -205,7 +205,7 @@
             <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
             <div class="product-form__input product-form__input--dropdown">
               <form id="form-{{ product.id }}" name="wholesale_add" action="/cart/add" method="post" style="text-align:center;">
-                <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="select var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
+                <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="select__select var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
                   <option value="" class="select__select" disabled selected hidden>Select Size</option>
                   {% for variant in product.variants %}
                     {%- if variant.title == "2 in" -%}
