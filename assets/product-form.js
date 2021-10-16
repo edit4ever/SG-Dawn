@@ -71,24 +71,5 @@ function myFunction(product, variant) {
   for (i = length-1; i >= 0; i--) {
     document.getElementById(inputOption).remove(i);
   }
-  if (selectTitle == "2 in" ) {
-    selectMult = 64;
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('¼ Flat', 'quarter');
-  }
-  else if (selectTitle == "4 in") {
-    selectMult = 15;
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅔ Flat', '2third');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅓ Flat', 'third');
-  }
-  else if (selectTitle == "6 in") {
-    selectMult = 6;
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half'); 
-  }
-  else {
-    document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
-  }
+
 }
