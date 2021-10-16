@@ -821,5 +821,10 @@ a.product__text {
   /* wholesale product page */
   .wholesale .product-form__input.product-form__quantity {
     display: flex;
+    flex-wrap: wrap;
   }
-    
+  
+  .wholesale .product-form__input.product-form__quantity .form__label {
+    width: 50%;
+    margin-left: 50%;
+  }
