@@ -862,3 +862,7 @@ a.product__text {
     width: 45%;
   }
   
+  .wholesale .variant-qty form input.qty {
+    width: 25%;
+  }
+  
