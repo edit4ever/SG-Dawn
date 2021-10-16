@@ -123,17 +123,6 @@
           {%- when 'quantity_selector' -%}
         {%- if customer.tags contains "wholesale" -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-              
-            <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt select__select">
-              {%- if product.selected_or_first_available_variant.title == "2 in" -%}
-             	<option value="whole" title="Flat">Whole Flat</option>
-				<option value="half" title="Flat">½ Flat</option>
-				<option value="quarter" title="Flat">¼ Flat</option>
-              {%- else -%}
-             	<option value="whole" title="Flat">Individual</option>
-              {%- endif -%}
-            </select>
-
 
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
@@ -155,8 +144,15 @@
                 </button>
               </quantity-input>
             </div>
-			<input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty hidden" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product_card_product.id }})">
-            <input id="Quantity-{{ section.id }}" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0" product-form-{{ section.id }}>
+        
+            <div class="qtyMultiplier">
+              <select id="option{{product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }})">
+                <option value="whole" title="Flat">Whole Flat</option>
+              </select>
+              <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
+              <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
+            </div>
+        
         {%- endif -%}
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
@@ -224,13 +220,7 @@
                     {% endif %}
                   {% endfor %}
                 </select>
-                <div class="qtyMultiplier">
-                <select id="option{{product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }})">
-                  <option value="whole" title="Flat">Whole Flat</option>
-                </select>
-                <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
-                <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
-                </div>
+
               </form>
             </div>
         </variant-selects>
