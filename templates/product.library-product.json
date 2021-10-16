@@ -99,7 +99,7 @@
     "16343293493d60a5f4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if collection.title %}\n{% if collection.previous_product %}\n{% assign productPrev = collection.previous_product %}\n{% else %}\n{% assign productPrev = collection.products | last %}\n{% assign productPrevURL = productPrev.url %}\n{% endif %}\n{% if collection.next_product %}\n{% assign productNext = collection.next_product %}\n{% else %}\n{% assign productNext = collection.products | first %}\n{% endif %}\n\n{% render 'library-nav',\nprev_product: productPrev,prev_product_url:productPrevURLnext_product: productNext\nproduct: product\n%}\n\n{% endif %}"
+        "custom_liquid": "{% if collection.title %}\n{% if collection.previous_product %}\n{% assign productPrev = collection.previous_product %}\n{% else %}\n{% assign productPrev = collection.products | last %}\n{% endif %}\n{% if collection.next_product %}\n{% assign productNext = collection.next_product %}\n{% else %}\n{% assign productNext = collection.products | first %}\n{% endif %}\n\n{% render 'library-nav',\nprev_product: productPrev,prev_product_url:productPrevURL,next_product: productNext\nproduct: product\n%}\n\n{% endif %}"
       }
     },
     "product-recommendations": {
