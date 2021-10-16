@@ -850,7 +850,7 @@ a.product__text {
     align-items: flex-start;
   }
   
-  .wholesale .variant-qty form select, .wholesale .variant-qty form input {
+  .wholesale  select, .wholesale  input {
     padding: 10px;
     font-size: inherit;
     border: 0;
@@ -864,16 +864,16 @@ a.product__text {
     transition: box-shadow var(--duration-short) ease;
   }
   
-  .wholesale .variant-qty form select.var {
+  .wholesale  select.var {
     width: 75%;
     margin-bottom: 1rem;
   }
   
-  .wholesale .variant-qty form select.opt {
+  .wholesale  select.opt {
     width: 45%;
   }
   
-  .wholesale .variant-qty form input.qty {
+  .wholesale  input.qty {
     width: 25%;
     margin: 1rem;
   }
