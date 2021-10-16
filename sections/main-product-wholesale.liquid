@@ -191,9 +191,9 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
         {%- if customer.tags contains "wholesale" -%}
-            <select id="variant{{ product_card_product.id }}" name="id" title="{{ product_card_product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product_card_product.id }})">
+            <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
               <option value="" disabled selected hidden>Select Size</option>
-              {% for variant in product_card_product.variants %}
+              {% for variant in product.variants %}
                 {%- if variant.title == "2 in" -%}
                   {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
                 {%- elsif variant.title == "4 in" -%}
