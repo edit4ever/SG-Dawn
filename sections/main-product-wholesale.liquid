@@ -235,7 +235,7 @@
                         >
                           {%- for variant in product.variants -%}
                             <option value="{{ variant.title }}" {% if variant.available == false %}disabled class="sold-out"{% endif %} {% if variant.selected %}selected="selected"{% endif %}>
-                              {{ variant.title }}
+                              {{ variant.title }}{% if variant.available == false %} - Sold Out{% endif %}
                             </option>
                           {%- endfor -%}
                         </select>
