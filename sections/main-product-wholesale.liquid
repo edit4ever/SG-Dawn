@@ -196,27 +196,7 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
         {%- if customer.tags contains "wholesale" -%}
-        <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-            <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var select__select" placeholder="Select Size" onchange="myFunction({{ product.id }})">
-              <option value="" disabled selected hidden>Select Size</option>
-              {% for variant in product.variants %}
-                {%- if variant.title == "2 in" -%}
-                  {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-                {%- elsif variant.title == "4 in" -%}
-                  {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-                {%- elsif variant.title == "6 in" -%}
-                  {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-                {%- else -%}
-                  {%- assign flatAvail = variant.inventory_quantity -%}
-                {%- endif -%}
-                {% if flatAvail > 0 %}
-                <option value="{{ variant.id }}" title="{{ variant.title }}" stock="{{ flatAvail }}">{{ variant.title }} - {{ variant.price | money }}</option>
-                {% else %}
-                <option disabled="disabled" style="color:rgba(var(--color-foreground),.35);">{{ variant.title }} - Sold Out</option>
-                {% endif %}
-              {% endfor %}
-            </select>
-        
+
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
