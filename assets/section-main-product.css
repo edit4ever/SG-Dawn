@@ -837,3 +837,9 @@ a.product__text {
   
   .wholesale .sold-out {
     color: rgba(var(--color-foreground),.35)
+      }
+      
+  .wholesale .variant-qty form {
+    display: flex;
+    flex-wrap: wrap;
+  }
