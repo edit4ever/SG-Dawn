@@ -229,59 +229,14 @@
                         >
                           {%- for value in option.values -%}
                             <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-                              {{ value }}
+                              {{ value }}<span class="optionQTY"> - {{ option.varient.inventory_quantity }}</span>
                             </option>
                           {%- endfor -%}
                         </select>
                         {% render 'icon-caret' %}
                       </div>
                     </div>
-                  {%- endfor -%}
-{% comment %}                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  {%- for option in product.options_with_values -%}
-                    <div class="product-form__input product-form__input--dropdown">
-                      <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
-                        {{ option.name }}
-                      </label>
-                      
-                      
-                      {%- for variant in product.variants -%}
-                      	{{ variant.option1 }} 1
-                     	{{ variant.option2 }} 2
-                     	{{ variant.option3 }} 3
-                     	{{ variant.option4 }} 4
-                        {{ variant.option5 }} 5
-                      {%- endfor -%}
-                      
-                      <div class="select">
-                        <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
-                          class="select__select"
-                          name="options[{{ option.name | escape }}]"
-                          form="product-form-{{ section.id }}"
-                        >
-                          {%- for variant in product.variants -%}
-                            <option value="{{ variant | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-                              {{ variant.option1 }} | {{ variant.inventory_quantity }} in stock
-                            </option>
-                          {%- endfor -%}
-                        </select>
-                        {% render 'icon-caret' %}
-                      </div>
-                    </div>
-                  {%- endfor -%}
-
-                  
-                  
-                  
-                  
-{% endcomment %}                  
+                  {%- endfor -%}                 
                   <script type="application/json">
                     {{ product.variants | json }}
                   </script>
