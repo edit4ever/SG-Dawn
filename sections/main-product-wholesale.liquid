@@ -206,7 +206,7 @@
             <div class="product-form__input variant-qty">
               <form id="form-{{ product.id }}" name="wholesale_add" action="/cart/add" method="post" style="text-align:center;">
                 <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
-                  <option value="" class="select__select" disabled selected hidden>Select Size</option>
+                  <option value="" disabled selected hidden>Select Size</option>
                   {% for variant in product.variants %}
                     {%- if variant.title == "2 in" -%}
                       {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
