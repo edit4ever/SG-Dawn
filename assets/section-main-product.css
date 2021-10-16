@@ -858,3 +858,7 @@ a.product__text {
     width: 75%;
   }
   
+  .wholesale .variant-qty form select.opt {
+    width: 45%;
+  }
+  
