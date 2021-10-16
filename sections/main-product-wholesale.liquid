@@ -225,10 +225,10 @@
                   {% endfor %}
                 </select>
                 <div class="qtyMultiplier">
-                <select id="option{{product.id }}" name="option" title="option-{{ product.id }}" class="select opt" onchange="myFunction2({{ product.id }})">
+                <select id="option{{product.id }}" name="option" title="option-{{ product.id }}" class="select__select opt" onchange="myFunction2({{ product.id }})">
                   <option value="whole" title="Flat">Whole Flat</option>
                 </select>
-                <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
+                <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="quantity__input qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
                 <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
                 </div>
               </form>
