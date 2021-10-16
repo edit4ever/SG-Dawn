@@ -229,7 +229,7 @@
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                    {%- assign selectVar = section.id | append: " - " | append:forloop.index0 -%}
+                    {%- assign selectVar = product.id | append: ", " | append:section.id | append: " - " | append:forloop.index0 -%}
                     <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                         {{ option.name }}
@@ -239,7 +239,7 @@
                           class="select__select"
                           name="options[{{ option.name | escape }}]"
                           form="product-form-{{ section.id }}"
-                          onchange="myFunction({{ product.id }}, {{ selectVar }})"
+                          onchange="myFunction({{ selectVar }})"
                         >
                           {%- for variant in product.variants -%}
                             <option value="{{ variant.title }}" {% if variant.available == false %}disabled class="sold-out"{% endif %} {% if variant.selected %}selected="selected"{% endif %} stock="{{variant.inventory_quantity}}">
