@@ -102,7 +102,7 @@
   {%- if target.available and target.inventory_quantity > 0 -%}
     {%- unless product.type == "wholesale" -%}
       <span class="badge price__badge-qty color-accent-2" aria-hidden="true">
-        {{ target.inventory_quantity }} available
+        {{ target.inventory_quantity }} available {{ product.type }}
       </span>
     {%- else -%}
     {%- endunless -%}
