@@ -839,7 +839,7 @@ a.product__text {
     color: rgba(var(--color-foreground),.35)
       }
       
-  .wholesale .variant-qty form qtyMultiplier {
+  .wholesale .variant-qty form {
     display: flex;
     flex-wrap: wrap;
   }
