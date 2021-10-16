@@ -286,7 +286,6 @@ a.product__text {
 }
 
 .product .price--sold-out .price__badge-sold-out {
-  border: none;
 }
 
 .product .price--sold-out .price__badge-sale {
