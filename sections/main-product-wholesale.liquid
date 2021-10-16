@@ -234,14 +234,8 @@
                           form="product-form-{{ section.id }}"
                         >
                           {%- for variant in product.variants -%}
-                            <option
-                              {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
-                              {% if variant.available == false %}disabled{% endif %}
-                              value="{{ variant.id }}"
-                            >
-                              {{ variant.title }}
-                              {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
-                              - {{ variant.price | money | strip_html }}
+                            <option value="{{ variant.value | escape }}" {% if variant.selected_value == value %}selected="selected"{% endif %}>
+                              {{ variant.value }}
                             </option>
                           {%- endfor -%}
                         </select>
