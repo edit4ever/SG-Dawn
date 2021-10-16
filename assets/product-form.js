@@ -60,7 +60,7 @@ if (!customElements.get('product-form')) {
 }
 
 
-function myFunction(product,variant) {
+function myFunction(product, variant) {
   var selectOption = "Option-" + variant;
   var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].title;
   var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
