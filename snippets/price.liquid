@@ -100,7 +100,7 @@
   {%- endif -%}
 
   {%- if target.available -%}
-  	<span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="true">
+  	<span class="badge price__badge-qty color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="true">
        {{ target.inventory_quantity }} available
     </span>
   {%- endif -%}
