@@ -816,3 +816,10 @@ a.product__text {
   .meta-field {
     font-style: normal;
   }
+  
+  
+  /* wholesale product page */
+  .wholesale .product-form__input.product-form__quantity {
+    display: flex;
+  }
+    
