@@ -238,7 +238,7 @@
                           class="select__select"
                           name="options[{{ option.name | escape }}]"
                           form="product-form-{{ section.id }}"
-                          onchange="myFunction({{ product.id }},{{ section.id }}-{{ forloop.index0 }})
+                          onchange="myFunction({{ product.id }},{{ section.id }}-{{ forloop.index0 }})"
                         >
                           {%- for variant in product.variants -%}
                             <option value="{{ variant.title }}" {% if variant.available == false %}disabled class="sold-out"{% endif %} {% if variant.selected %}selected="selected"{% endif %} stock="{{variant.inventory_quantity}}">
