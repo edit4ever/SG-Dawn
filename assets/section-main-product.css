@@ -852,6 +852,15 @@ a.product__text {
   .wholesale .variant-qty form select, .wholesale .variant-qty form input {
     padding: 10px;
     font-size: inherit;
+    border: 0;
+    border-radius: 0;
+    color: rgb(var(--color-foreground));
+    font-size: inherit;
+    width: 100%;
+    box-shadow: 0 0 0 .1rem rgba(var(--color-foreground),.55);
+    height: 4.5rem;
+    box-sizing: border-box;
+    transition: box-shadow var(--duration-short) ease;
   }
   
   .wholesale .variant-qty form select.var {
