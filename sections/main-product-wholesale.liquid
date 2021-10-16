@@ -241,7 +241,7 @@
                           onchange="myFunction({{ product.id }},{{ section.id }}-{{ forloop.index0 }})
                         >
                           {%- for variant in product.variants -%}
-                            <option value="{{ variant.title }}" {% if variant.available == false %}disabled class="sold-out"{% endif %} {% if variant.selected %}selected="selected"{% endif %}>
+                            <option value="{{ variant.title }}" {% if variant.available == false %}disabled class="sold-out"{% endif %} {% if variant.selected %}selected="selected"{% endif %} stock="{{variant.inventory_quantity}}">
                               {{ variant.title }}{% if variant.available == false %} - Sold Out{% endif %}
                             </option>
                           {%- endfor -%}
