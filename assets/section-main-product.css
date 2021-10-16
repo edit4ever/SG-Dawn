@@ -819,6 +819,11 @@ a.product__text {
   
   
   /* wholesale product page */
+  
+  :focus-visible {
+    outline: 0;
+    box-shadow: none;
+  }
   .wholesale .product-form__input.product-form__quantity {
     display: flex;
     flex-wrap: wrap;
@@ -846,10 +851,9 @@ a.product__text {
   
   .wholesale .variant-qty form select {
     padding: 10px;
-
   }
   
-  :focus-visible {
-    outline: 0;
-    box-shadow: none;
-}
+  .wholesale .variant-qty form select.var {
+    width: 75%;
+  }
+  
