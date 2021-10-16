@@ -99,7 +99,7 @@
     "16343293493d60a5f4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if collection.title %}\n{% render 'library-nav',\nprev_product: collectionNew.previous_product,next_product: productNew.next_product\nproduct: productNew\n%}\n{% endif %}"
+        "custom_liquid": "{% if collection.title %}\n{% render 'library-nav',\nprev_product: collection.previous_product,next_product: collection.next_product\nproduct: productNew\n%}\n{% endif %}"
       }
     },
     "product-recommendations": {
