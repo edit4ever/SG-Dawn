@@ -107,14 +107,17 @@
     {%- else -%}
       {%- if target.title == "2 in" -%}
       	{%- assign flatAvail = target.inventory_quantity | divided_by: 64 -%}
+  		{%- if flatAvail > 1 -%}{%- assign unitSize = "flats" -%}{%- else -%}{%- assign unitSize = "flat" -%}{%- endif -%}
       {%- elsif target.title == "4 in" -%}
-     	 {%- assign flatAvail = target.inventory_quantity | divided_by: 15 -%}
+     	{%- assign flatAvail = target.inventory_quantity | divided_by: 15 -%}
+  		{%- if flatAvail > 1 -%}{%- assign unitSize = "flats" -%}{%- else -%}{%- assign unitSize = "flat" -%}{%- endif -%}
       {%- elsif target.title == "6 in" -%}
-     	 {%- assign flatAvail = target.inventory_quantity | divided_by: 6  -%}
+     	{%- assign flatAvail = target.inventory_quantity | divided_by: 6  -%}
+  		{%- if flatAvail > 1 -%}{%- assign unitSize = "flats" -%}{%- else -%}{%- assign unitSize = "flat" -%}{%- endif -%}
       {%- else -%}
       	{%- assign flatAvail = target.inventory_quantity -%}
+  		{%- assign unitSize = "" -%}	
       {%- endif -%}
-	  {%- if flatAvail > 1 -%}{%- assign unitSize = "flats" -%}{%- else -%}{%- assign unitSize = "flats" -%}{%- endif -%}
       <span class="badge price__badge-qty color-accent-2" aria-hidden="true">
         {{ flatAvail }} {{ unitSize }} available
       </span>
