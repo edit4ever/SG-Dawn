@@ -220,7 +220,7 @@
                     {% if flatAvail > 0 %}
                     <option value="{{ variant.id }}" title="{{ variant.title }}" stock="{{ flatAvail }}">{{ variant.title }} - {{ variant.price | money }}</option>
                     {% else %}
-                    <option disabled="disabled" class="select__select" style="color:var(--color-btn-social-focus);">{{ variant.title }} - Sold Out</option>
+                    <option disabled="disabled" style="color:var(--color-btn-social-focus);">{{ variant.title }} - Sold Out</option>
                     {% endif %}
                   {% endfor %}
                 </select>
