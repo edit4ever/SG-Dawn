@@ -149,7 +149,7 @@
         
             <div class="qtyMultiplier">
 
-              <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
+              <input id="var-quantity-{{ product.id }}" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
               <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
             </div>
         
@@ -467,7 +467,7 @@
   
   
   <script type="text/javascript">
-    function myFunction2(product) {
+    function myFunction2(product, quantity) {
       var selectOption2 = "option" + product;
       var selectVariant2 = document.getElementById(selectOption2).options[document.getElementById(selectOption2).selectedIndex].value;
       var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
