@@ -446,7 +446,7 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-size: 1.3rem;
+  font-size: inherit;
   line-height: 1.5;
   letter-spacing: 0.04rem;
 }
