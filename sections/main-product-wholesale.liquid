@@ -213,8 +213,6 @@
                 {% endif %}
               {% endfor %}
             </select>
-            <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product_card_product.id }})">
-            <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
         
         {% comment %}
             {%- unless product.has_only_default_variant -%}
