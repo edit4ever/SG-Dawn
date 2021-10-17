@@ -145,9 +145,8 @@
             </div>
         
             <div class="qtyMultiplier">
-
-              <input id="var-quantity-{{ product.id }}" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
-              <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
+              <input id="var-quantity-{{ product.id }}" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" form="{{ product_form_id}}" onchange="myFunction3({{ product.id }})">
+              <input id="quantity-{{ product.id }}" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0" form="{{ product_form_id}}">
             </div>
         
         {%- endif -%}
