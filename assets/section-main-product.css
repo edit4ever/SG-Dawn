@@ -820,64 +820,6 @@ a.product__text {
   
   /* wholesale product page */
   
-  :focus-visible {
-    outline: 0;
-    box-shadow: none;
-  }
-  .wholesale .product-form__input.product-form__quantity {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-  
-  .wholesale .product-form__input.product-form__quantity .form__label {
-    width: 50%;
-    margin-left: 50%;
-  }
-  
-  .wholesale .product-form__input.product-form__quantity select.opt {
-    width: 35%;
-    margin-right: 5%;
-  }
-  
-  .wholesale .sold-out {
-    color: rgba(var(--color-foreground),.35)
-      }
-      
-  .wholesale .variant-qty form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  
-  .wholesale  select, .wholesale  input {
-    padding: 10px;
-    font-size: inherit;
-    border: 0;
-    border-radius: 0;
-    color: rgb(var(--color-foreground));
-    font-size: inherit;
-    width: 100%;
-    box-shadow: 0 0 0 .1rem rgba(var(--color-foreground),.55);
-    height: 4.5rem;
-    box-sizing: border-box;
-    transition: box-shadow var(--duration-short) ease;
-  }
-  
-  .wholesale  select.var {
-    width: 75%;
-    margin-bottom: 1rem;
-  }
-  
-  .wholesale  select.opt {
-    width: 45%;
-  }
-  
-  .wholesale  input.qty {
-    width: 25%;
-    margin: 1rem;
-  }
-  
   .btn {
     cursor: pointer;
     padding: 10px;
