@@ -123,9 +123,6 @@
           {%- when 'quantity_selector' -%}
         {%- if customer.tags contains "wholesale" -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-			  <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }}, {{ section.id }})">
-                <option value="whole" title="Flat">Whole Flat</option>
-              </select>
 
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
