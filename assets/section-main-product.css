@@ -870,11 +870,11 @@ a.product__text {
   }
   
   .wholesale  select.opt {
-    width: 35%;
+    width: 20%;
   }
   
   .wholesale  input.qty {
-    width: 25%;
+    width: 15%;
     margin: 1rem;
   }
   
