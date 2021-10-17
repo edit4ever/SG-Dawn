@@ -218,7 +218,7 @@ fieldset.product-form__input .form__label {
   --color-button: var(--color-base-accent-1);
   --color-button-text: var(--color-base-solid-button-labels);
   --alpha-button-background: 1;
-}
+    }
 
 .product-form__submit[aria-disabled="true"] + .shopify-payment-button,
 .product-form__submit[disabled] + .shopify-payment-button {
@@ -870,7 +870,7 @@ a.product__text {
   }
   
   .wholesale  select.opt {
-    width: 45%;
+    width: 35%;
   }
   
   .wholesale  input.qty {
