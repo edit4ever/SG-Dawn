@@ -534,6 +534,30 @@
       else {
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
       }
+      document.getElementById("var-mult-" + product).setAttribute("multiplier", selectMult);
+      document.getElementById("quantity-" + product).setAttribute("title", selectVariant);
+      document.getElementById("quantity-" + product).max = selectMax * selectMult;
+      document.getElementById("var-mult-" + product).max = selectMax;
+      document.getElementById("quantity-" + product).value = "";
+      document.getElementById("var-mult-" + product).value = "1";
+
+      var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
+      if (selectVariant2 == "half") {
+        document.getElementById("quantity-" + product).value = Math.round(selectMult * .5);
+      }
+      else if (selectVariant2 == "quarter") {
+        document.getElementById("quantity-" + product).value = Math.round(selectMult * .25);
+      }
+      else if (selectVariant2 == "third") {
+        document.getElementById("quantity-" + product).value = Math.round(selectMult * .33);
+      }
+      else if (selectVariant2 == "2third") {
+        document.getElementById("quantity-" + product).value = Math.round(selectMult * .67);
+      }
+      else {
+        document.getElementById("var-mult-" + product).setAttribute("class", "qty");
+        document.getElementById("quantity-" + product).value = selectMult;
+      }
     }
   </script>
 
