@@ -509,6 +509,9 @@
       var selectOption = "Size-" + product;
       var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].title;
       var selectMult = 1;
+      var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
+      var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
+      var selectMult = 1;
       var inputOption = "option-" + product;
       var length = document.getElementById(inputOption).length;
       for (i = length-1; i >= 0; i--) {
