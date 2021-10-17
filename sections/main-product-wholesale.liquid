@@ -244,10 +244,10 @@
                 </div>
 
                   <div class="list-view-item__variant-column">
-                    <form id="form-{{ product_card_product.id }}" name="wholesale_add" action="/cart/add" method="post" style="text-align:center;">
-                      <select id="variant{{ product_card_product.id }}" name="id" title="{{ product_card_product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product_card_product.id }})">
+                    <form id="form-{{ product.id }}" name="wholesale_add" action="/cart/add" method="post" style="text-align:center;">
+                      <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
                         <option value="" disabled selected hidden>Select Size</option>
-                        {% for variant in product_card_product.variants %}
+                        {% for variant in product.variants %}
                           {%- if variant.title == "2 in" -%}
                             {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
                           {%- elsif variant.title == "4 in" -%}
@@ -264,10 +264,10 @@
                           {% endif %}
                         {% endfor %}
                       </select>
-                      <select id="option{{ product_card_product.id }}" name="option" title="option-{{ product_card_product.id }}" class="opt" onchange="myFunction2({{ product_card_product.id }})">
+                      <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }})">
                         <option value="whole" title="Flat">Whole Flat</option>
                       </select>
-                      <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product_card_product.id }})">
+                      <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
                       <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
                       <input type="submit" value="Add to Cart" class="btn"/>
                     </form>
