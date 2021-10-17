@@ -878,6 +878,10 @@ a.product__text {
     margin: 1rem;
   }
   
+  .wholesale_add {
+    text-align: left;
+  }
+  
 .wholesale input.btn {
     cursor: pointer;
     padding: 10px;
