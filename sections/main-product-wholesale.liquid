@@ -211,7 +211,7 @@
                           class="select__select"
                           name="options[{{ option.name | escape }}]"
                           form="product-form-{{ section.id }}"
-                          onchange="myFunction({{ section.id }})"
+                          onchange="myFunction({{ optLabel }})"
                         >
                           {%- for value in option.values -%}
                             <option value="{{ value | escape }}" title="{{ value }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
