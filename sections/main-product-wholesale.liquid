@@ -200,7 +200,7 @@
           {%- if customer.tags contains "wholesale" -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                  {%- assign optLabel = "product-form-" | concat: section.id -%}
+                  {%- assign optLabel = "product-form-" | append: section.id -%}
                   {%- assign product_form_id = 'product-form-' | append: section.id -%}
                     <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
