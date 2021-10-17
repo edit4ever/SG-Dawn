@@ -204,7 +204,7 @@
                         {{ option.name }}
                       </label>
                       <div class="select">
-                        <select id="{{optLabel}}"
+                        <select id="Size-{{ product.id }}"
                           class="select__select"
                           name="options[{{ option.name | escape }}]"
                           form="{{ product_form_id }}"
@@ -512,6 +512,7 @@
   <script type="text/javascript">
     function myFunction(product) {
       var selectOption = "variant" + product;
+      var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].title;
       var selectMult = 1;
       var inputOption = "option-" + product;
       var length = document.getElementById(inputOption).length;
