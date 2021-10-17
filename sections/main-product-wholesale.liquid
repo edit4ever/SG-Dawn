@@ -122,8 +122,8 @@
             </div>
           {%- when 'quantity_selector' -%}
         {%- if customer.tags contains "wholesale" -%}
+        {%- comment -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
@@ -143,7 +143,7 @@
                 </button>
               </quantity-input>
             </div>
-        
+        {%- endcomment -%}
             <div class="qtyMultiplier">
               <input id="var-quantity-{{ product.id }}" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" form="{{ product_form_id}}" onchange="myFunction3({{ product.id }})">
               <input id="quantity-{{ product.id }}" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0" form="{{ product_form_id}}">
