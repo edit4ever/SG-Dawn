@@ -539,7 +539,7 @@
 
   <script type="text/javascript">
     function myFunction2(product) {
-      var selectOption2 = "option" + product;
+      var selectOption2 = "Size-" + product;
       var selectVariant2 = document.getElementById(selectOption2).options[document.getElementById(selectOption2).selectedIndex].value;
       var variantMult = document.getElementById("var-mult-" + product).getAttribute('multiplier');
       if (selectVariant2 == "half") {
