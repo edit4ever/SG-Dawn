@@ -271,7 +271,7 @@
            		   </div>   
 
                   
-                  {%comment %}
+
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   <div class="product-form__buttons">
@@ -294,7 +294,6 @@
                 {%- endform -%}
               </product-form>
 
-                {% endcomment %}
                 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
