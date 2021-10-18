@@ -830,7 +830,7 @@ a.product__text {
   margin-bottom: 1rem;
 }
   
-  .list-view-item__variant-column inputQTY {
+  .list-view-item__variant-column form .inputQTY {
   width: 100%;
 }
   
