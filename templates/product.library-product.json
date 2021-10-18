@@ -41,6 +41,11 @@
             "text_style": "body"
           }
         },
+        "wholesale_buy": {
+          "type": "wholesale_buy",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -63,11 +68,6 @@
             "show_dynamic_checkout": false
           }
         },
-        "wholesale_buy": {
-          "type": "wholesale_buy",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -82,11 +82,11 @@
         "5bef1cb5-8555-4727-9433-69798039506c",
         "description",
         "c578d5df-20ac-42eb-9ed7-071faec58581",
+        "wholesale_buy",
         "variant_picker",
         "price",
         "quantity_selector",
         "buy_buttons",
-        "wholesale_buy",
         "share"
       ],
       "settings": {
