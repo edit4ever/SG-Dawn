@@ -825,7 +825,7 @@ a.product__text {
   flex-wrap: wrap;
 }
   
-.list-view-item__variant-column select.var {
+.list-view-item__variant-column form select.var {
   width: 50%;
   margin-bottom: 1rem;
 }
@@ -834,11 +834,11 @@ a.product__text {
   width: 100%;
 }
   
-  .list-view-item__variant-column select.opt {
+  .list-view-item__variant-column form select.opt {
   width: 30%;
 }
   
-  .list-view-item__variant-column input.qty {
+  .list-view-item__variant-column form input.qty {
   width: 15%;
   margin: 0 1rem;
 }
