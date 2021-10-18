@@ -122,11 +122,13 @@
                 <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }})">
                   <option value="whole" title="Flat">Whole Flat</option>
                 </select>
+                <div class="inputQTY">
                 <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
                 <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
+                </div>
                 <input type="submit" value="Add to Cart" class="btn"/>
               </form>
-    </div>            
+    		</div>            
         
         
           {%- when 'description' -%}
