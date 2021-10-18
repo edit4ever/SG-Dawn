@@ -822,6 +822,7 @@ a.product__text {
 
 .list-view-item__variant-column {
   width: 100%;
+  display: block;
 }
   
 .list-view-item__variant-column form {
