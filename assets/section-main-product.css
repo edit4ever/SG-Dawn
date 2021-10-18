@@ -830,3 +830,12 @@ a.product__text {
   margin-bottom: 1rem;
 }
   
+  .list-view-item__variant-column select.opt {
+  width: 35%;
+}
+  
+  .list-view-item__variant-column input.qty {
+  width: 20%;
+  margin: 1rem;
+}
+  
