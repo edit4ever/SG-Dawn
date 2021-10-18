@@ -820,31 +820,35 @@ a.product__text {
   
   /* wholesale product page */
 
-.list-view-item__variant-column {
+.wholesale.list-view-item__variant-column {
   width: 100%;
   display: block;
 }
   
-.list-view-item__variant-column form {
+.wholesale.list-view-item__variant-column form {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
   
-.list-view-item__variant-column form select.var {
+  
+.wholesale.list-view-item__variant-column form select.var {
   width: 50%;
   margin-bottom: 1rem;
 }
   
-  .list-view-item__variant-column form .inputQTY {
+    
+.wholesale.list-view-item__variant-column form .inputQTY {
   width: 100%;
 }
   
-  .list-view-item__variant-column form select.opt {
+    
+.wholesale.list-view-item__variant-column form select.opt {
   width: 30%;
 }
   
-  .list-view-item__variant-column form input.qty {
+    
+.wholesale.list-view-item__variant-column form input.qty {
   width: 15%;
   margin: 0 1rem;
 }
