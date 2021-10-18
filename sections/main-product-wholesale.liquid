@@ -83,7 +83,7 @@
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
-        {%- unless product.tags contains "wholesale" -%}
+        	{%- unless product.tags contains "wholesale" -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
@@ -93,7 +93,8 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
-          {%- endunless -%}
+          	{%- endunless -%}
+        {%- when 'wholesale_buy' -%}
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
@@ -552,6 +553,11 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
+      "limit": 1
+    },
+ 	{
+      "type": "wholesale_buy",
+      "name": "t:sections.main-product.blocks.wholesale_buy.name",
       "limit": 1
     },
     {
