@@ -835,11 +835,11 @@ a.product__text {
 }
   
   .list-view-item__variant-column select.opt {
-  width: 35%;
+  width: 30%;
 }
   
   .list-view-item__variant-column input.qty {
-  width: 20%;
-  margin: 1rem;
+  width: 15%;
+  margin: 0 1rem;
 }
   
