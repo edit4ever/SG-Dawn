@@ -1565,6 +1565,9 @@
         "price": {
           "name": "Price"
         },
+        "wholesale_buy": {
+          "name": "Wholesale Buy"
+        },
         "quantity_selector": {
           "name": "Quantity selector"
         },

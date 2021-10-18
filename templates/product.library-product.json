@@ -63,6 +63,11 @@
             "show_dynamic_checkout": false
           }
         },
+        "wholesale_buy": {
+          "type": "wholesale_buy",
+          "settings": {
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -81,6 +86,7 @@
         "price",
         "quantity_selector",
         "buy_buttons",
+        "wholesale_buy",
         "share"
       ],
       "settings": {
