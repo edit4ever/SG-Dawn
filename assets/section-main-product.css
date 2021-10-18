@@ -819,6 +819,10 @@ a.product__text {
   
   
   /* wholesale product page */
+
+.list-view-item__variant-column {
+  width: 100%;
+}
   
 .list-view-item__variant-column form {
   display: flex;
