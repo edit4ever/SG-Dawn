@@ -18,7 +18,7 @@
 {%- endif -%}
 
 <section class="page-width">
-  <div class="product wholesale grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
@@ -68,7 +68,7 @@
     </div>
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
-        {%- assign product_form_id = 'product-form-' | append: product.id -%}
+        {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -83,7 +83,7 @@
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
-        {%- if customer.tags contains "wholesale" -%}
+        {%- unless product.tags contains "wholesale" -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
@@ -93,7 +93,7 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
-          {%- endif -%}
+          {%- endunless -%}
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
@@ -121,9 +121,12 @@
               </details>
             </div>
           {%- when 'quantity_selector' -%}
-        {%- if customer.tags contains "wholesale" -%}
-        {%- comment -%}
+        {%- unless product.tags contains "wholesale" -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
+              <label class="form__label" for="Quantity-{{ section.id }}">
+                {{ 'products.product.quantity.label' | t }}
+              </label>
+
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
@@ -135,7 +138,7 @@
                     id="Quantity-{{ section.id }}"
                     min="1"
                     value="1"
-                    form="{{ product_form_id}}"
+                    form="product-form-{{ section.id }}"
                   >
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
@@ -143,16 +146,7 @@
                 </button>
               </quantity-input>
             </div>
-        {%- endcomment -%}
-            <div class="qtyMultiplier">
-              <select id="option-{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }})">
-                <option value="whole" title="Flat">Whole Flat</option>
-              </select>
-              <input id="var-mult-{{ product.id }}" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
-              <input id="quantity-{{ product.id }}" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0" form="{{ product_form_id}}">
-            </div>
-        
-        {%- endif -%}
+        {%- endunless -%}
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
@@ -196,7 +190,31 @@
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
-          {%- if customer.tags contains "wholesale" -%}
+        {%- unless product.tags contains "wholesale" -%}
+            {%- unless product.has_only_default_variant -%}
+              {%- if block.settings.picker_type == 'button' -%}
+                <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                  {%- for option in product.options_with_values -%}
+                      <fieldset class="js product-form__input">
+                        <legend class="form__label">{{ option.name }}</legend>
+                        {%- for value in option.values -%}
+                          <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+                                name="{{ option.name }}"
+                                value="{{ value | escape }}"
+                                form="product-form-{{ section.id }}"
+                                {% if option.selected_value == value %}checked{% endif %}
+                          >
+                          <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+                            {{ value }}
+                          </label>
+                        {%- endfor -%}
+                      </fieldset>
+                  {%- endfor -%}
+                  <script type="application/json">
+                    {{ product.variants | json }}
+                  </script>
+                </variant-radios>
+              {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                     <div class="product-form__input product-form__input--dropdown">
@@ -204,14 +222,13 @@
                         {{ option.name }}
                       </label>
                       <div class="select">
-                        <select id="Size-{{ product.id }}"
+                        <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
                           class="select__select"
                           name="options[{{ option.name | escape }}]"
-                          form="{{ product_form_id }}"
-                          onchange="myFunction({{ product.id }})"
+                          form="product-form-{{ section.id }}"
                         >
                           {%- for value in option.values -%}
-                            <option value="{{ value | escape }}" title="{{ value }}" {% if option.selected_value == value %}selected="selected"{% endif %} stock="3">
+                            <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
                               {{ value }}
                             </option>
                           {%- endfor -%}
@@ -223,50 +240,34 @@
                   <script type="application/json">
                     {{ product.variants | json }}
                   </script>
-                  
-                  
-                  {%- comment -%}
-                  <div class="list-view-item__variant-column">
-                    <form id="form-{{ product.id }}" name="wholesale_add" action="/cart/add" method="post">
-                      <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
-                        <option value="" disabled selected hidden>Select Size</option>
-                        {% for variant in product.variants %}
-                          {%- if variant.title == "2 in" -%}
-                            {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-                          {%- elsif variant.title == "4 in" -%}
-                            {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-                          {%- elsif variant.title == "6 in" -%}
-                            {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-                          {%- else -%}
-                            {%- assign flatAvail = variant.inventory_quantity -%}
-                          {%- endif -%}
-                          {% if flatAvail > 0 %}
-                          <option value="{{ variant.id }}" title="{{ variant.title }}" stock="{{ flatAvail }}">{{ variant.title }} - {{ variant.price | money }}</option>
-                          {% else %}
-                          <option disabled="disabled" style="color:var(--color-btn-social-focus);">{{ variant.title }} - Sold Out</option>
-                          {% endif %}
-                        {% endfor %}
-                      </select>
-                      <select id="option{{ product.id }}" name="option" title="option-{{ product.id }}" class="opt" onchange="myFunction2({{ product.id }})">
-                        <option value="whole" title="Flat">Whole Flat</option>
-                      </select>
-                      <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product.id }})">
-                      <input id="quantity" type="number" name="quantity" title="variant quantity" class="hidden" min="0" value="0">
-                      <input type="submit" value="Add to Cart" class="btn"/>
-                    </form>
-           		   </div>   
-                  
-               {%- endcomment -%}   
-                  
-                  
-                  
                 </variant-selects>
               {%- endif -%}
-        
-        
-        
+            {%- endunless -%}
+
+            <noscript class="product-form__noscript-wrapper-{{ section.id }}">
+              <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+                <label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
+                <div class="select">
+                  <select name="id" id="Variants-{{ section.id }}" class="select__select" form="product-form">
+                    {%- for variant in product.variants -%}
+                      <option
+                        {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+                        {% if variant.available == false %}disabled{% endif %}
+                        value="{{ variant.id }}"
+                      >
+                        {{ variant.title }}
+                        {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                        - {{ variant.price | money | strip_html }}
+                      </option>
+                    {%- endfor -%}
+                  </select>
+                  {% render 'icon-caret' %}
+                </div>
+              </div>
+            </noscript>
+        {%- endunless -%}
           {%- when 'buy_buttons' -%}
-        {%- if customer.tags contains "wholesale" -%}
+        {%- unless product.tags contains "wholesale" -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -322,7 +323,7 @@
                 </template>
               </pickup-availability>
             </div>
-              {%- endif -%}
+              {%- endunless -%}
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
@@ -501,105 +502,6 @@
     ]
   }
 </script>
- 
-  
-  
-  <script type="text/javascript">
-    function myFunction(product) {
-      var selectOption = "Size-" + product;
-      var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].title;
-      var selectMult = 1;
-      var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
-      var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
-      var selectMult = 1;
-      var inputOption = "option-" + product;
-      var length = document.getElementById(inputOption).length;
-      for (i = length-1; i >= 0; i--) {
-        document.getElementById(inputOption).remove(i);
-      }
-      if (selectTitle == "2 in" ) {
-        selectMult = 64;
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half');
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('¼ Flat', 'quarter');
-      }
-      else if (selectTitle == "4 in") {
-        selectMult = 15;
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅔ Flat', '2third');
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅓ Flat', 'third');
-      }
-      else if (selectTitle == "6 in") {
-        selectMult = 6;
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half'); 
-      }
-      else {
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
-      }
-      document.getElementById("var-mult-" + product).setAttribute("multiplier", selectMult);
-      document.getElementById("quantity-" + product).setAttribute("title", selectVariant);
-      document.getElementById("quantity-" + product).max = selectMax * selectMult;
-      document.getElementById("var-mult-" + product).max = selectMax;
-      document.getElementById("quantity-" + product).value = "";
-      document.getElementById("var-mult-" + product).value = "1";
-
-      var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
-      if (selectVariant2 == "half") {
-        document.getElementById("quantity-" + product).value = Math.round(selectMult * .5);
-      }
-      else if (selectVariant2 == "quarter") {
-        document.getElementById("quantity-" + product).value = Math.round(selectMult * .25);
-      }
-      else if (selectVariant2 == "third") {
-        document.getElementById("quantity-" + product).value = Math.round(selectMult * .33);
-      }
-      else if (selectVariant2 == "2third") {
-        document.getElementById("quantity-" + product).value = Math.round(selectMult * .67);
-      }
-      else {
-        document.getElementById("var-mult-" + product).setAttribute("class", "qty");
-        document.getElementById("quantity-" + product).value = selectMult;
-      }
-    }
-  </script>
-
-  <script type="text/javascript">
-    function myFunction2(product) {
-      var selectOption2 = "Size-" + product;
-      var selectVariant2 = document.getElementById(selectOption2).options[document.getElementById(selectOption2).selectedIndex].value;
-      var variantMult = document.getElementById("var-mult-" + product).getAttribute('multiplier');
-      if (selectVariant2 == "half") {
-        document.getElementById("quantity-" + product).value = Math.round(variantMult * .5);
-        document.getElementById("var-mult-" + product).setAttribute("class", "hidden");
-      }
-      else if (selectVariant2 == "quarter") {
-        document.getElementById("quantity-" + product).value = Math.round(variantMult * .25);
-        document.getElementById("var-mult-" + product).setAttribute("class", "hidden");
-      }
-      else if (selectVariant2 == "third") {
-        document.getElementById("quantity-" + product).value = Math.round(variantMult * .33);
-        document.getElementById("var-mult-" + product).setAttribute("class", "hidden");
-      }
-      else if (selectVariant2 == "2third") {
-        document.getElementById("quantity-" + product).value = Math.round(variantMult * .67);
-        document.getElementById("var-mult-" + product).setAttribute("class", "hidden");
-      }
-      else {
-        document.getElementById("quantity-" + product).setAttribute("class", "qty");
-        document.getElementById("var-mult-" + product).value = variantMult;
-      }
-    }
-  </script>
-
-  <script type="text/javascript">
-    function myFunction3(product) {
-      var variantValue = document.getElementById("var-mult-" + product).value;
-      var variantMult = document.getElementById("var-mult-" + product).getAttribute('multiplier');
-      document.getElementById("quantity-" + product).value = variantMult * variantValue;
-    }
-  </script>
-  
 
 {% schema %}
 {
@@ -650,11 +552,6 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
-    },
-  	{	
-      "type": "wholesale_buy",
-      "name": "t:sections.main-product.blocks.wholesale_buy.name",
       "limit": 1
     },
     {
