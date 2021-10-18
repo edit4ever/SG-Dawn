@@ -827,5 +827,6 @@ a.product__text {
   
 .list-view-item__variant-column select.var {
   width: 50%;
+  margin-bottom: 1rem;
 }
   
