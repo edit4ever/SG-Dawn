@@ -823,6 +823,7 @@ a.product__text {
 .list-view-item__variant-column form {
   display: flex;
   flex-wrap: wrap;
+  align-items: start;
 }
   
 .list-view-item__variant-column select.var {
