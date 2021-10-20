@@ -191,6 +191,7 @@ option {
     width: 75% !important;
     max-width: none !important;
     margin-bottom: 5px;
+    margin-right: 1rem;
   }
   .list-view-item__image-column {
     vertical-align: top;
@@ -206,7 +207,7 @@ option {
   .list-view-item__variant-column .btn {
   	margin-top: 0;
     width: auto;
-    margin: 0 1rem;
+    margin-right: 1rem;
   }
   .plant-submit {
     width: 45%;
