@@ -1,5 +1,9 @@
 @media print {
   
+  .wholesale.list-view-item__variant-column {
+    display: none;
+  }
+  
   .product.grid.grid--1-col.grid--2-col-tablet {
     flex-wrap: nowrap;
     align-items: top;
