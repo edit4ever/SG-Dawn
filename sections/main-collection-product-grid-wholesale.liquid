@@ -579,9 +579,10 @@
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').max = selectMax * selectMult;
       document.getElementById("form-" + product).querySelector('input[name="var-mult"]').max = selectMax;
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = "";
-      document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "";
+      document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "1";
 
       var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
+      var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
       if (selectVariant2 == "half") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .5);
         document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .5) + " plants)"
