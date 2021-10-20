@@ -585,25 +585,25 @@
       var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
       if (selectVariant2 == "half") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .5);
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .5) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .5) + " plants)"
 
       }
       else if (selectVariant2 == "quarter") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .25);
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .25) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .25) + " plants)"
       }
       else if (selectVariant2 == "third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .33);
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .33) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .33) + " plants)"
       }
       else if (selectVariant2 == "2third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .67);
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .67) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .67) + " plants)"
       }
       else {
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = selectMult;
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + selectMult + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + selectMult + " plants)"
       }
     }
   </script>
@@ -616,27 +616,27 @@
       if (selectVariant2 == "half") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .5);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .5) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .5) + " plants)"
       }
       else if (selectVariant2 == "quarter") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .25);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .25) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .25) + " plants)"
       }
       else if (selectVariant2 == "third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .33);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .33) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .33) + " plants)"
       }
       else if (selectVariant2 == "2third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .67);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .67) + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(variantMult * .67) + " plants)"
       }
       else {
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult;
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + variantMult + " plants)"
+        document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + variantMult + " plants)"
       }
     }
   </script>
@@ -646,7 +646,7 @@
     var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
     var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
     document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult * variantValue;
-    document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + variantMult * variantValue + " plants)"
+    document.getElementById("form-" + product).querySelector('label[name="plantSubmit"]').value = "Add to Cart  (" + variantMult * variantValue + " plants)"
   }
 </script>
 
