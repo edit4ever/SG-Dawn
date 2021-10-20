@@ -19,6 +19,10 @@
 
   }
   
+  .product__info-wrapper.grid__item {
+    width: 49%;
+  }
+  
   .product__info-container h1 {
     font-size: 300%;
     margin-top: 0;
