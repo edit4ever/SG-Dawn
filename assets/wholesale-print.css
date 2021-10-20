@@ -20,5 +20,9 @@
     margin-top: 0;
   }
   
+  .product__info-container {
+    font-size: 200%;
+  }
+  
   
 }
