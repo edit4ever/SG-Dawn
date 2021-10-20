@@ -170,7 +170,7 @@ input, select {
   line-height: 1.2;}
 
 option {
-  padding: 0 1rem; }
+  padding: 1rem; }
 
 :focus-visible {
     outline: none;
