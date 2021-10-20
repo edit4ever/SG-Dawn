@@ -1,6 +1,6 @@
 @media print {
   
-  .wholesale.list-view-item__variant-column {
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide {
     display: none;
   }
   
