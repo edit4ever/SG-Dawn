@@ -925,18 +925,25 @@ a.product__text {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    
   }
-  
     .list-view-item__variant-column form select.var {
     width: 100%;
     margin-bottom: 1rem;
-}
+  }
+  .list-view-item__variant-column form select.opt {
+    width: 70% !important;
+    margin-top: 5px;
+    margin-right: 1rem;
+  }
+  .list-view-item__variant-column form input.qty {
+    margin-top: 5px;
+    width: 25%;
+    max-width: 25%;
+  }
   .full-width-link {
     bottom: 70%;
     right: 0;
-  }
-  
+  }  
   .list-view-item__variant-column form select {
     font-size: 110%;
     width: 49%;
