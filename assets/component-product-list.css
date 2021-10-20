@@ -266,7 +266,9 @@ option {
     width: 49%;
     background-color: #fff;
   }
- 
+  .plant-submit {
+    width: 25%;
+  }
   
 }
 
