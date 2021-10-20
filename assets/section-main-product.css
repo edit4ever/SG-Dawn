@@ -853,3 +853,10 @@ a.product__text {
   margin: 0 1rem;
 }
   
+.plant-submit {
+  width: 20%;
+  margin-top: 1rem;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+}
