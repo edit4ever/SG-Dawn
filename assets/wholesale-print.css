@@ -1,6 +1,6 @@
 @media print {
   
-  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .shopify-section.spaced-section:not(:first-of-type), .footer {
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .shopify-section.spaced-section:not(:first-of-type), .footer, .header {
     display: none;
   }
   
