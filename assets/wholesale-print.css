@@ -1,5 +1,9 @@
 @media print {
   
+  .grid__item.product__media-wrapper {
+    width: 40%;
+  }
+  
   .product__media-item.grid__item.slider__slide {
     width: 10%;
   }
