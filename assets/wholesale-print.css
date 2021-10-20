@@ -6,6 +6,7 @@
   
   .grid__item.product__media-wrapper {
     max-width: 40%;
+    margin-right: 5%;
   }
   
   h1 {
