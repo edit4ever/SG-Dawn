@@ -193,12 +193,14 @@ option {
   }
   
   .list-view-item__variant-column form select.opt {
-    width: 75% !important;
+    width: 70% !important;
     margin-top: 5px;
     margin-right: 1rem;
   }
   .list-view-item__variant-column form input.qty {
     margin-top: 5px;
+    width: 25%;
+    max-width: 25%;
   }
   .list-view-item__image-column {
     vertical-align: top;
