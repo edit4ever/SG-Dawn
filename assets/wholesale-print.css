@@ -39,5 +39,13 @@
     font-size: 150%;
   }
   
+  .meta-title {
+    color: rgba(var(--color-foreground),.75);
+      }
+  
+  .meta-field {
+    color: var(--color-foreground);
+      }
+  
   
 }
