@@ -4,8 +4,8 @@
     width: 40%;
   }
   
-  .product__media-item.grid__item.slider__slide {
-    width: 10%;
+  .product__media-list.grid.grid--peek.list-unstyled.slider.slider--mobile {
+    width: 40%;
   }
   
   h1 {
