@@ -184,11 +184,11 @@ option {
   }
   .list-view-item__variant-column form {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
   }
   .list-view-item__variant-column form select {
-    width: 100% !important;
+    width: 75% !important;
     max-width: none !important;
     margin-bottom: 5px;
   }
@@ -204,9 +204,12 @@ option {
     margin-top: .5rem;
   }
   .list-view-item__variant-column .btn {
-  margin-top: 0;
+  	margin-top: 0;
     width: auto;
     margin: 0 1rem;
+  }
+  .plant-submit {
+    width: 45%;
   }
   
 }
