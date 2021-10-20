@@ -914,24 +914,6 @@ a.product__text {
 }
 
 @media only screen and (max-width: 749px) {
-  .list-view-item__link {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .list-view-item__title-column {
-    width: 85%;
-  }
-  .list-view-item__image-column {
-    vertical-align: top;
-    width: 15%;
-  }
-  .list-view-item__image-wrapper {
-    margin-right: 15px;
-  }
-  .list-view-item__image {
-    width: 100%;
-    margin-top: .5rem;
-  }
   .list-view-item__variant-column {
     margin-top: 2rem;
   }
@@ -945,6 +927,11 @@ a.product__text {
     appearance: none;
     
   }
+  
+    .list-view-item__variant-column form select.var {
+    width: 100%;
+    margin-bottom: 1rem;
+}
   .full-width-link {
     bottom: 70%;
     right: 0;
