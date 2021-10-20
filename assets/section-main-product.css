@@ -883,8 +883,11 @@ a.product__text {
   
   .list-view-item__variant-column form select.opt {
     width: 60% !important;
+    margin-top: 0;
+    margin-right: 0;
   }
   .list-view-item__variant-column form input.qty {
+    margin-top: 0;
     width: 25%;
     max-width: 25%;
   }
