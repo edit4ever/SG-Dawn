@@ -195,6 +195,7 @@ option {
   
   .list-view-item__variant-column form select.opt {
     width: 75% !important;
+    margin-top: 5px;
   }
   .list-view-item__image-column {
     vertical-align: top;
@@ -208,7 +209,7 @@ option {
     margin-top: .5rem;
   }
   .list-view-item__variant-column .btn {
-  	margin-top: 0;
+  	margin-top: 5px;
     width: auto;
     margin-right: 1rem;
   }
