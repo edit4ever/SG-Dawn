@@ -931,7 +931,7 @@ a.product__text {
     margin-bottom: 1rem;
   }
   .list-view-item__variant-column form select.opt {
-    width: 70% !important;
+    width: 60% !important;
     margin-top: 5px;
     margin-right: 1rem;
   }
