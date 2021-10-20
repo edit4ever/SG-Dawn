@@ -875,6 +875,11 @@ a.product__text {
     width: 100% !important;
     max-width: none !important;
   }
+    
+  .list-view-item__variant-column form select.var {
+    width: 100%;
+    margin-bottom: 1rem;
+}
   
   .list-view-item__variant-column form select.opt {
     width: 70% !important;
