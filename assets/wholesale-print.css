@@ -1,7 +1,7 @@
 @media print {
   
   .grid--1-col .grid__item {
-    width: 50%;
+    width: 10%;
     margin-right: 2rem;
   }
   
