@@ -4,12 +4,12 @@
     flex-wrap: nowrap;
   }
   
-  .product__media-list.grid.grid--peek.list-unstyled.slider.slider--mobile {
-    width: 40%;
+  .grid__item.product__media-wrapper {
+    max-width: 40%;
   }
   
   h1 {
-    font-size: 200%;
+    font-size: 300%;
   }
   
   
