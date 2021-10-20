@@ -634,6 +634,7 @@
     var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
     var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
     document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult * variantValue;
+    document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = variantMult * variantValue
   }
 </script>
 
