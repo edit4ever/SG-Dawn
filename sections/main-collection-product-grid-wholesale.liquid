@@ -579,7 +579,7 @@
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').max = selectMax * selectMult;
       document.getElementById("form-" + product).querySelector('input[name="var-mult"]').max = selectMax;
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = "";
-      document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "1";
+      document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "";
 
       var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
       if (selectVariant2 == "half") {
