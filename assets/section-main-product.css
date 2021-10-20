@@ -938,6 +938,7 @@ a.product__text {
     margin-top: 5px;
     width: 25%;
     max-width: 25%;
+    padding: 11px 10px;
   }
   .full-width-link {
     bottom: 70%;
