@@ -1,7 +1,5 @@
 @media print {
-  
-  size: auto;
-  
+    
   .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide,
   .shopify-section.spaced-section:not(:first-of-type), .footer, .header, #shopify-section-header,
   .product__media-icon
