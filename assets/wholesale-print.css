@@ -4,6 +4,10 @@
     display: none;
   }
   
+  .spaced-section {
+    margin-top: 0;
+  }
+  
   .product.grid.grid--1-col.grid--2-col-tablet {
     flex-wrap: nowrap;
     align-items: top;
