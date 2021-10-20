@@ -903,7 +903,7 @@ a.product__text {
     margin-top: .5rem;
   }
   .list-view-item__variant-column .btn {
-  	margin-top: 1rem;
+  	margin-top: 1rem !important;
     width: auto;
     margin-right: 1rem;
   }
