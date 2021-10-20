@@ -1,7 +1,7 @@
 @media print {
   
-  .grid__item.product__media-wrapper {
-    width: 40%;
+  .product.grid.grid--1-col.grid--2-col-tablet {
+    flex-wrap: no-wrap;
   }
   
   .product__media-list.grid.grid--peek.list-unstyled.slider.slider--mobile {
