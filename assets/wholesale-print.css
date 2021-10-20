@@ -37,6 +37,7 @@
   
   .product__description.rte {
     font-size: 150%;
+    color: rgba(var(--color-foreground),1);
   }
   
   .meta-title {
