@@ -190,7 +190,6 @@ option {
   .list-view-item__variant-column form select {
     width: 100% !important;
     max-width: none !important;
-    margin-bottom: 5px;
     margin-right: 1rem;
   }
   
