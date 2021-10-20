@@ -936,6 +936,7 @@ a.product__text {
   .list-view-item__variant-column form input.qty {
     width: 25%;
     max-width: 25%;
+    font-size: 110%;
   }
   .full-width-link {
     bottom: 70%;
