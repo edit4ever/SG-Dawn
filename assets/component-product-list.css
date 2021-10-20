@@ -197,6 +197,9 @@ option {
     width: 75% !important;
     margin-top: 5px;
   }
+  .list-view-item__variant-column form input.qty {
+    margin-top: 5px;
+  }
   .list-view-item__image-column {
     vertical-align: top;
     width: 15%;
