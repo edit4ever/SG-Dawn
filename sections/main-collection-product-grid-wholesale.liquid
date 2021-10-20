@@ -584,19 +584,25 @@
       var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
       if (selectVariant2 == "half") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .5);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .5) + " plants)"
+
       }
       else if (selectVariant2 == "quarter") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .25);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .25) + " plants)"
       }
       else if (selectVariant2 == "third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .33);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .33) + " plants)"
       }
       else if (selectVariant2 == "2third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .67);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + Math.round(selectMult * .67) + " plants)"
       }
       else {
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = selectMult;
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "Add to Cart  (" + selectMult + " plants)"
       }
     }
   </script>
