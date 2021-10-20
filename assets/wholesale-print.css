@@ -1,6 +1,6 @@
 @media print {
   
-  .grid__item.product__media-wrapper {
+  .product__media-item.grid__item.slider__slide {
     width: 10%;
   }
   
