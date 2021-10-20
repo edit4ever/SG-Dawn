@@ -1,6 +1,6 @@
 @media print {
   
-  .grid--1-col .grid__item {
+  .grid__item.product__media-wrapper {
     width: 10%;
   }
   
