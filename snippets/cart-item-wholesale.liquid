@@ -308,6 +308,7 @@
         {%- else cartTotalRemain < 1 -%} Flat{%- endif -%}
       </span>
     </div>
+    {{cartTotalRemain}}
     {%- endif -%}
   </td>
   <td class="cart-item__totals right small-hide">
@@ -315,7 +316,6 @@
   </td>
 </tr>
 {%- assign cartTotalRemain = cartTotal | modulo:1 -%}
-{{cartTotalRemain}}
 {%- if cartTotalRemain != 0 -%}
 <tr class="cart-item warning">
   <td colspan="5"class= "cart-item__warning">
