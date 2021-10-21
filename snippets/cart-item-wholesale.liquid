@@ -274,8 +274,8 @@
 {%- assign qtyFloor = item.quantity | divided_by: multiplier | floor -%}
 {%- assign qtyRemain = qtyFull | minus: qtyFloor -%} 
 {%- if qtyRemain == 0.53 -%}{%- assign qtyRemain = 0.50 -%}{%- endif -%}
-{%- if qtyRemain == 0.99 -%}{%- assign qtyRemain = 1 -%}{%- endif -%}
 {%- assign qtyCombo = qtyFloor | plus: qtyRemain -%}
+{%- if qtyCombo == 0.99 -%}{%- assign qtyCombo = 1 -%}{%- endif -%}
 {%- assign cartTotal = cartTotal | plus: qtyCombo -%}
 {%- endif -%}
 {%- endif -%}
