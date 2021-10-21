@@ -275,11 +275,9 @@
 {%- assign qtyRemain = qtyFull | minus: qtyFloor -%} 
 {%- if qtyRemain == 0.53 -%}{%- assign qtyRemain = 0.50 -%}{%- endif -%}
 {%- assign qtyCombo = qtyFloor | plus: qtyRemain -%}
-{%- if qtyCombo == 0.99 -%}{%- assign qtyCombo = 1 -%}{%- endif -%}
 {%- assign cartTotal = cartTotal | plus: qtyCombo -%}
 {%- endif -%}
 {%- endif -%}
-<tr><td>{{ qtyCombo }}{{cartTotal}}</td></tr>
 {%- endfor -%}
 {%- unless qtyRaw == 0 -%}
 <tr class="cart-item spacer"></tr>
@@ -304,7 +302,7 @@
         {%- elsif cartTotalRemain == 0.53 -%} ½
         {%- elsif cartTotalRemain == 0.33 -%} ⅓
         {%- elsif cartTotalRemain == 0.25 -%} ¼
-      	{%- elsif cartTotalRemain == 0.99 -%}{%- assign cartTotalRemain = 0 -%}
+      	{%- elsif cartTotalRemain == 0.99 -%}{%- assign cartTotalRemain = 1.00 -%}
         {%- endif -%}
       &nbsp;
         {%- if cartTotalFloor > 1 -%} Flats
