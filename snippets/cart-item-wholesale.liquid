@@ -308,7 +308,6 @@
         {%- if cartTotalFloor > 1 -%} Flats
         {%- else cartTotalFloor == 1 -%} Flat
         {%- else cartTotalRemain < 1 -%} Flat{%- endif -%}
-        {{cartTotalRemain}}
       </span>
     </div>
     {%- endif -%}
@@ -323,7 +322,6 @@
 {%- if cartTotalRemain != 0 -%}
 <tr class="cart-item warning">
   <td colspan="5"class= "cart-item__warning">
-    {{cartTotalRemain}}
     <span>Total {{ variantSize }} flats above not full! Please adjust quantity before checkout.</span>
   </td>
 </tr>
