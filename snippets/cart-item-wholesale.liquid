@@ -293,9 +293,10 @@
   </td>
   <td class="cart-item__flat-qty">
     {%- if variantSize == "2 in" or variantSize == "4 in" or variantSize == "6 in" -%}
+    {%- assign cartTotalFloor = cartTotal | floor -%}
+    {%- assign cartTotalRemain = cartTotal | minus: cartTotalFloor -%} 
+    {%- if cartTotalRemain == 0.99 -%}{%- assign cartTotal = cartTotal | plus: 1 -%}{%- endif -%}
     <div class="cart-total__flat"><span class="cart-total-flat-qty">{%- if cartTotal >= 1 -%}{{ cartTotal | floor }}{%- endif -%}
-        {%- assign cartTotalFloor = cartTotal | floor -%}
-        {%- assign cartTotalRemain = cartTotal | minus: cartTotalFloor -%} 
         {%- if cartTotalRemain == 0.75 -%} ¾ 
         {%- elsif cartTotalRemain == 0.66 -%} ⅔
       	{%- elsif cartTotalRemain == 0.67 -%} ⅔
@@ -303,7 +304,6 @@
         {%- elsif cartTotalRemain == 0.53 -%} ½
         {%- elsif cartTotalRemain == 0.33 -%} ⅓
         {%- elsif cartTotalRemain == 0.25 -%} ¼
-      	{%- elsif cartTotalRemain == 0.99 -%}{%- assign cartTotalRemain = 0 -%}
         {%- endif -%}
       &nbsp;
         {%- if cartTotalFloor > 1 -%} Flats
