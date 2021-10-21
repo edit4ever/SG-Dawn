@@ -320,14 +320,14 @@
   </td>
 </tr>
 
-
+{%- if cartTotalRemain != 0 -%}
 <tr class="cart-item warning">
   <td colspan="5"class= "cart-item__warning">
     {{cartTotalRemain}}
     <span>Total {{ variantSize }} flats above not full! Please adjust quantity before checkout.</span>
   </td>
 </tr>
-{%- endunless -%}
-{%- if cartTotalRemain != 0 -%}
-      	
 {% endif -%}
+{%- endunless -%}
+
+      	
