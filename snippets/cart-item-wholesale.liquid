@@ -305,6 +305,7 @@
         {%- if cartTotalFloor > 1 -%} Flats
         {%- else cartTotalFloor == 1 -%} Flat
         {%- else cartTotalRemain < 1 -%} Flat{%- endif -%}
+        {{cartTotalRemain}}
       </span>
     </div>
     {%- endif -%}
