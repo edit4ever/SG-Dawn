@@ -315,7 +315,7 @@
   </td>
 </tr>
 {%- assign cartTotalRemain = cartTotal | modulo:1 -%}
-{%- if cartTotalRemain >=1 -%}
+{%- if cartTotalRemain != 0 -%}
 <tr class="cart-item warning">
   <td colspan="5"class= "cart-item__warning">
     <span>Total {{ variantSize }} flats above not full! Please adjust quantity before checkout.</span>
