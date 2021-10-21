@@ -312,6 +312,8 @@
   </td>
   <td class="cart-item__totals right small-hide">
     <div class="totals"></div>
+    {{cartTotalRemain}}
+    {{cartTotal}}
   </td>
 </tr>
 {%- assign cartTotalRemain = cartTotal | modulo:1 -%}
