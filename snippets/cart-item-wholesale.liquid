@@ -302,7 +302,6 @@
         {%- elsif cartTotalRemain == 0.53 -%} ½
         {%- elsif cartTotalRemain == 0.33 -%} ⅓
         {%- elsif cartTotalRemain == 0.25 -%} ¼
-      	{%- elsif cartTotalRemain == 0.99 -%}{%- assign cartTotalRemain = 0 -%}
         {%- endif -%}
       &nbsp;
         {%- if cartTotalFloor > 1 -%} Flats
@@ -320,11 +319,14 @@
   </td>
 </tr>
 {%- assign cartTotalRemain = cartTotal | modulo:1 -%}
-{%- if cartTotalRemain != 0 -%}
+
 <tr class="cart-item warning">
   <td colspan="5"class= "cart-item__warning">
+    {{cartTotalRemain}}
     <span>Total {{ variantSize }} flats above not full! Please adjust quantity before checkout.</span>
   </td>
 </tr>
-{%- endif -%}
 {%- endunless -%}
+{%- if cartTotalRemain != 0 -%}
+      	{%- elsif cartTotalRemain == 0.99 -%}
+{% endif -%}
