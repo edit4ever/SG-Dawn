@@ -302,6 +302,7 @@
         {%- elsif cartTotalRemain == 0.53 -%} ½
         {%- elsif cartTotalRemain == 0.33 -%} ⅓
         {%- elsif cartTotalRemain == 0.25 -%} ¼
+      	{%- elsif cartTotalRemain == 0.99 -%}{%- assign cartTotalRemain = 0 -%}
         {%- endif -%}
       &nbsp;
         {%- if cartTotalFloor > 1 -%} Flats
