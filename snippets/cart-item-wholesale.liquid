@@ -297,6 +297,7 @@
         {%- assign cartTotalRemain = cartTotal | minus: cartTotalFloor -%} 
         {%- if cartTotalRemain == 0.75 -%} ¾ 
         {%- elsif cartTotalRemain == 0.66 -%} ⅔
+      	{%- elsif cartTotalRemain == 0.67 -%} ⅔
         {%- elsif cartTotalRemain == 0.50 -%} ½
         {%- elsif cartTotalRemain == 0.53 -%} ½
         {%- elsif cartTotalRemain == 0.33 -%} ⅓
