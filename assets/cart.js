@@ -135,3 +135,8 @@ class CartItems extends HTMLElement {
 }
 
 customElements.define('cart-items', CartItems);
+
+window.onload = function function() {
+  var preUrl = document.referrer;
+  document.getElementById("returnURL").href = preUrl;
+}
