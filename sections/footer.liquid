@@ -37,8 +37,11 @@
               {%- case block.type -%}
                 {%- when 'text' -%}
                   <div class="footer-block__details-content rte">
-                    {{ block.settings.subtext }}
-                  </div>
+                    <div class="footer-block__details-content liquid">
+                    	{{ block.settings.subtext }}
+                  	</div>
+                {%- when 'custom_liquid' -%}
+              		{{ block.settings.custom_liquid }}
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
