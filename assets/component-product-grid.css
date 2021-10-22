@@ -24,6 +24,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.blog-nav .media.grid-4 > *
+.blog-nav .media.grid-4 *
   grid-column: span 1;
 }
