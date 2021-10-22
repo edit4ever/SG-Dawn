@@ -5,6 +5,7 @@
 .article-template__hero-container {
   max-width: var(--page-width);
   margin: 0 auto;
+    padding: 0 5rem;
 }
 
 @media screen and (min-width: 1320px) {
