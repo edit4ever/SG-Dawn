@@ -707,6 +707,15 @@
               "label": "Subtext"
             }
           }
+        },
+        "custom_liquid": {
+          "name": "Custom liquid",
+          "settings": {
+            "custom_liquid": {
+              "label": "Custom liquid",
+              "info": "Add app snippets or other Liquid code to create advanced customizations."
+            }
+          }
         }
       },
       "settings": {
