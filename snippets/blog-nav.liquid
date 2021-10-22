@@ -25,10 +25,10 @@
   <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
     <li class="collection-list__item grid__item prev">
       <a href="{{ prev_product.handle }}"
-         class="card animate-arrow{% if prev_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
+         class="card animate-arrow{% if prev_product.article.image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
         <div class="card--stretch card-colored color-accent-2">
-          {%- if prev_product.featured_media != blank -%}
+          {%- if prev_product.article.image != blank -%}
           <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
             {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
             <div class="media media--square media--hover-effect overflow-hidden"
@@ -41,7 +41,7 @@
                            {%- if prev_product.featured_media.width >= 750 -%}{{ prev_product.featured_media | img_url: '750x' }} 750w,{%- endif -%}
                            {%- if prev_product.featured_media.width >= 1000 -%}{{ prev_product.featured_media | img_url: '1000x' }} 1000w,{%- endif -%}
                            {%- if prev_product.featured_media.width >= 1500 -%}{{ prev_product.featured_media | img_url: '1500x' }} 1500w,{%- endif -%}"
-                   src="{{ prev_product.featured_media | img_url: '1500x' }}"
+                   src="{{ prev_product.article.image | img_url: '1500x' }}"
                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
                    alt="{{ prev_product.title | escape }}"
                    height="{{ prev_product.featured_media.height }}"
