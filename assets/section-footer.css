@@ -510,3 +510,13 @@ noscript .localization-selector.link {
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
+
+
+.footer .liquid a {
+  color: rgba(var(--color-foreground), 1);
+  text-decoration: none;
+}
+
+.footer .liquid a:hover {
+  color: rgba(var(--color-foreground), 0.75);
+    }
