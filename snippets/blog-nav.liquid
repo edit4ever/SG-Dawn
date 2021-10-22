@@ -83,10 +83,10 @@
             <div class="media media--square media--hover-effect overflow-hidden grid-4"
                  {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: prev_product.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
-              <div class="blog-4"><img src="{{ blog.articles[0].image.src | img_url: '1500x' }}" loading="lazy"/></div>
-              <div class="blog-4"><img src="{{ blog.articles[1].image.src | img_url: '1500x' }}" loading="lazy"/></div>
-              <div class="blog-4"><img src="{{ blog.articles[2].image.src | img_url: '1500x' }}" loading="lazy"/></div>
-              <div class="blog-4"><img src="{{ blog.articles[3].image.src | img_url: '1500x' }}" loading="lazy"/></div>
+              <div class="blog-4 1"><img src="{{ blog.articles[0].image.src | img_url: '1500x' }}" loading="lazy"/></div>
+              <div class="blog-4 2"><img src="{{ blog.articles[1].image.src | img_url: '1500x' }}" loading="lazy"/></div>
+              <div class="blog-4 3"><img src="{{ blog.articles[2].image.src | img_url: '1500x' }}" loading="lazy"/></div>
+              <div class="blog-4 4"><img src="{{ blog.articles[3].image.src | img_url: '1500x' }}" loading="lazy"/></div>
             </div>
           </div>
           <div class="card__text card__text-spacing card__text-hover">
