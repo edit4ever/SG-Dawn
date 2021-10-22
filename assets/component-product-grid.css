@@ -28,6 +28,6 @@
   grid-column: span 1;
 }
 
-.blog-nav .media.grid-4 img {
+.blog-nav .media.grid-4 div img {
   width: 100%;
 }
