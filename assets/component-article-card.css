@@ -139,10 +139,10 @@
   }
 }
 
-.article-template__content img {
+.rte img {
   float: left;
 }
 
-.article-template__content img:nth-child(2) {
+.rte img:nth-child(2) {
   float: right;
 }
