@@ -35,17 +35,17 @@
                  {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: prev_product.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
               <img
-                   srcset="{%- if prev_product.featured_media.width >= 165 -%}{{ prev_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
-                           {%- if prev_product.featured_media.width >= 360 -%}{{ prev_product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
-                           {%- if prev_product.featured_media.width >= 535 -%}{{ prev_product.featured_media | img_url: '535x' }} 535w,{%- endif -%}
-                           {%- if prev_product.featured_media.width >= 750 -%}{{ prev_product.featured_media | img_url: '750x' }} 750w,{%- endif -%}
-                           {%- if prev_product.featured_media.width >= 1000 -%}{{ prev_product.featured_media | img_url: '1000x' }} 1000w,{%- endif -%}
-                           {%- if prev_product.featured_media.width >= 1500 -%}{{ prev_product.featured_media | img_url: '1500x' }} 1500w,{%- endif -%}"
-                   src="{{ prev_product.image | img_url: '1500x' }}"
+                   srcset="{%- if prev_product.image.src.width >= 165 -%}{{ prev_product.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                           {%- if prev_product.image.src.width >= 360 -%}{{ prev_product.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                           {%- if prev_product.image.src.width >= 535 -%}{{ prev_product.image.src | img_url: '535x' }} 535w,{%- endif -%}
+                           {%- if prev_product.image.src.width >= 750 -%}{{ prev_product.image.src | img_url: '750x' }} 750w,{%- endif -%}
+                           {%- if prev_product.image.src.width >= 1000 -%}{{ prev_product.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                           {%- if prev_product.image.src.width >= 1500 -%}{{ prev_product.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
+                   src="{{ prev_product.image.src | img_url: '1500x' }}"
                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
                    alt="{{ prev_product.title | escape }}"
-                   height="{{ prev_product.featured_media.height }}"
-                   width="{{ prev_product.featured_media.width }}"
+                   height="{{ prev_product.image.height }}"
+                   width="{{ prev_product.image.width }}"
                    loading="lazy"
                    >
             </div>
@@ -83,12 +83,12 @@
                  {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
               <img
-                   srcset="{%- if collection.featured_image.width >= 165 -%}{{ collection.featured_image | img_url: '165x' }} 165w,{%- endif -%}
-                           {%- if collection.featured_image.width >= 360 -%}{{ collection.featured_image | img_url: '360x' }} 360w,{%- endif -%}
-                           {%- if collection.featured_image.width >= 535 -%}{{ collection.featured_image | img_url: '535x' }} 535w,{%- endif -%}
-                           {%- if collection.featured_image.width >= 750 -%}{{ collection.featured_image | img_url: '750x' }} 750w,{%- endif -%}
-                           {%- if collection.featured_image.width >= 1000 -%}{{ collection.featured_image | img_url: '1000x' }} 1000w,{%- endif -%}
-                           {%- if collection.featured_image.width >= 1500 -%}{{ collection.featured_image | img_url: '1500x' }} 1500w,{%- endif -%}"
+                   srcset="{%- if collection.image.src.width >= 165 -%}{{ collection.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                           {%- if collection.image.src.width >= 360 -%}{{ collection.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                           {%- if collection.image.src.width >= 535 -%}{{ collection.image.src | img_url: '535x' }} 535w,{%- endif -%}
+                           {%- if collection.image.src.width >= 750 -%}{{ collection.image.src | img_url: '750x' }} 750w,{%- endif -%}
+                           {%- if collection.image.src.width >= 1000 -%}{{ collection.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                           {%- if collection.image.src.width >= 1500 -%}{{ collection.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
                    src="{{ collection.featured_image | img_url: '1500x' }}"
                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
                    alt="{{ collection.title | escape }}"
@@ -131,17 +131,17 @@
                  {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: prev_product.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
               <img
-                   srcset="{%- if next_product.featured_media.width >= 165 -%}{{ next_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
-                           {%- if next_product.featured_media.width >= 360 -%}{{ next_product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
-                           {%- if next_product.featured_media.width >= 535 -%}{{ next_product.featured_media | img_url: '535x' }} 535w,{%- endif -%}
-                           {%- if next_product.featured_media.width >= 750 -%}{{ next_product.featured_media | img_url: '750x' }} 750w,{%- endif -%}
-                           {%- if next_product.featured_media.width >= 1000 -%}{{ next_product.featured_media | img_url: '1000x' }} 1000w,{%- endif -%}
-                           {%- if next_product.featured_media.width >= 1500 -%}{{ next_product.featured_media | img_url: '1500x' }} 1500w,{%- endif -%}"
-                   src="{{ next_product.featured_media | img_url: '1500x' }}"
+                   srcset="{%- if next_product.image.src.width >= 165 -%}{{ next_product.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                           {%- if next_product.image.src.width >= 360 -%}{{ next_product.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                           {%- if next_product.image.src.width >= 535 -%}{{ next_product.image.src | img_url: '535x' }} 535w,{%- endif -%}
+                           {%- if next_product.image.src.width >= 750 -%}{{ next_product.image.src | img_url: '750x' }} 750w,{%- endif -%}
+                           {%- if next_product.image.src.width >= 1000 -%}{{ next_product.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                           {%- if next_product.image.src.width >= 1500 -%}{{ next_product.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
+                   src="{{ next_product.image.src | img_url: '1500x' }}"
                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
                    alt="{{ next_product.title | escape }}"
-                   height="{{ next_product.featured_media.height }}"
-                   width="{{ next_product.featured_media.width }}"
+                   height="{{ next_product.image.height }}"
+                   width="{{ next_product.image.width }}"
                    loading="lazy"
                    >
             </div>
