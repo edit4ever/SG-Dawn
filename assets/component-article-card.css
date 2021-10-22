@@ -138,3 +138,11 @@
     margin-right: 4rem;
   }
 }
+
+.article-template__content img {
+  float: left;
+}
+
+.article-template__content img:nth-child(2) {
+  float: right;
+}
