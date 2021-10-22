@@ -139,10 +139,3 @@
   }
 }
 
-.rte img {
-  float: left;
-}
-
-.rte img:nth-child(2) {
-  float: right;
-}
