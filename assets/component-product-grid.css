@@ -35,3 +35,6 @@
   height: 100%;
   object-fit: cover;
 }
+
+.blog-nav .media.grid-4:nth-child(2n) {
+  left: 50%;}
