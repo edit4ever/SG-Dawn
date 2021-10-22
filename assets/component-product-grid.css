@@ -20,7 +20,7 @@
   }
 }
 
-.blognav .media.media--square.media--hover-effect.overflow-hidden.grid-4 {
+.blog-nav .media.grid-4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
