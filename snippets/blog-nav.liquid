@@ -83,7 +83,7 @@
             <div class="media media--square media--hover-effect overflow-hidden"
                  {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: prev_product.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
-              <img src="{{ blog.article[1].image.src | img_url: '1500x' }}" loading="lazy" width: 24%>
+              <img src="{{ blog.articles[1].image.src | img_url: '1500x' }}" loading="lazy" width: 24%>
             </div>
           </div>
           <div class="card__text card__text-spacing card__text-hover">
