@@ -22,7 +22,7 @@
 
 .blog-nav .media.grid-4 {
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
   padding-bottom: 0;
 }
 .blog-nav .media.grid-4 .blog-4 {
