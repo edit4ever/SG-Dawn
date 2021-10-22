@@ -84,17 +84,17 @@
                  {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: prev_product.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
               <img
-                   srcset="{%- if blog.article.image.src.width >= 165 -%}{{ blog.article.image.src | img_url: '165x' }} 165w,{%- endif -%}
-                           {%- if blog.article.image.src.width >= 360 -%}{{ blog.article.image.src | img_url: '360x' }} 360w,{%- endif -%}
-                           {%- if blog.article.image.src.width >= 535 -%}{{ blog.article.image.src | img_url: '535x' }} 535w,{%- endif -%}
-                           {%- if blog.article.image.src.width >= 750 -%}{{ blog.article.image.src | img_url: '750x' }} 750w,{%- endif -%}
-                           {%- if blog.article.image.src.width >= 1000 -%}{{ blog.article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
-                           {%- if blog.article.image.src.width >= 1500 -%}{{ blog.article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
-                   src="{{ blog.article.image.src | img_url: '1500x' }}"
+                   srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                           {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                           {%- if article.image.src.width >= 535 -%}{{ article.image.src | img_url: '535x' }} 535w,{%- endif -%}
+                           {%- if article.image.src.width >= 750 -%}{{ article.image.src | img_url: '750x' }} 750w,{%- endif -%}
+                           {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                           {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
+                   src="{{ article.image.src | img_url: '1500x' }}"
                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
-                   alt="{{ blog.article.title | escape }}"
-                   height="{{ blog.article.image.height }}"
-                   width="{{ blog.article.image.width }}"
+                   alt="{{ article.title | escape }}"
+                   height="{{ article.image.height }}"
+                   width="{{ article.image.width }}"
                    loading="lazy"
                    >
             </div>
