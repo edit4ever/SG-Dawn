@@ -23,13 +23,11 @@
 .blog-nav .media.grid-4 {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-bottom: 0;
 }
 .blog-nav .media.grid-4 .blog-4 {
   grid-column: span 1;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .blog-nav .media.grid-4 .blog-4 img {
