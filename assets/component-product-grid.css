@@ -22,7 +22,8 @@
 
 .blog-nav .media.grid-4 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
 }
 .blog-nav .media.grid-4 .blog-4 {
   grid-column: span 1;
@@ -30,4 +31,6 @@
 
 .blog-nav .media.grid-4 .blog-4 img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
