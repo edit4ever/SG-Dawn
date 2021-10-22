@@ -13,6 +13,5 @@
   .blog-articles > *:last-child:nth-child(2),
   .blog-articles > *:last-child:nth-child(5) {
     grid-column: span 1;
-    text-align: center;
   }
 }
