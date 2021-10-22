@@ -74,7 +74,7 @@
     </li>
     <li class="collection-list__item grid__item prev">
       <a href="{{ blog.handle }}"
-         class="card animate-arrow{% if blog.article.image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
+         class="card animate-arrow{% if article.image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
         <div class="card--stretch card-colored color-accent-2">
           {%- if article.image != blank -%}
