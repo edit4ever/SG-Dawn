@@ -33,6 +33,10 @@
   object-fit: cover;
 }
 
-.blog-nav .media.grid-4 .blog-4.image-2 {
+.blog-4.image-2, .blog-4.image-4 {
   left: 50%;
+}
+
+.blog-4.image-3, .blog-4.image-4 {
+  top: 50%;
 }
