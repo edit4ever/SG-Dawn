@@ -124,7 +124,7 @@
          class="card animate-arrow{% if next_product.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
          >
         <div class="card--stretch card-colored color-accent-2">
-          {%- if next_product.featured_media != blank -%}
+          {%- if next_product.image != blank -%}
           <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
             {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
             <div class="media media--square media--hover-effect overflow-hidden"
@@ -137,7 +137,7 @@
                            {%- if next_product.image.src.width >= 750 -%}{{ next_product.image.src | img_url: '750x' }} 750w,{%- endif -%}
                            {%- if next_product.image.src.width >= 1000 -%}{{ next_product.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
                            {%- if next_product.image.src.width >= 1500 -%}{{ next_product.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
-                   src="{{ next_product.image | img_url: '1500x' }}"
+                   src="{{ next_product.image.src | img_url: '1500x' }}"
                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 3), calc(100vw - 30px)"
                    alt="{{ next_product.title | escape }}"
                    height="{{ next_product.image.height }}"
