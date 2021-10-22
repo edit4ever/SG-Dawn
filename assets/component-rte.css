@@ -23,15 +23,6 @@
   }
 }
 
-.rte img {
-  height: auto;
-  max-width: 100%;
-  float: left;
-}
-
-.rte img:nth-child(2n) {
-  float: right;
-}
 
 .rte ul {
   padding-left: 2rem;
