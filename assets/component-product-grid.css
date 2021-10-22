@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.blog-nav .media.grid-4 div
+.blog-nav .media.grid-4 .blog-4
   grid-column: span 1;
 }
 
