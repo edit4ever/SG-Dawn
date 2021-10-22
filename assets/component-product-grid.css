@@ -20,7 +20,7 @@
   }
 }
 
-.blognav .grid-4 {
+.blognav .media.grid-4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
