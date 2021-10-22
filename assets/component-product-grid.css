@@ -20,6 +20,10 @@
   }
 }
 
+.blog-nav li {
+  text-align: center;
+}
+
 .blog-nav .media.grid-4 {
 }
 .blog-nav .media.grid-4 .blog-4 {
