@@ -1214,6 +1214,9 @@
             },
             "blog_show_author": {
               "label": "Show author"
+            },
+            "blog_show_tags": {
+              "label": "Show tags"
             }
           }
         },
