@@ -156,6 +156,8 @@
 }
 
 .tag {
-  border: 1px solid;
-  border-color: rgb(var(--color-background));
+  background: var(--gradient-base-accent-2);
+    margin-right: 1rem;
+    padding: 2px;
+    color: #fff;
 }
