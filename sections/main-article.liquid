@@ -50,8 +50,8 @@
           </div>
   
         {%- when 'tags'-%}
-        <div class="article-template__content page-width rte" itemprop="articleTags" {{ block.shopify_attributes }}>
-          {{ article.tags }}
+        <div class="article-template__content page-width rte tags" itemprop="articleTags" {{ block.shopify_attributes }}>
+          <span class="caption-with-letter-spacing">{{ article.tags }}</span>
         </div>
 
         {%- when 'share' -%}
