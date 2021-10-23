@@ -48,6 +48,11 @@
           <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
           </div>
+  
+        {%- when 'tags'-%}
+        <div class="article-template__content page-width rte" itemprop="articleTags" {{ block.shopify_attributes }}>
+          {{ article.tags }}
+        </div>
 
         {%- when 'share' -%}
           <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }}>
