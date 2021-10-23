@@ -64,7 +64,7 @@
 
             {%- if prev_product.excerpt != blank -%}
             <p>
-              <span class="icon-wrap">&nbsp;{% render 'icon-arrow-rev' %}</span>{{ .excerpt | strip_html | truncatewords: 12 }}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow-rev' %}</span>{{ prev_product.excerpt | strip_html | truncatewords: 12 }}
             </p>
             {%- endif -%}
           </div>
