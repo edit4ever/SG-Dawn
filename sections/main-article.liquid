@@ -43,11 +43,9 @@
               </span>
             {%- endif -%}
             {%- if block.settings.blog_show_tags -%}
-            <div class="tags">
+            <div class="tags" itemprop="tags">
              {%- for tag in article.tags -%}
-           	  <span class="caption-with-letter-spacing tag">
-                <span itemprop="tags">{{ tag }} </span>
-              </span>
+           	  <span class="caption-with-letter-spacing tag">{{ tag }} </span>
             {%- endfor -%}
             </div>
             {%- endif -%}
