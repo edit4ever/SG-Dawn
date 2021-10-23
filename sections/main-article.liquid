@@ -42,10 +42,12 @@
                 <span itemprop="name">{{ article.author }}</span>
               </span>
             {%- endif -%}
-            {%- if block.settings.blog_show_author -%}
+            {%- if block.settings.blog_show_tags -%}
+             {%- for tag in article.tags -%}
            	  <span class="caption-with-letter-spacing">
-                <span itemprop="tags">{{ article.tags }}</span>
+                <span itemprop="tags">{{ tag }} </span>
               </span>
+            {%- endfor -%}
             {%- endif -%}
           </header>
 
