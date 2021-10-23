@@ -54,7 +54,7 @@
           <div class="card__text card__text-spacing card__text-hover">
             {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
             <h2 class="h3"><span class="icon-wrap">{% render 'icon-arrow-rev' %}&nbsp;</span>{{ prev_product.title }}</h2>
-            <p>{{ prev_product.excerpt_or_content | strip_html | truncatewords: 12 }}</p>
+            <p>{{ prev_product.excerpt_or_content | strip_html | truncatewords: 20 }}</p>
           </div>
           {%- else -%}
           <div class="overlay-card"></div>
@@ -135,6 +135,7 @@
           <div class="card__text card__text-spacing card__text-hover">
             {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
             <h2 class="h3">{{- next_product.title -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></h2>
+            <p>{{ next_product.excerpt_or_content | strip_html | truncatewords: 20 }}</p>
           </div>
           {%- else -%}
           <div class="overlay-card"></div>
