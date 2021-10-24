@@ -166,3 +166,8 @@
     padding: 2px;
     color: #fff;
 }
+
+.blog-column2 {
+	display: grid;
+    grid-template-columns: 3fr 1fr;
+}
