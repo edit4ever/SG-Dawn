@@ -10,5 +10,10 @@
 {% endcomment %}
 
 <div class="recent-blogs">
-  <p>This is test text</p>
+  <h3>Recent Blogs</h3>
+  <ul class="blog-list">
+  {%- for blog in blog.articles -%}
+    <li class="blog-list-blog">{{blog.title}}</li>
+    {%- endfor -%}
+  </ul>
 </div>
