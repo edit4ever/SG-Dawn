@@ -52,9 +52,11 @@
           </header>
 
         {%- when 'content'-%}
-          <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+  		  <div class="blog-column2">
+          	<div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
-          </div>
+          	</div>
+  		  </div>
   
         {%- when 'tags'-%}
         <div class="article-template__content page-width rte tags" itemprop="articleTags" {{ block.shopify_attributes }}>
