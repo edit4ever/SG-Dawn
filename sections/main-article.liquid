@@ -56,6 +56,9 @@
           	<div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
           	</div>
+            <div class="blog-sidebar">
+              {%- render blog-sidebar -%}
+            </div>
   		  </div>
   
         {%- when 'tags'-%}
