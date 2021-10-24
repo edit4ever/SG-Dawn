@@ -16,7 +16,7 @@
     <li class="blog-list-blog">
       <a href="{{blog.url}}">
       	<img class="list-view-item__image" src="{{ blog.image | img_url: '95x95', scale: 2 }}" alt="{{ blog.image.alt }}">
-    	{{blog.title}}
+        <div>{{blog.title}}</div>
       </a>
       </li>
     {%- endfor -%}
