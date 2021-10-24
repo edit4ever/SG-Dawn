@@ -170,4 +170,5 @@
 .blog-column2 {
 	display: grid;
     grid-template-columns: 3fr 1fr;
+ 	grid-column-gap: 4rem;
 }
