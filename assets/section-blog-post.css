@@ -161,10 +161,8 @@
 }
 
 .tag {
-  background: rgba(var(--color-base-background-2),1);
     margin-right: 1rem;
-    padding: 2px;
-    color: #fff;
+    color: rgba(var(--color-base-background-2),1);
 }
 
 .blog-column2 {
