@@ -212,3 +212,7 @@
 .blog-sidebar ul {
   padding-inline-start: 1rem;
 }
+
+.blog-sidebar .excerpt {
+  color: rgba(var(--color-foreground), 0.75);
+    }
