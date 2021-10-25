@@ -24,3 +24,29 @@ td {
 td:first-child, td:last-child {
   text-align: left;
 }
+
+
+
+
+@media print {
+    
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide,
+  .shopify-section.spaced-section:not(:first-of-type), .footer, .header, #shopify-section-header,
+  .product__media-icon
+  {
+    display: none;
+  }
+  
+  body {transform: scale(.3);}
+  
+  #AvailabilityGrid {
+    font-size: 6pt;
+    color: #000;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    line-height: 1.2;
+  }
+  
+  #AvailabilityGrid table, #AvailabilityGrid th, #AvailabilityGrid td {
+  border: 1px solid #666;
+  }
+}
