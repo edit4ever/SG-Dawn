@@ -16,7 +16,7 @@
     <li class="blog-list-blog">
       <a href="{{blog.url}}">
       	<img class="list-view-item__image" src="{{ blog.image | img_url: '95x95', scale: 2 }}" alt="{{ blog.image.alt }}">
-        <div><p>{{blog.title}}</p>
+        <div><p class="title">{{blog.title}}</p>
         {%- if blog.excerpt.size > 0 or blog.content.size > 0 -%}
         <p class="excerpt caption-with-letter-spacing">
           {%- if article.excerpt.size > 0 -%}
