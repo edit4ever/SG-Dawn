@@ -48,7 +48,7 @@ td:first-child, td:last-child {
   border: 1px solid #666;
   }
   
-  tbody {
+  table {
     transform: scale(.5);
   }
   
