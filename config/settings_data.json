@@ -13,7 +13,7 @@
     "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "accent-1",
     "accent_icons": "accent-1",
-    "page_width": "1200",
+    "page_width": "1600",
     "social_twitter_link": "https:\/\/twitter.com\/succulentgard",
     "social_facebook_link": "https:\/\/www.facebook.com\/Succulent.Gardens.Nursery",
     "social_instagram_link": "http:\/\/instagram.com\/succulentgardens",
@@ -62,15 +62,23 @@
           },
           "887fe1ba-0e10-4d52-8dd8-0d74e342790c": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "heading": "CONTACT",
               "subtext": "<p>2133 Elkhorn Road, Castroville, CA 95012<br\/>(831) 632-0482<\/p><p><a href=\"mailto:info@sgplants.com\">info@sgplants.com<\/a><\/p>"
+            }
+          },
+          "74d262e8-0716-44db-af25-02f906518e7b": {
+            "type": "custom_liquid",
+            "settings": {
+              "custom_liquid": "<h2 class=\"footer-block__heading\">CONTACT<\/h2>\n<p>Succulent Gardens<br>\n2133 Elkhorn Road, Castroville, CA 95012<br>\n(831) 632-0482<\/p>\n\n{% if customer.tags contains \"wholesale\" %}\n<a href=\"mailto:wholesale@sgplants.com\" class=\"contact-email\">wholesale@sgplants.com<\/a>\n{% else %}\n<a href=\"mailto:info@sgplants.com\" class=\"contact-email\">info@sgplants.com<\/a>\n{% endif %}"
             }
           }
         },
         "block_order": [
           "footer-1",
-          "887fe1ba-0e10-4d52-8dd8-0d74e342790c"
+          "887fe1ba-0e10-4d52-8dd8-0d74e342790c",
+          "74d262e8-0716-44db-af25-02f906518e7b"
         ],
         "settings": {
           "color_scheme": "accent-2",

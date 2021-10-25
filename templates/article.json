@@ -1,1 +1,67 @@
-{"sections":{"main":{"type":"main-article","blocks":{"featured_image":{"type":"featured_image","settings":{}},"title":{"type":"title","settings":{}},"content":{"type":"content","settings":{}},"share":{"type":"share","settings":{}}},"block_order":["featured_image","title","share","content"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "medium"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": true,
+            "blog_show_tags": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {
+      }
+    },
+    "163492437058c21bca": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if blog.previous_article %}\n{% assign productPrev = blog.previous_article %}\n{% else %}\n{% assign productPrev = blog.articles | last %}\n{% endif %}\n{% if blog.next_article %}\n{% assign productNext = blog.next_article %}\n{% else %}\n{% assign productNext = blog.articles | first %}\n{% endif %}\n\n{% render 'blog-nav',\nprev_product: productPrev,next_product: productNext\nproduct: blog,article: article\n%}"
+      }
+    },
+    "16349227824c1c214c": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "Blog posts",
+        "blog": "news",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163492437058c21bca",
+    "16349227824c1c214c"
+  ]
+}
