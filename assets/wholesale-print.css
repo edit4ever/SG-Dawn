@@ -52,11 +52,8 @@
     font-size: 6pt;
     color: #000;
     font-family: "Arial Narrow", Arial, sans-serif;
-    line-height: 1;
+    line-height: 1.1;
   }
   
-  table.avail-grid, .avail-grid th, .avail-grid td {
-     border: .25pt solid rgba(0,0,0,1);
-  }
   
 }
