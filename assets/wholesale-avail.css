@@ -44,11 +44,11 @@ td:first-child, td:last-child {
     line-height: 1.2;
   }
   
-  #AvailabilityGrid table, #AvailabilityGrid th, #AvailabilityGrid td {
+  table, th, td {
   border: 1px solid #666;
   }
   
-  #AvailabilityGrid {
+  tbody {
     transform: scale(.5);
   }
   
