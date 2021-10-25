@@ -30,7 +30,7 @@
         {%- endif -%}
         {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
         {% if flatAvail > 0 %}
-          <td>{{ flatAvail }} available {% if variant.metafields.my_fields.landscape_quality %}(L){% endif %}</td>
+          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %}(L){% endif %}</td>
         {% else %}
           <td>&nbsp;</td>
         {% endif %}
