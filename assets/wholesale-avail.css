@@ -47,4 +47,9 @@ td:first-child, td:last-child {
   #AvailabilityGrid table, #AvailabilityGrid th, #AvailabilityGrid td {
   border: 1px solid #666;
   }
+  
+  #AvailabilityGrid {
+    transform: scale(.5);
+  }
+  
 }
