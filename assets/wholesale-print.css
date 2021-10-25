@@ -56,7 +56,7 @@
   }
   
   #AvailabilityGrid table, #AvailabilityGrid th, #AvailabilityGrid td {
-     border: .5pt solid rgba(0,0,0,1);
+     border: .25pt solid rgba(0,0,0,1);
   }
   
 }
