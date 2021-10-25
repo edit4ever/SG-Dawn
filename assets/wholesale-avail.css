@@ -3,14 +3,13 @@
 }
 
 table, th, td {
-
   text-align: left;
 }
 
 table {
   empty-cells: show;
   border-collapse: collapse;
-
+  border: 2px solid rgba(0,0,0,.2);
 }
 
 th:first-child, th:last-child {
