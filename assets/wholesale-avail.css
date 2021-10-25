@@ -17,4 +17,5 @@ th:first-child, th:last-child {
 
 td {
   width: 4%;
+  text-align: center;
 }
