@@ -188,6 +188,7 @@
   grid-column-gap: 2rem;
   height: 100%;
   text-decoration: none;
+  color: rgb(var(--color-base-background-1));
 }
 
 .blog-list-blog img {
@@ -202,7 +203,7 @@
   margin-top :0;
   padding: 1rem;
   color: rgb(var(--color-base-background-1));
-    }
+}
 
 .blog-sidebar ul {
   padding-inline-start: 1rem;
