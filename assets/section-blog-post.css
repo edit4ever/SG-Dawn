@@ -239,7 +239,8 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
 .article-template__hero-container
+  padding: 0;
   
 }
