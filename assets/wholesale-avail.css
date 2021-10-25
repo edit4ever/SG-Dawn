@@ -8,7 +8,8 @@ table, th, td {
 }
 
 table {
-  border-collapse: collapse;
+  empty-cells: show;
+
 
 }
 
@@ -19,7 +20,6 @@ th:first-child, th:last-child {
 td {
   width: 4%;
   text-align: center;
-  empty-cells: show;
 }
 
 td:first-child, td:last-child {
