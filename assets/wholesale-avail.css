@@ -44,7 +44,7 @@ td:first-child, td:last-child {
     line-height: 1.2;
   }
   
-  #AvailabilityGrid table, #AvailabilityGrid th, #AvailabilityGrid td {
-  border: 1px solid #666;
+  table, th, td {
+  border: 1pt solid #666;
   }
 }
