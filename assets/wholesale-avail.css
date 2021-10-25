@@ -9,6 +9,7 @@ table, th, td {
 
 table {
   border-collapse: collapse;
+  empty-cells: show;
 }
 
 th:first-child, th:last-child {
