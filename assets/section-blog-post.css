@@ -164,6 +164,10 @@
     color: rgba(var(--color-base-background-2),1);
 }
 
+.tag:first-child {
+  margin-left: 1rem;
+}
+
 .blog-column2 {
 	display: grid;
     grid-template-columns: 2fr 1fr;
