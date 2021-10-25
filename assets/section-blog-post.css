@@ -189,6 +189,7 @@
 
 .blog-list-blog p.excerpt {
   font-size: 90%;
+  margin-bottom: 0;
 }
 
 .blog-list-blog a {
