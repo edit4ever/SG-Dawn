@@ -18,6 +18,7 @@
     {%- for product in collections.wholesale-inventory.products -%}
     <tr>
       <td>{{ product.title }}</td>
+      <td>&nbsp;</td>
 	  {% for variant in product.variants %}
         {%- if variant.title == "2 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
