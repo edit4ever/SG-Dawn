@@ -16,15 +16,15 @@
     <li class="blog-list-blog">
       <a href="{{blog.url}}">
       	<img class="list-view-item__image" src="{{ blog.image | img_url: '95x95', scale: 2 }}" alt="{{ blog.image.alt }}">
-        <div>{{blog.title}}
+        <div><p>{{blog.title}}
         {%- if blog.excerpt.size > 0 or blog.content.size > 0 -%}
-        <p class="excerpt caption-with-letter-spacing">
+        <span class="excerpt caption-with-letter-spacing">
           {%- if article.excerpt.size > 0 -%}
             {{ blog.excerpt | strip_html | truncatewords: 30 }}
           {%- else -%}
             {{ blog.content | strip_html | truncatewords: 30 }}
           {%- endif -%}
-        </p>
+          </span></p>
      	{%- endif -%}
         </div>
       </a>
