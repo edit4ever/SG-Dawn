@@ -240,7 +240,7 @@
 }
 
 @media screen and (max-width: 750px) {
-.article-template__hero-container
-  padding: 0;
-  
+  .article-template__hero-container {
+    padding: 0;
+  }
 }
