@@ -199,5 +199,5 @@
   background: rgba(var(--color-base-background-2),1);
   margin-top :0;
   padding: 1rem;
-  color: var(--color-base-background-1);
+  color: rgb(var(--color-base-background-1));
     }
