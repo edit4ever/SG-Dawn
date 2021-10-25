@@ -1,6 +1,5 @@
 .product-grid .grid__item {
   padding-bottom: 2rem;
-  background-color: rgba(var(--color-base-background-2),1);
 }
 
 .product-grid.negative-margin {
