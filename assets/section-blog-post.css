@@ -234,4 +234,7 @@
   .blog-sidebar {
     display: none;
   }
+  .blog-column2 {
+    display: block;
+  }
 }
