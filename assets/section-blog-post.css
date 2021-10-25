@@ -161,7 +161,7 @@
 }
 
 .tag {
-  background: var(--gradient-base-accent-2);
+  background: rgba(var(--color-base-background-2),1);
     margin-right: 1rem;
     padding: 2px;
     color: #fff;
@@ -194,3 +194,7 @@
   height: 100%;
   width: 100%;
 }
+
+.blog-sidebar h3 {
+  background: rgba(var(--color-base-background-2),1);
+    }
