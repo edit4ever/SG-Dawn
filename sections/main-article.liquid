@@ -45,7 +45,7 @@
             {%- if block.settings.blog_show_tags -%}
             <div class="caption-with-letter-spacing tags" itemprop="tags">{%- if article.tags.size > 0 -%}Tags:{%- endif -%}
              {%- for tag in article.tags -%}
-           	  <span class="caption-with-letter-spacing tag">{{ tag }}</span>|
+           	  <span class="caption-with-letter-spacing tag">{{ tag }}</span>
             {%- endfor -%}
             </div>
             {%- endif -%}
