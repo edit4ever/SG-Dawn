@@ -59,8 +59,9 @@
 }
 
 .article-content:hover .article-card__title {
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.3rem;
+  opacity: .75;
 }
 
 .article-card__image {
