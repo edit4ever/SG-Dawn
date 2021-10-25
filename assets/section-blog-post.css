@@ -182,7 +182,7 @@
   margin-bottom: 2rem;
 }
 
-.blog-list-blog:after {
+.blog-list-blog::after {
   padding: 100%;
 }
 
