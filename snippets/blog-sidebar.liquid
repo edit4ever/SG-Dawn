@@ -20,9 +20,9 @@
         {%- if blog.excerpt.size > 0 or blog.content.size > 0 -%}
         <p class="excerpt">
           {%- if article.excerpt.size > 0 -%}
-            {{ blog.excerpt | strip_html | truncatewords: 12 }}
+            {{ blog.excerpt | strip_html | truncatewords: 16 }}
           {%- else -%}
-            {{ blog.content | strip_html | truncatewords: 12 }}
+            {{ blog.content | strip_html | truncatewords: 16 }}
           {%- endif -%}
           </p>
      	{%- endif -%}
