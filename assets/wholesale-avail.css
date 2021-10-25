@@ -45,6 +45,6 @@ td:first-child, td:last-child {
   }
   
   table, th, td {
-  border: 1pt solid #666;
+  border: .1% solid #666;
   }
 }
