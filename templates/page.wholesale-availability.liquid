@@ -23,85 +23,25 @@
 	  {% for variant in product.variants %}
         {%- if variant.title == "2 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-          {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
-        {%- else -%}
-          <td>&nbsp;</td>
-        {%- endif -%}
-        {%- if variant.title == "4 in" -%}
+        {%- elsif variant.title == "4 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-          {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
-        {%- else -%}
-          <td>&nbsp;</td>
-        {%- endif -%}
-        {%- if variant.title == "6 in" -%}
+        {%- elsif variant.title == "6 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-          {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
         {%- else -%}
-          <td>&nbsp;</td>
-        {%- endif -%}
-        {%- if variant.title == "8 in" -%}
           {%- assign flatAvail = variant.inventory_quantity -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
-        {%- else -%}
-          <td>&nbsp;</td>
         {%- endif -%}
-        {%- if variant.title == "1 gal" -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
-        {%- else -%}
+        {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
+        {% if flatAvail > 0 %}
+          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+        {% else %}
           <td>&nbsp;</td>
-        {%- endif -%}
-        {%- if variant.title == "2 gal" -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
-        {%- else -%}
-          <td>&nbsp;</td>
-        {%- endif -%}
-        {%- if variant.title == "5 gal" -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
-        {%- else -%}
-          <td>&nbsp;</td>
-        {%- endif -%}
-        {%- if variant.title == "10 gal" -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
-        {%- else -%}
-          <td>&nbsp;</td>
-        {%- endif -%}
-        {%- if variant.title == "15 gal" -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-          {% if flatAvail > 0 %}
-            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% endif %}
+        {% endif %}
+        {%- if product.metafields.my_fields.stock_notes -%}
+          <td>product.metafields.my_fields.stock_notes</td>
         {%- else -%}
           <td>&nbsp;</td>
         {%- endif -%}
       {% endfor %}
-      {%- if product.metafields.my_fields.stock_notes -%}
-        <td>{{product.metafields.my_fields.stock_notes}}</td>
-      {%- else -%}
-        <td>&nbsp;</td>
-      {%- endif -%}
     </tr>
       {%- endfor -%}
   </table>
