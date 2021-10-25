@@ -40,7 +40,7 @@ td:first-child, td:last-child {
   body {transform: scale(.3);}
   
   #AvailabilityGrid {
-    font-size: 6pt;
+    font-size: 12pt;
     color: #000;
     font-family: "Arial Narrow", Arial, sans-serif;
     line-height: 1.2;
