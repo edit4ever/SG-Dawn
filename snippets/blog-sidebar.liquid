@@ -18,7 +18,7 @@
       	<img class="list-view-item__image" src="{{ blog.image | img_url: '95x95', scale: 2 }}" alt="{{ blog.image.alt }}">
         <div>{{blog.title}}
         {%- if blog.excerpt.size > 0 or blog.content.size > 0 -%}
-        <p class="excerpt">
+        <p class="excerpt caption-with-letter-spacing">
           {%- if article.excerpt.size > 0 -%}
             {{ blog.excerpt | strip_html | truncatewords: 30 }}
           {%- else -%}
