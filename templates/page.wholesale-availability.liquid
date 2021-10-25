@@ -36,12 +36,12 @@
         {% else %}
           <td>&nbsp;</td>
         {% endif %}
-        {%- if product.metafields.my_fields.stock_notes -%}
-          <td>product.metafields.my_fields.stock_notes</td>
-        {%- else -%}
-          <td>&nbsp;</td>
-        {%- endif -%}
       {% endfor %}
+      {%- if product.metafields.my_fields.stock_notes -%}
+        <td>{{product.metafields.my_fields.stock_notes}}</td>
+      {%- else -%}
+        <td>&nbsp;</td>
+      {%- endif -%}
     </tr>
       {%- endfor -%}
   </table>
