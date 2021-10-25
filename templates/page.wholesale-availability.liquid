@@ -23,19 +23,79 @@
 	  {% for variant in product.variants %}
         {%- if variant.title == "2 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-        {%- elsif variant.title == "4 in" -%}
+          {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+          {%- endif -%}
+        {%- if variant.title == "4 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-        {%- elsif variant.title == "6 in" -%}
+          {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+          {%- endif -%}
+        {%- if variant.title == "6 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-        {%- else -%}
+          {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+          {%- endif -%}
+        {%- if variant.title == "8 in" -%}
           {%- assign flatAvail = variant.inventory_quantity -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
         {%- endif -%}
-        {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
-        {% if flatAvail > 0 %}
-          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-        {% else %}
-          <td>&nbsp;</td>
-        {% endif %}
+        {%- if variant.title == "1 gal" -%}
+          {%- assign flatAvail = variant.inventory_quantity -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+        {%- endif -%}
+        {%- if variant.title == "2 gal" -%}
+          {%- assign flatAvail = variant.inventory_quantity -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+        {%- endif -%}
+        {%- if variant.title == "5 gal" -%}
+          {%- assign flatAvail = variant.inventory_quantity -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+        {%- endif -%}
+        {%- if variant.title == "10 gal" -%}
+          {%- assign flatAvail = variant.inventory_quantity -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+        {%- endif -%}
+        {%- if variant.title == "15 gal" -%}
+          {%- assign flatAvail = variant.inventory_quantity -%}
+          {% if flatAvail > 0 %}
+            <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {% else %}
+            <td>&nbsp;</td>
+          {% endif %}
+        {%- endif -%}
       {% endfor %}
       {%- if product.metafields.my_fields.stock_notes -%}
         <td>{{product.metafields.my_fields.stock_notes}}</td>
