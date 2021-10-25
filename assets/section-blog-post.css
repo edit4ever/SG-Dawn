@@ -201,3 +201,7 @@
   padding: 1rem;
   color: rgb(var(--color-base-background-1));
     }
+
+.blog-sidebar ul {
+  padding-inline-start: 0;
+}
