@@ -180,6 +180,8 @@
 .blog-list-blog {
   max-height: 100px;
   margin-bottom: 2rem;
+  line-height: 1;
+  margin: 0;
 }
 
 .blog-list-blog a {
