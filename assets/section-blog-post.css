@@ -170,7 +170,7 @@
 .blog-column2 {
 	display: grid;
     grid-template-columns: 2fr 1fr;
- 	grid-column-gap: 4rem;
+ 	grid-column-gap: 8rem;
 }
 
 .blog-list {
