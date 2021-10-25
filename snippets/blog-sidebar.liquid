@@ -17,9 +17,9 @@
       <a href="{{blog.url}}">
       	<img class="list-view-item__image" src="{{ blog.image | img_url: '95x95', scale: 2 }}" alt="{{ blog.image.alt }}">
         <div><p class="title">{{blog.title}}</p>
-        {%- if blog.excerpt.size > 0 or blog.content.size > 0 -%}
+        {%- if blog.excerpt.size > 1 or blog.content.size > 0 -%}
         <p class="excerpt">
-          {%- if article.excerpt.size > 0 -%}
+          {%- if article.excerpt.size > 1 -%}
             {{ blog.excerpt | strip_html | truncatewords: 15 }}
           {%- else -%}
             {{ blog.content | strip_html | truncatewords: 15 }}
