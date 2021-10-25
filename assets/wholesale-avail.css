@@ -36,9 +36,7 @@ td:first-child, td:last-child {
   {
     display: none;
   }
-  
-  body {transform: scale(.3);}
-  
+   
   #AvailabilityGrid {
     font-size: 12pt;
     color: #000;
