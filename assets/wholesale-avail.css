@@ -4,6 +4,7 @@ table, th, td {
 
 table {
   border-collapse: collapse;
+  margin: 3rem auto;
 }
 
 th:first-child, th:last-child {
