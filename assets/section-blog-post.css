@@ -211,6 +211,10 @@
   width: 100%;
 }
 
+.blog-sidebar {
+  margin-top: 3rem;
+}
+
 .blog-sidebar h3 {
   background: rgba(var(--color-base-background-2),1);
   margin-top :0;
