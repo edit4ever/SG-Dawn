@@ -1,22 +1,24 @@
-
-
-<div id="CollectionProductGrid">
-  <div class="collection page-width">
-    <div class="loading-overlay gradient"></div>
-    <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="negative-margin">
-      {%- for product in collections.wholesale-inventory.products -%}
-      <li class="list__item">
-        {% render 'product-card-list-wholesale',
-                  product_card_product: product,
-        media_size: section.settings.image_ratio,
-        show_secondary_image: section.settings.show_secondary_image,
-        add_image_padding: section.settings.add_image_padding,
-        show_vendor: section.settings.show_vendor,
-        show_image_outline: section.settings.show_image_outline,
-        show_rating: section.settings.show_rating
-        %}
-      </li>
+<div id="AvailabilityGrid">
+  <table class="avail-grid page-width">
+    <tr>
+      <th>Botanical</th>
+      <th>Pricing</th>
+      <th>2 in</th>
+      <th>4 in</th>
+      <th>6 in</th>
+      <th>8 in</th>
+      <th>1 gal</th>
+      <th>2 gal</th>
+      <th>5 gal</th>
+      <th>10 gal</th>
+      <th>15 gal</th>
+      <th>25 gal+</th>
+      <th>Notes/Comments</th>
+    </tr>
+    {%- for product in collections.wholesale-inventory.products -%}
+    <tr>
+      <td>{{ product_card_product.title }}</td>
+    </tr>
       {%- endfor -%}
-    </ul>
-  </div>
+  </table>
 </div>
