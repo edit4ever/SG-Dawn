@@ -182,11 +182,6 @@
   margin-bottom: 2rem;
 }
 
-.blog-list-blog:after {
-  padding: 100%;
-  content: "";
-}
-
 .blog-list-blog a {
   display: grid;
   grid-template-columns: 1fr 3fr;
