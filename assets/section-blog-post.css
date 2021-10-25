@@ -187,6 +187,10 @@
   margin: 0;
 }
 
+.blog-list-blog p.excerpt {
+  font-size: 90%;
+}
+
 .blog-list-blog a {
   display: grid;
   grid-template-columns: 1fr 3fr;
