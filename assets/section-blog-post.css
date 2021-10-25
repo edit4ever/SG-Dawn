@@ -197,4 +197,6 @@
 
 .blog-sidebar h3 {
   background: rgba(var(--color-base-background-2),1);
+  margin-top :0;
+  padding: 2rem;
     }
