@@ -35,6 +35,7 @@
 .card--media {
   display: block;
   text-decoration: none;
+  height: 100%;
 }
 
 .card--text-only {
