@@ -230,11 +230,16 @@
   color: rgba(var(--color-foreground), 0.75);
     }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .blog-sidebar {
     display: none;
   }
   .blog-column2 {
     display: block;
   }
+}
+
+@media screen and (max-width: 768px) {
+.article-template__hero-container
+  
 }
