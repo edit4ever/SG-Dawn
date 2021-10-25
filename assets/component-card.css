@@ -289,7 +289,6 @@
   .card-wrapper:hover .card-information__text {
     text-decoration: none;
     text-underline-offset: 0.3rem;
-    color: rgba(var(--color-base-background-1),.75);
   }
 
   .card-wrapper:hover .card--search img {
