@@ -15,7 +15,11 @@ th:first-child, th:last-child {
   width:25%;
 }
 
-td:not(:first-child), td:not(:last-child) {
+td {
   width: 4%;
   text-align: center;
+}
+
+td:first-child, td:last-child {
+  text-align: left;
 }
