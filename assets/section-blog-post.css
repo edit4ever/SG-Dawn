@@ -183,8 +183,8 @@
   line-height: 1;
 }
 
-.blog-list-blog p {
-  margin: 0;;
+.blog-list-blog p.title {
+  margin: 0;
 }
 
 .blog-list-blog a {
