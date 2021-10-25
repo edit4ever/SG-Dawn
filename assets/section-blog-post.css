@@ -230,7 +230,7 @@
   color: rgba(var(--color-foreground), 0.75);
     }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .blog-sidebar {
     display: none;
   }
