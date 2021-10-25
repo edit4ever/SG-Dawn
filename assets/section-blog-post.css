@@ -192,7 +192,8 @@
 }
 
 .blog-list-blog a:hover {
-  color: rgba(var(--color-base-background-2),.75)
+  color: rgba(var(--color-base-background-2),.75);
+}
 
 .blog-list-blog img {
   object-fit: cover;
