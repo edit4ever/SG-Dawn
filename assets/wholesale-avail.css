@@ -3,7 +3,7 @@
 }
 
 table, th, td {
-  border: 1px solid rgba(0,0,0,.2);
+
   text-align: left;
 }
 
@@ -20,6 +20,7 @@ th:first-child, th:last-child {
 td {
   width: 4%;
   text-align: center;
+  border: 1px solid rgba(0,0,0,.2);
 }
 
 td:first-child, td:last-child {
