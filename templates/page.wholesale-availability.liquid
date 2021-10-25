@@ -1,0 +1,22 @@
+
+
+<div id="CollectionProductGrid">
+  <div class="collection page-width">
+    <div class="loading-overlay gradient"></div>
+    <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="negative-margin">
+      {%- for product in collection.products -%}
+      <li class="list__item">
+        {% render 'product-card-list-wholesale',
+                  product_card_product: product,
+        media_size: section.settings.image_ratio,
+        show_secondary_image: section.settings.show_secondary_image,
+        add_image_padding: section.settings.add_image_padding,
+        show_vendor: section.settings.show_vendor,
+        show_image_outline: section.settings.show_image_outline,
+        show_rating: section.settings.show_rating
+        %}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
