@@ -182,8 +182,9 @@
   margin-bottom: 2rem;
 }
 
-.blog-list-blog::after {
+.blog-list-blog:after {
   padding: 100%;
+  content: "";
 }
 
 .blog-list-blog a {
@@ -197,6 +198,7 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
+  max-height: 100px;
 }
 
 .blog-sidebar h3 {
