@@ -48,5 +48,11 @@
     color: rgba(var(--color-foreground),1);
       }
   
+  #AvailabilityGrid {
+    font-size: 6pt;
+    color: #000;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    line-height: 1;
+  }
   
 }
