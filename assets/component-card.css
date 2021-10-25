@@ -285,7 +285,7 @@
   .card-wrapper:hover .card-information__text {
     text-decoration: none;
     text-underline-offset: 0.3rem;
-    color: var(--gradient-base-background-1));
+    color: rgb(var(--gradient-base-background-1));
   }
 
   .card-wrapper:hover .card--search img {
