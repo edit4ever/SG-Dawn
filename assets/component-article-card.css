@@ -61,7 +61,7 @@
 .article-content:hover .article-card__title {
   text-decoration: none;
   text-underline-offset: 0.3rem;
-  opacity: .75;
+  color: rgba(var(--color-base-background-2),1);
 }
 
 .article-card__image {
