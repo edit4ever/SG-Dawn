@@ -12,7 +12,7 @@
 <div class="recent-blogs">
   <h3>Recent Blog Posts</h3>
   <ul class="blog-list">
-  {%- for blog in blog.articles limit: 5 -%}
+  {%- for blog in blog.articles limit: 10 -%}
     <li class="blog-list-blog">
       <a href="{{blog.url}}">
       	<img class="list-view-item__image" src="{{ blog.image | img_url: '95x95', scale: 2 }}" alt="{{ blog.image.alt }}">
