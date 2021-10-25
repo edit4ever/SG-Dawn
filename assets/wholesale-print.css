@@ -55,7 +55,7 @@
     line-height: 1;
   }
   
-  #AvailabilityGrid table {
+  #AvailabilityGrid table, #AvailabilityGrid th, #AvailabilityGrid td {
      border: 2px solid rgba(0,0,0,1);
   }
   
