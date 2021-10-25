@@ -36,6 +36,10 @@ td:first-child, td:last-child {
   {
     display: none;
   }
+  
+  .page-width {
+    max-width: 100%;
+  }
    
   #AvailabilityGrid {
     font-size: 24pt;
