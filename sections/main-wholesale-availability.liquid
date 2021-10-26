@@ -16,7 +16,7 @@
       <th>2 in</th>
       <th>4 in</th>
     </tr>
-    {%- for product in collections.wholesale-assorted.products -%}
+    {%- for product in collections.wholesale-assortment.products -%}
     <tr>
       <td>{{ product.title }}</td>
       {%- if product.metafields.my_fields.pricing -%}<td>{{ product.metafields.my_fields.pricing | upcase }}</td>
