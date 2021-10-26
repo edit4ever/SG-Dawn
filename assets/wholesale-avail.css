@@ -64,6 +64,7 @@ td:first-child, td:last-child {
 
 .image-with-text {
   margin-top:0;
+  display: none;
 }
 
 .image-with-text__grid {
@@ -120,6 +121,11 @@ td:first-child, td:last-child {
   .pagebreak {
     page-break-after: always;
   }
+  
+  .image-with-text {
+  display: block;
+}
+
    
   #AvailabilityGrid {
     line-height: 1.2;
