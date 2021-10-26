@@ -101,12 +101,21 @@ td:first-child, td:last-child {
   margin-bottom: 2rem;
 }
 
+/*
 .column2 {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
+*/
+
+.column2 {
+  display: flex;
+}
+
+.table2 {
+  width: 49%;
 
 .table2 table {
   margin-bottom: 2rem;
