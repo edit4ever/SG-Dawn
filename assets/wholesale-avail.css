@@ -48,7 +48,6 @@ td:first-child, td:last-child {
   }
    
   #AvailabilityGrid {
-    font-size: 1vw;
     color: #000;
     font-family: "Arial Narrow", Arial, sans-serif;
     line-height: 1.2;
@@ -56,6 +55,10 @@ td:first-child, td:last-child {
   
   table, th, td {
   border: 1pt solid #666;
+  }
+  
+  table {
+    font-size: 1vw;
   }
   
   .print-head {
