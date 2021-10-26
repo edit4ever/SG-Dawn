@@ -114,6 +114,7 @@ td:first-child, td:last-child {
   
   body {
     font-size: 9pt;
+    color: #000;
   }
   
   .pagebreak {
@@ -121,8 +122,6 @@ td:first-child, td:last-child {
   }
    
   #AvailabilityGrid {
-    font-size: 9pt;
-    color: #000;
     line-height: 1.2;
   }
   
