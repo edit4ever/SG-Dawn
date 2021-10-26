@@ -4,61 +4,9 @@
       "type": "main-page",
       "settings": {
       }
-    },
-    "163424943823a26eab": {
-      "type": "collection-list",
-      "blocks": {
-        "163424943823a26eab-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "diy-kits"
-          }
-        },
-        "08441134-51f3-490c-b42f-35641e5e51e6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "live-plants"
-          }
-        },
-        "163424943823a26eab-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "planter"
-          }
-        },
-        "163424943823a26eab-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "classes-workshops"
-          }
-        },
-        "e779fcb7-978a-4bc2-9c72-200fd1464ccb": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wholesale-inventory"
-          }
-        }
-      },
-      "block_order": [
-        "163424943823a26eab-0",
-        "08441134-51f3-490c-b42f-35641e5e51e6",
-        "163424943823a26eab-1",
-        "163424943823a26eab-2",
-        "e779fcb7-978a-4bc2-9c72-200fd1464ccb"
-      ],
-      "settings": {
-        "title": "",
-        "layout": "grid",
-        "image_ratio": "square",
-        "color_scheme": "accent-2",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
     }
   },
   "order": [
-    "main",
-    "163424943823a26eab"
+    "main"
   ]
 }
