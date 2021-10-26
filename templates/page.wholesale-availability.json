@@ -56,12 +56,6 @@
         "align": "left"
       }
     },
-    "16352761916fd9c8ed": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"pagebreak\"> <\/div>"
-      }
-    },
     "1635274077e36fe0e0": {
       "type": "rich-text",
       "blocks": {
@@ -176,7 +170,6 @@
   "order": [
     "16352677731bc211f5",
     "1635273027b72996fc",
-    "16352761916fd9c8ed",
     "1635274077e36fe0e0",
     "1635274451162eb7e3",
     "163527466606088fcc",

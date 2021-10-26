@@ -62,25 +62,10 @@ margin-bottom: 1rem;
 
 @media print {
   
-  @page {
-    margin: 0;
-  }
-    
-  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, header-drawer, .header__inline-menu, .header__icons
+  
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, .header-wrapper
   {
     display: none;
-  }
-  
-  .header {
-    display: block;
-  }
-  
-  .header-wrapper--border-bottom {
-    border: none;
-  }
-  
-  .header__heading-link {
-  padding: 0;
   }
   
   body {
