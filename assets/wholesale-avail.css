@@ -82,6 +82,10 @@ margin-bottom: 1rem;
   body {
     font-size: 9pt;
   }
+  
+  .pagebreak {
+    page-break-before: always;
+  }
    
   #AvailabilityGrid {
     font-size: 9pt;
