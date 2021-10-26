@@ -5,6 +5,10 @@ body {
 table.pricing {
   line-height: 1.2;
 }
+
+table.pricing td:first-child {
+  width: 20%;
+}
   
 #AvailabilityGrid {
   margin: 3rem auto;
