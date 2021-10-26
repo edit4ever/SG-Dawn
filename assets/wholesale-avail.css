@@ -74,6 +74,10 @@ margin-bottom: 1rem;
   .header-wrapper--border-bottom {
     border: none;
   }
+  
+  .header__heading-link {
+  padding: 0;
+  }
    
   #AvailabilityGrid {
     font-size: 9pt;
