@@ -54,7 +54,7 @@ td:first-child, td:last-child {
   }
   
   table, th, td {
-  border: .05vw solid #666;
+  border: .1mm solid #666;
   }
   
   table {
