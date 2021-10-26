@@ -25,6 +25,14 @@ td:first-child, td:last-child {
   text-align: left;
 }
 
+.print-head {
+  display: none;
+}
+
+.logo {
+  margin-bottom: 3rem;
+}
+
 
 
 
