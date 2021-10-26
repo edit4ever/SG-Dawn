@@ -56,6 +56,34 @@
         "align": "left"
       }
     },
+    "1635274077e36fe0e0": {
+      "type": "rich-text",
+      "blocks": {
+        "1635274077e36fe0e0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Order Minimums",
+            "heading_size": "h2"
+          }
+        },
+        "1635274077e36fe0e0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2\", 4\", and 6\" sold as flats and you must order a full flat of the size (but not of each species).<\/p><p>2\" - 64 to a flat (Ordering options: 16, 32, 64)<br\/>4\" - 15 to a flat (Ordering options: 5, 10, 15)<br\/>6\" -   6 to a flat (Ordering options: 3, 6)<\/p><p>All other sizes sold individually.<\/p>",
+            "margin": false
+          }
+        }
+      },
+      "block_order": [
+        "1635274077e36fe0e0-0",
+        "1635274077e36fe0e0-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "left"
+      }
+    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
@@ -66,6 +94,7 @@
   "order": [
     "16352677731bc211f5",
     "1635273027b72996fc",
+    "1635274077e36fe0e0",
     "main"
   ]
 }

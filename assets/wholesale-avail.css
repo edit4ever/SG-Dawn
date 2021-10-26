@@ -47,6 +47,10 @@ td:first-child, td:last-child {
 margin-bottom: 1rem;
 }
 
+.p-indent {
+  margin-left: 30px;
+}
+
 
 
 
