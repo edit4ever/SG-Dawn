@@ -1,6 +1,10 @@
 body {
   line-height: 1.4;
 }
+
+table.pricing {
+  line-height: 1.2;
+}
   
 #AvailabilityGrid {
   margin: 3rem auto;
