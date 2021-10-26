@@ -73,17 +73,19 @@
       </table>
     </div>
 	<div class="table2">
-      <h3>Specialty 4" Succulents and Cacti - $8 each, 25 per flat</h3>
-      {% tablerow product in collections.wholesale-specialty.products cols:2 %}
-        {{ product.title }}{% if flatAvail > 0 %} - {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}{% endif %}
-      {% endtablerow %}
+      <table class="avail-grid wholesale-specialty">
+		<tr>
+        	<th colspan="2">Specialty 4" Succulents and Cacti - $8 each, 25 per flat</th>
+      	</tr>
+        {% tablerow product in collections.wholesale-specialty.products cols:2 %}
+          {{ product.title }}{% if flatAvail > 0 %} - {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}{% endif %}
+        {% endtablerow %}
+      </table>
     </div>
 {% comment %}    
     <div class="table2">
       <table class="avail-grid wholesale-specialty">
-      <tr>
-        <th colspan="2">Specialty 4" Succulents and Cacti - $8 each, 25 per flat</th>
-      </tr>
+
       {%- for product in collections.wholesale-specialty.products -%}
       <tr>
         <td>{{ product.title }}
