@@ -69,6 +69,35 @@
     </tr>
       {%- endfor -%}
   	</table>
+        <table class="avail-grid wholesale-seasonal">
+    <tr>
+      <th>Assortments Available</th>
+      <th>2 in</th>
+      <th>4 in</th>
+    </tr>
+    {%- for product in collections.wholesale-assortment.products -%}
+    <tr>
+      <td>{{ product.title }}</td>
+	  {% for variant in product.variants %}
+        {%- if variant.title == "2 in" -%}
+          {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
+        {%- elsif variant.title == "4 in" -%}
+          {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
+        {%- elsif variant.title == "6 in" -%}
+          {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
+        {%- else -%}
+          {%- assign flatAvail = variant.inventory_quantity -%}
+        {%- endif -%}
+        {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
+        {% if flatAvail > 0 %}
+          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+        {% else %}
+          <td>&nbsp;</td>
+        {% endif %}
+      {% endfor %}
+    </tr>
+      {%- endfor -%}
+  	</table>
   </div>
   <div class= "spacer">&nbsp;</div>
   <table class="avail-grid wholesale">
