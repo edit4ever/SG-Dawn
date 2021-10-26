@@ -62,9 +62,13 @@ margin-bottom: 1rem;
 
 @media print {
     
-  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, header-drawer
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, header-drawer, .header__inline-menu, .header__icons
   {
     display: none;
+  }
+  
+  .header {
+    display: inline-block;
   }
    
   #AvailabilityGrid {
