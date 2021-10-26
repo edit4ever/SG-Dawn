@@ -8,10 +8,17 @@
           "settings": {
             "text": "<p><strong>Phone: (831)632-0482 FAX: (831)633-5280<\/strong><\/p>"
           }
+        },
+        "754cfd3e-7e31-4200-b21c-32cd6dea4445": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We take orders by phone, fax, or email (wholesale@sgplants.com).<\/p><p>If you need a special order or want particular photos, please contact us at wholesale@sgplants.com.<\/p>"
+          }
         }
       },
       "block_order": [
-        "16352677731bc211f5-1"
+        "16352677731bc211f5-1",
+        "754cfd3e-7e31-4200-b21c-32cd6dea4445"
       ],
       "settings": {
         "color_scheme": "background-1",
