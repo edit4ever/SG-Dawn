@@ -61,6 +61,10 @@ margin-bottom: 1rem;
 
 
 @media print {
+  
+  @page {
+    margin: 0;
+  }
     
   .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, header-drawer, .header__inline-menu, .header__icons
   {
