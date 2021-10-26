@@ -7,7 +7,11 @@ table.pricing {
 }
 
 table.pricing td:first-child {
-  width: 20%;
+  width: 10%;
+}
+
+table.pricing td {
+  padding: 0;
 }
   
 #AvailabilityGrid {
