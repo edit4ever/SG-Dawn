@@ -85,7 +85,7 @@
         "094a89db-6d68-4742-b45b-f3f10a23934c": {
           "type": "text",
           "settings": {
-            "text": "<p>2\" - 64 to a flat (Ordering options: 16, 32, 64)<\/p><p>4\" - 15 to a flat (Ordering options: 5, 10, 15)<\/p><p>6\" -   6 to a flat (Ordering options: 3, 6)<\/p><p><\/p>",
+            "text": "<p>2\" - 64 to a flat - Ordering options:  ¼ Flat (16) | ½ Flat (32) |  Whole Flat (64)<\/p><p>4\" - 15 to a flat - Ordering options: ⅓ Flat (5) | ⅔ Flat (10) | Whole Flat (15)<\/p><p>6\" -   6 to a flat - Ordering options: ½ Flat (3) | Whole Flat (6)<\/p><p><\/p>",
             "margin": true,
             "indent": true
           }
@@ -128,11 +128,20 @@
             "margin": true,
             "indent": false
           }
+        },
+        "7c0328f0-bba7-4568-866c-720623cabee9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><\/p><p>Call us for special delivery needs. (831)632-0482<\/p>",
+            "margin": false,
+            "indent": false
+          }
         }
       },
       "block_order": [
         "1635274451162eb7e3-0",
-        "1635274451162eb7e3-1"
+        "1635274451162eb7e3-1",
+        "7c0328f0-bba7-4568-866c-720623cabee9"
       ],
       "settings": {
         "color_scheme": "background-1",
