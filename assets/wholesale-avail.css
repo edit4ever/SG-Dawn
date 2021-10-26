@@ -101,7 +101,7 @@ td:first-child, td:last-child {
   margin-bottom: 2rem;
 }
 
-.column2 {
+.column3 {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
   grid-column-gap: 2rem;
