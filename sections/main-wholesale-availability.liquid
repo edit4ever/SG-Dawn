@@ -42,28 +42,17 @@
     </table>
     <table class="avail-grid wholesale-specialty">
     <tr>
-      <th>Assortments Available</th>
-      <th>2 in</th>
-      <th>4 in</th>
+      <th colspan="2">Specialty 4" Succulents and Cacti - $8 each, 25 per flat</th>
     </tr>
     {%- for product in collections.wholesale-specialty.products -%}
     <tr>
-      <td>{{ product.title }}</td>
+      <td>{{ product.title }}
 	  {% for variant in product.variants %}
-        {%- if variant.title == "2 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-        {%- elsif variant.title == "4 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-        {%- elsif variant.title == "6 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-        {%- else -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-        {%- endif -%}
-        {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
+        {%- assign flatAvail = variant.inventory_quantity -%}
         {% if flatAvail > 0 %}
-          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+          {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
         {% else %}
-          <td>&nbsp;</td>
+          &nbsp;</td>
         {% endif %}
       {% endfor %}
     </tr>
