@@ -59,7 +59,7 @@ td:first-child, td:last-child {
   }
   
   table, th, td {
-  border: .1mm solid;
+  border: 1px solid;
   border-color: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 60%, rgba(255,255,255,1) 60%);
   }
   
