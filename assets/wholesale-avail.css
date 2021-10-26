@@ -110,15 +110,15 @@ td:first-child, td:last-child {
 }
 */
 
-.column2 {
+.2column {
   display: flex;
   justify-content: space-between;
 }
 
-.table2 {
-  width: 49%;
+.column1 {
+  width: 40%;
 
-.table2 table {
+.2column table {
   margin-bottom: 2rem;
 }
 
