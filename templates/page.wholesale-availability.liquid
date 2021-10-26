@@ -1,63 +1,64 @@
-{{ 'wholesale-avail.css' | asset_url | stylesheet_tag }}
-{{ 'wholesale-print.css' | asset_url | stylesheet_tag }}
-
-
-
-
-<div id="AvailabilityGrid" class="page-width">
-  <div class="print-head">
-    <div class="logo">
-      <img src="https://cdn.shopify.com/s/files/1/0654/1643/files/logo_cf7af7f6-0fe0-4136-8a67-3d9fbeb83a34_410x.png?v=1526044892" width="15%";>
-    </div>
-  </div>
-  <div class="info">
- 	<strong>Phone: (831)632-0482  FAX: (831)633-5280</strong>
-    <p>We take orders by phone, fax, or email (wholesale@sgplants.com).</p>
-    <p>If you need a special order or want particular photos, please contact us at wholesale@sgplants.com.</p>
-    <h2>Wholesale Availability - {{ "now" | date: "%B %e, %Y" }}</h2>
-  </div>
-  <table class="avail-grid">
-    <tr>
-      <th>Botanical</th>
-      <th>Pricing</th>
-      <th>2 in</th>
-      <th>4 in</th>
-      <th>6 in</th>
-      <th>8 in</th>
-      <th>1 gal</th>
-      <th>2 gal</th>
-      <th>5 gal</th>
-      <th>10 gal</th>
-      <th>15 gal</th>
-      <th>Notes/Comments</th>
-    </tr>
-    {%- for product in collections.wholesale-inventory.products -%}
-    <tr>
-      <td>{{ product.title }}</td>
-      <td>&nbsp;</td>
-	  {% for variant in product.variants %}
-        {%- if variant.title == "2 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-        {%- elsif variant.title == "4 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-        {%- elsif variant.title == "6 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-        {%- else -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-        {%- endif -%}
-        {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
-        {% if flatAvail > 0 %}
-          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-        {% else %}
-          <td>&nbsp;</td>
-        {% endif %}
-      {% endfor %}
-      {%- if product.metafields.my_fields.stock_notes -%}
-        <td>{{product.metafields.my_fields.stock_notes}}</td>
-      {%- else -%}
-        <td>&nbsp;</td>
-      {%- endif -%}
-    </tr>
-      {%- endfor -%}
-  </table>
-</div>
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "163424943823a26eab": {
+      "type": "collection-list",
+      "blocks": {
+        "163424943823a26eab-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "diy-kits"
+          }
+        },
+        "08441134-51f3-490c-b42f-35641e5e51e6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "live-plants"
+          }
+        },
+        "163424943823a26eab-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "planter"
+          }
+        },
+        "163424943823a26eab-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "classes-workshops"
+          }
+        },
+        "e779fcb7-978a-4bc2-9c72-200fd1464ccb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-inventory"
+          }
+        }
+      },
+      "block_order": [
+        "163424943823a26eab-0",
+        "08441134-51f3-490c-b42f-35641e5e51e6",
+        "163424943823a26eab-1",
+        "163424943823a26eab-2",
+        "e779fcb7-978a-4bc2-9c72-200fd1464ccb"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "grid",
+        "image_ratio": "square",
+        "color_scheme": "accent-2",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163424943823a26eab"
+  ]
+}
