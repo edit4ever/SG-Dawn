@@ -84,7 +84,7 @@ margin-bottom: 1rem;
   }
   
   .pagebreak {
-    page-break-before: always;
+    page-break-after: always;
   }
    
   #AvailabilityGrid {
