@@ -101,6 +101,12 @@ td:first-child, td:last-child {
   margin-bottom: 2rem;
 }
 
+.column2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+
 
 
 
