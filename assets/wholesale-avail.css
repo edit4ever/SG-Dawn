@@ -2,6 +2,10 @@ body {
   line-height: 1.4;
 }
 
+.rte h3 {
+  margin-bottom: 0;
+}
+
 table.pricing {
   line-height: 1.2;
 }
