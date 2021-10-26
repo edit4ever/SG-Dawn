@@ -118,6 +118,10 @@ td:first-child, td:last-child {
   width: 70%;
 }
 
+.column2 {
+  width: 60%;
+}
+
 .columns2 table {
   margin-bottom: 2rem;
   width: 100%
