@@ -101,15 +101,6 @@ td:first-child, td:last-child {
   margin-bottom: 2rem;
 }
 
-/*
-.column2 {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-}
-*/
-
 .2column {
   display: flex;
   justify-content: space-between;
