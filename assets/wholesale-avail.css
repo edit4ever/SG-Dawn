@@ -34,8 +34,8 @@ td:first-child, td:last-child {
   display: none;
 }
 
-.logo {
-  margin-bottom: 2rem;
+.image-with-text {
+  max-width: 25%;
 }
 
 .p-nomargin p {
