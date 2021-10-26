@@ -1806,6 +1806,9 @@
         }
       }
     },
+    "main-wholesale-availability": {
+      "name": "Wholesale Availability"
+    },
     "multicolumn": {
       "name": "Multicolumn",
       "settings": {
@@ -2119,9 +2122,6 @@
       "presets": {
         "name": "Video"
       }
-    },
-    "wholesale-availability": {
-      "name": "Wholesale Availability"
     }
   }
 }
