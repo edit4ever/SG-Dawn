@@ -3,10 +3,11 @@
     "16352677731bc211f5": {
       "type": "rich-text",
       "blocks": {
-        "16352677731bc211f5-1": {
-          "type": "text",
+        "e2ae00b6-761c-4bd1-bfcf-4cdcbeb744f1": {
+          "type": "heading",
           "settings": {
-            "text": "<p><strong>Phone: (831)632-0482 FAX: (831)633-5280<\/strong><\/p>"
+            "heading": "Phone: (831)632-0482 FAX: (831)633-5280",
+            "heading_size": "h2"
           }
         },
         "754cfd3e-7e31-4200-b21c-32cd6dea4445": {
@@ -17,8 +18,35 @@
         }
       },
       "block_order": [
-        "16352677731bc211f5-1",
+        "e2ae00b6-761c-4bd1-bfcf-4cdcbeb744f1",
         "754cfd3e-7e31-4200-b21c-32cd6dea4445"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "left"
+      }
+    },
+    "1635273027b72996fc": {
+      "type": "rich-text",
+      "blocks": {
+        "b2d200c8-6145-4d6b-b48e-db9b1f05eac0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Recent and Upcoming Changes",
+            "heading_size": "h2"
+          }
+        },
+        "1635273027b72996fc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Policy and Price Changes - Fuel Charge, $450 minimum<\/p><p>Please let us know if you have any suggestions for format changes.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b2d200c8-6145-4d6b-b48e-db9b1f05eac0",
+        "1635273027b72996fc-1"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -35,6 +63,7 @@
   },
   "order": [
     "16352677731bc211f5",
+    "1635273027b72996fc",
     "main"
   ]
 }
