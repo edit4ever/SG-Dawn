@@ -50,10 +50,9 @@
 	  {% for variant in product.variants %}
         {%- assign flatAvail = variant.inventory_quantity -%}
         {% if flatAvail > 0 %}
-          {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-        {% else %}
-          &nbsp;</td>
+           - {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}
         {% endif %}
+        </td>
       {% endfor %}
     </tr>
       {%- endfor -%}
