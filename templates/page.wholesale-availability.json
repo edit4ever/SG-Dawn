@@ -23,7 +23,8 @@
           "type": "text",
           "settings": {
             "text": "<p>We take orders by phone, fax, or email (wholesale@sgplants.com).<\/p><p>If you need a special order or want particular photos, please contact us at wholesale@sgplants.com.<\/p>",
-            "margin": true
+            "margin": true,
+            "indent": false
           }
         }
       },
@@ -51,7 +52,8 @@
           "type": "text",
           "settings": {
             "text": "<p>Policy and Price Changes - Fuel Charge, $450 minimum<\/p><p>Please let us know if you have any suggestions for format changes.<\/p>",
-            "margin": true
+            "margin": true,
+            "indent": false
           }
         }
       },
@@ -79,7 +81,8 @@
           "type": "text",
           "settings": {
             "text": "<p>2\", 4\", and 6\" sold as flats and you must order a full flat of the size (but not of each species).<\/p><p><\/p>",
-            "margin": false
+            "margin": false,
+            "indent": false
           }
         },
         "094a89db-6d68-4742-b45b-f3f10a23934c": {
@@ -142,35 +145,6 @@
         "1635274451162eb7e3-0",
         "1635274451162eb7e3-1",
         "7c0328f0-bba7-4568-866c-720623cabee9"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "align": "left"
-      }
-    },
-    "163527466606088fcc": {
-      "type": "rich-text",
-      "blocks": {
-        "163527466606088fcc-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Quality",
-            "heading_size": "h2"
-          }
-        },
-        "163527466606088fcc-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>All plant stock are retail quality unless otherwise noted with an<em> (L) <\/em>for landscape quality.<\/p>",
-            "margin": false,
-            "indent": false
-          }
-        }
-      },
-      "block_order": [
-        "163527466606088fcc-0",
-        "163527466606088fcc-1"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -245,6 +219,35 @@
         "align": "left"
       }
     },
+    "163527466606088fcc": {
+      "type": "rich-text",
+      "blocks": {
+        "163527466606088fcc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality",
+            "heading_size": "h2"
+          }
+        },
+        "163527466606088fcc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All plant stock are retail quality unless otherwise noted with an<em> (L) <\/em>for landscape quality.<\/p>",
+            "margin": false,
+            "indent": false
+          }
+        }
+      },
+      "block_order": [
+        "163527466606088fcc-0",
+        "163527466606088fcc-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "left"
+      }
+    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
@@ -258,9 +261,9 @@
     "1635273027b72996fc",
     "1635274077e36fe0e0",
     "1635274451162eb7e3",
-    "163527466606088fcc",
     "1635278922e630d136",
     "1635278983ff48e326",
+    "163527466606088fcc",
     "main"
   ]
 }
