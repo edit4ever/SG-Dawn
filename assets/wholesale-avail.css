@@ -13,6 +13,10 @@ table.pricing td:first-child {
 table.pricing td {
   padding: 0;
 }
+
+table.pricing td:last-child {
+  text-align: center;
+}
   
 #AvailabilityGrid {
   margin: 3rem auto;
