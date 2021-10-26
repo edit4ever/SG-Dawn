@@ -131,6 +131,35 @@
         "align": "left"
       }
     },
+    "163527466606088fcc": {
+      "type": "rich-text",
+      "blocks": {
+        "163527466606088fcc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality",
+            "heading_size": "h2"
+          }
+        },
+        "163527466606088fcc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All plant stock are retail quality unless otherwise noted with an<em> (L) <\/em>for landscape quality.<\/p>",
+            "margin": false,
+            "indent": false
+          }
+        }
+      },
+      "block_order": [
+        "163527466606088fcc-0",
+        "163527466606088fcc-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "left"
+      }
+    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
@@ -143,6 +172,7 @@
     "1635273027b72996fc",
     "1635274077e36fe0e0",
     "1635274451162eb7e3",
+    "163527466606088fcc",
     "main"
   ]
 }
