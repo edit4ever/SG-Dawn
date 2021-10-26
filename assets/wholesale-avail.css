@@ -51,6 +51,11 @@ margin-bottom: 1rem;
   margin-left: 30px;
 }
 
+.rich-text--full-width.color-background-1, .rich-text:not(.rich-text--full-width) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 
 
 
