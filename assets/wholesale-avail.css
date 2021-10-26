@@ -108,6 +108,10 @@ td:first-child, td:last-child {
   grid-row-gap: 2rem;
 }
 
+.table2 table {
+  margin-bottom: 2rem;
+}
+
 
 
 
