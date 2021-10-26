@@ -34,7 +34,7 @@ td:first-child, td:last-child {
   display: none;
 }
 
-.image-with-text__media {
+.image-with-text__grid {
   max-width: 25%;
 }
 
