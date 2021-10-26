@@ -1,0 +1,72 @@
+{{ 'wholesale-avail.css' | asset_url | stylesheet_tag }}
+{{ 'wholesale-print.css' | asset_url | stylesheet_tag }}
+
+
+<div id="AvailabilityGrid" class="page-width">
+  <div class="print-head">
+    <div class="logo">
+      <img src="https://cdn.shopify.com/s/files/1/0654/1643/files/logo_cf7af7f6-0fe0-4136-8a67-3d9fbeb83a34_410x.png?v=1526044892" width="15%";>
+    </div>
+  </div>
+  <div class="info">
+ 	<strong>Phone: (831)632-0482  FAX: (831)633-5280</strong>
+    <p>We take orders by phone, fax, or email (wholesale@sgplants.com).</p>
+    <p>If you need a special order or want particular photos, please contact us at wholesale@sgplants.com.</p>
+    <h2>Wholesale Availability - {{ "now" | date: "%B %e, %Y" }}</h2>
+  </div>
+  <table class="avail-grid">
+    <tr>
+      <th>Botanical</th>
+      <th>Pricing</th>
+      <th>2 in</th>
+      <th>4 in</th>
+      <th>6 in</th>
+      <th>8 in</th>
+      <th>1 gal</th>
+      <th>2 gal</th>
+      <th>5 gal</th>
+      <th>10 gal</th>
+      <th>15 gal</th>
+      <th>Notes/Comments</th>
+    </tr>
+    {%- for product in collections.wholesale-inventory.products -%}
+    <tr>
+      <td>{{ product.title }}</td>
+      <td>&nbsp;</td>
+	  {% for variant in product.variants %}
+        {%- if variant.title == "2 in" -%}
+          {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
+        {%- elsif variant.title == "4 in" -%}
+          {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
+        {%- elsif variant.title == "6 in" -%}
+          {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
+        {%- else -%}
+          {%- assign flatAvail = variant.inventory_quantity -%}
+        {%- endif -%}
+        {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
+        {% if flatAvail > 0 %}
+          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
+        {% else %}
+          <td>&nbsp;</td>
+        {% endif %}
+      {% endfor %}
+      {%- if product.metafields.my_fields.stock_notes -%}
+        <td>{{product.metafields.my_fields.stock_notes}}</td>
+      {%- else -%}
+        <td>&nbsp;</td>
+      {%- endif -%}
+    </tr>
+      {%- endfor -%}
+  </table>
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.main-wholesale-availability.name",
+  	"tag": "section",
+  	"class": "product-section spaced-section",
+    "settings": []
+  }
+{% endschema %}
+
