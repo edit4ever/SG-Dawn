@@ -25,6 +25,10 @@ td:first-child, td:last-child {
   text-align: left;
 }
 
+.hidden {
+  display: none;
+}
+
 
 
 
