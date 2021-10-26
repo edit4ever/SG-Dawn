@@ -2089,6 +2089,9 @@
             },
             "margin": {
               "label": "Remove paragraph margins"
+            },
+            "indent": {
+              "label": "Indent text"
             }
           }
         },
