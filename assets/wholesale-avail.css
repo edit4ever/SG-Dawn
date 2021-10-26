@@ -101,7 +101,7 @@ td:first-child, td:last-child {
   margin-bottom: 2rem;
 }
 
-.2column {
+.columns2 {
   display: flex;
   justify-content: space-between;
 }
