@@ -38,6 +38,10 @@ td:first-child, td:last-child {
   margin-bottom: 2rem;
 }
 
+.p-nomargin p {
+  margin-bottom: 0;
+}
+
 
 
 
