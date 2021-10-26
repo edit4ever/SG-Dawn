@@ -44,29 +44,16 @@
 
       <table class="avail-grid wholesale-seasonal">
         <tr>
-          <th>Assortments Available</th>
+          <th>Seasonal Products</th>
           <th>2 in</th>
           <th>4 in</th>
         </tr>
-        {%- for product in collections.wholesale-assortment.products -%}
+        {%- for product in collections.wholesale-seasonal.products -%}
         <tr>
           <td>{{ product.title }}</td>
           {% for variant in product.variants %}
-          {%- if variant.title == "2 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-          {%- elsif variant.title == "4 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-          {%- elsif variant.title == "6 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-          {%- else -%}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-          {%- endif -%}
-          {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
-          {% if flatAvail > 0 %}
-          <td>{{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}</td>
-          {% else %}
-          <td>&nbsp;</td>
-          {% endif %}
+          <td>variant.title</td>
+          <td>variant.title</td>
           {% endfor %}
         </tr>
         {%- endfor -%}
@@ -87,27 +74,7 @@
           {% endfor %}
         {% endtablerow %}
       </table>
-    </div>
-{% comment %}    
-    <div class="table2">
-      <table class="avail-grid wholesale-specialty">
-
-      {%- for product in collections.wholesale-specialty.products -%}
-      <tr>
-        <td>{{ product.title }}
-        {% for variant in product.variants %}
-          {%- assign flatAvail = variant.inventory_quantity -%}
-          {% if flatAvail > 0 %}
-             - {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}
-          {% endif %}
-          </td>
-        {% endfor %}
-      </tr>
-        {%- endfor -%}
-      </table>
-    </div>
-{% endcomment %}
-  
+    </div>  
   </div>
   <div class= "spacer">&nbsp;</div>
   <table class="avail-grid wholesale">
