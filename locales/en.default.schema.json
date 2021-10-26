@@ -2119,6 +2119,9 @@
       "presets": {
         "name": "Video"
       }
+    },
+    "wholesale-availability": {
+      "name": "Wholesale Availability"
     }
   }
 }
