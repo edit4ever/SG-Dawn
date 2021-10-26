@@ -51,12 +51,16 @@ td:first-child, td:last-child {
   margin-bottom: 1rem;
 }
 
-.rich-text h2 {
+.rich-text .h2 {
   font-size: 120%;
 }
 
-.rich-text h1 {
+.rich-text .h1 {
   font-size: 150%;
+}
+
+.rich-text .h0 {
+  font-size: 200%;
 }
 
 .p-indent {
