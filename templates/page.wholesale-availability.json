@@ -25,12 +25,6 @@
         "full_width": true
       }
     },
-    "1635267938f9eb5378": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<h2>Wholesale Availability - {{ \"now\" | date: \"%B %e, %Y\" }}<\/h2>"
-      }
-    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
@@ -40,7 +34,6 @@
   },
   "order": [
     "16352677731bc211f5",
-    "1635267938f9eb5378",
     "main"
   ]
 }
