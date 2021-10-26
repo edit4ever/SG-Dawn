@@ -78,7 +78,13 @@
         	<th colspan="2">Specialty 4" Succulents and Cacti - $8 each, 25 per flat</th>
       	</tr>
         {% tablerow product in collections.wholesale-specialty.products cols:2 %}
-          {{ product.title }}{% if flatAvail > 0 %} - {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}{% endif %}
+          {{ product.title }}
+          {% for variant in product.variants %}
+            {%- assign flatAvail = variant.inventory_quantity -%}
+            {% if flatAvail > 0 %}
+             - {{ flatAvail }}{% if variant.metafields.my_fields.landscape_quality %} (L){% endif %}
+            {% endif %}
+          {% endfor %}
         {% endtablerow %}
       </table>
     </div>
