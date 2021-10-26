@@ -13,7 +13,8 @@
         "754cfd3e-7e31-4200-b21c-32cd6dea4445": {
           "type": "text",
           "settings": {
-            "text": "<p>We take orders by phone, fax, or email (wholesale@sgplants.com).<\/p><p>If you need a special order or want particular photos, please contact us at wholesale@sgplants.com.<\/p>"
+            "text": "<p>We take orders by phone, fax, or email (wholesale@sgplants.com).<\/p><p>If you need a special order or want particular photos, please contact us at wholesale@sgplants.com.<\/p>",
+            "margin": false
           }
         }
       },
@@ -40,7 +41,8 @@
         "1635273027b72996fc-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Policy and Price Changes - Fuel Charge, $450 minimum<\/p><p>Please let us know if you have any suggestions for format changes.<\/p>"
+            "text": "<p>Policy and Price Changes - Fuel Charge, $450 minimum<\/p><p>Please let us know if you have any suggestions for format changes.<\/p>",
+            "margin": true
           }
         }
       },
