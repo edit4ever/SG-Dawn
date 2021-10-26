@@ -120,6 +120,7 @@ td:first-child, td:last-child {
 
 .columns2 table {
   margin-bottom: 2rem;
+  width: 100%
 }
 
 
