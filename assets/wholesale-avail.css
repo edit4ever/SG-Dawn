@@ -50,7 +50,7 @@ td:first-child, td:last-child {
   border: 1pt solid #666;
   }
   
-  .print-head {
+  .hidden {
     display: block;
   }
 }
