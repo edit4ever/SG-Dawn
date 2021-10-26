@@ -11,6 +11,7 @@
     },
     "16352677731bc211f5": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "e2ae00b6-761c-4bd1-bfcf-4cdcbeb744f1": {
           "type": "heading",
@@ -40,6 +41,7 @@
     },
     "1635273027b72996fc": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "b2d200c8-6145-4d6b-b48e-db9b1f05eac0": {
           "type": "heading",
@@ -69,6 +71,7 @@
     },
     "1635274077e36fe0e0": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1635274077e36fe0e0-0": {
           "type": "heading",
@@ -116,6 +119,7 @@
     },
     "1635274451162eb7e3": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1635274451162eb7e3-0": {
           "type": "heading",
@@ -154,6 +158,7 @@
     },
     "1635278922e630d136": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1635278922e630d136-0": {
           "type": "heading",
@@ -183,6 +188,7 @@
     },
     "1635278983ff48e326": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1635278983ff48e326-0": {
           "type": "heading",
@@ -221,6 +227,7 @@
     },
     "163527466606088fcc": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "163527466606088fcc-0": {
           "type": "heading",
