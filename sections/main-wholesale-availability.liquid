@@ -44,8 +44,8 @@
     <tr>
       <th colspan="2">Specialty 4" Succulents and Cacti - $8 each, 25 per flat</th>
     </tr>
-
     {%- for product in collections.wholesale-specialty.products -%}
+    <tr>
       <td>{{ product.title }}
 	  {% for variant in product.variants %}
         {%- assign flatAvail = variant.inventory_quantity -%}
@@ -54,7 +54,7 @@
         {% endif %}
         </td>
       {% endfor %}
-
+    </tr>
       {%- endfor -%}
   	</table>
         <table class="avail-grid wholesale-seasonal">
