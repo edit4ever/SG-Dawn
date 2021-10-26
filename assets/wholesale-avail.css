@@ -67,7 +67,7 @@ margin-bottom: 1rem;
 @media print {
   
   
-  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, .header-wrapper, .skip-to-content-link
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, .header-wrapper, .skip-to-content-link, #admin-bar-iframe
   {
     display: none;
   }
