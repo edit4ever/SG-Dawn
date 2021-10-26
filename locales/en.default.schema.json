@@ -2086,6 +2086,9 @@
           "settings": {
             "text": {
               "label": "Description"
+            },
+            "margin": {
+              "label": "Remove paragraph margins"
             }
           }
         },
