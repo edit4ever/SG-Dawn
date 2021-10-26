@@ -48,11 +48,10 @@ td:first-child, td:last-child {
   }
    
   #AvailabilityGrid {
-    font-size: 12pt;
+    font-size: 1vb;
     color: #000;
     font-family: "Arial Narrow", Arial, sans-serif;
     line-height: 1.2;
-    width:100%;
   }
   
   table, th, td {
