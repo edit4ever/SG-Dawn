@@ -1,3 +1,7 @@
+body {
+  line-height: 1.4;
+}
+  
 #AvailabilityGrid {
   margin: 3rem auto;
 }
