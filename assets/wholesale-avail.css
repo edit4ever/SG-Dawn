@@ -107,7 +107,15 @@ td:first-child, td:last-child {
 }
 
 .column1 {
-  width: 40%;
+  width: 35%;
+}
+
+.column1 td {
+  width: 15%;
+}
+
+.column1 td:first-child {
+  width: 70%;
 }
 
 .columns2 table {
