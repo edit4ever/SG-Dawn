@@ -1,12 +1,32 @@
 {
   "sections": {
+    "16352677731bc211f5": {
+      "type": "rich-text",
+      "blocks": {
+        "16352677731bc211f5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Phone: (831)632-0482 FAX: (831)633-5280<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16352677731bc211f5-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
+        "title": ""
       }
     }
   },
   "order": [
+    "16352677731bc211f5",
     "main"
   ]
 }
