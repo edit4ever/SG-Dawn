@@ -178,6 +178,73 @@
         "align": "left"
       }
     },
+    "1635278922e630d136": {
+      "type": "rich-text",
+      "blocks": {
+        "1635278922e630d136-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Common Carrier",
+            "heading_size": "h2"
+          }
+        },
+        "1635278922e630d136-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No minimum. Plants are boxed and shrink wrapped on a pallet and generally arrive within 1-2 days.<\/p><p>Rates are typically $150-$175\/pallet for delivery throughout California, with surcharges for rural destinations. Boxes are $3.25\/each. <\/p>",
+            "margin": true,
+            "indent": false
+          }
+        }
+      },
+      "block_order": [
+        "1635278922e630d136-0",
+        "1635278922e630d136-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "left"
+      }
+    },
+    "1635278983ff48e326": {
+      "type": "rich-text",
+      "blocks": {
+        "1635278983ff48e326-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Preticketing \/ Barcoding",
+            "heading_size": "h2"
+          }
+        },
+        "1635278983ff48e326-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We sticker pots 4” and up including your pricing and logo.<\/p><p>We need 7 days for initial setup and after that, order as normal. No additional cost. <\/p>",
+            "margin": true,
+            "indent": false
+          }
+        },
+        "a86cc335-917a-421b-b92a-20e06bd24438": {
+          "type": "text",
+          "settings": {
+            "text": "<p><\/p><p><strong>We will happily curate a retail-ready assortment for you if you specify the number of total flats in each size.<br\/>If you'd like to specify some varieties and have us curate the rest, we can deliver a retail-ready assortment.<br\/>When we curate an assortment, we may include premium priced plants unless you specify otherwise.<\/strong><\/p>",
+            "margin": false,
+            "indent": false
+          }
+        }
+      },
+      "block_order": [
+        "1635278983ff48e326-0",
+        "1635278983ff48e326-1",
+        "a86cc335-917a-421b-b92a-20e06bd24438"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "left"
+      }
+    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
@@ -192,6 +259,8 @@
     "1635274077e36fe0e0",
     "1635274451162eb7e3",
     "163527466606088fcc",
+    "1635278922e630d136",
+    "1635278983ff48e326",
     "main"
   ]
 }
