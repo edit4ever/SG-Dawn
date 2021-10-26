@@ -102,6 +102,35 @@
         "align": "left"
       }
     },
+    "1635274451162eb7e3": {
+      "type": "rich-text",
+      "blocks": {
+        "1635274451162eb7e3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Deliveries",
+            "heading_size": "h2"
+          }
+        },
+        "1635274451162eb7e3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have a delivery truck that services the Bay Area with a $450 minimum order.<\/p><p>Need the plants delivered to your clients home? Jobsite delivery fee is $50. Curbside pick-up only.<\/p><p>Delivery\/fuel charge for San Mateo County, Santa Cruz County, Santa Clara County and San Francisco County and the greater Oakland area - $25.<\/p><p>Delivery\/fuel charge for other locations in the greater Bay Area - $35.<\/p><p>Other pricing for special deliveries vary based on location and order size.<\/p>",
+            "margin": true,
+            "indent": false
+          }
+        }
+      },
+      "block_order": [
+        "1635274451162eb7e3-0",
+        "1635274451162eb7e3-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "left"
+      }
+    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
@@ -113,6 +142,7 @@
     "16352677731bc211f5",
     "1635273027b72996fc",
     "1635274077e36fe0e0",
+    "1635274451162eb7e3",
     "main"
   ]
 }
