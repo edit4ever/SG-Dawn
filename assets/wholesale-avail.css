@@ -178,7 +178,7 @@ table.wholesale-seasonal td {
     display: block;
   }
   
-  .wholesale table td:last-child {
+  table.wholesale td:last-child {
     font-size: 8pt;
   }
 }
