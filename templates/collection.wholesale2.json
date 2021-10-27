@@ -30,11 +30,40 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
+    },
+    "16353727698da70142": {
+      "type": "rich-text",
+      "blocks": {
+        "16353727698da70142-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Line 1",
+            "heading_size": "h1"
+          }
+        },
+        "fd68be17-1ea6-4ccb-9176-e8e310b95dc1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Line 2",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "16353727698da70142-0",
+        "fd68be17-1ea6-4ccb-9176-e8e310b95dc1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "align": "center"
+      }
     }
   },
   "order": [
     "banner",
     "1635371132e1dbc210",
-    "product-grid"
+    "product-grid",
+    "16353727698da70142"
   ]
 }
