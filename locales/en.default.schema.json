@@ -1981,6 +1981,20 @@
         "name": "Page"
       }
     },
+    "page-no-space": {
+      "name": "Page - No Space",
+      "settings": {
+        "page": {
+          "label": "Page - No Space"
+        },
+        "show_title": {
+          "label": "Show Page Title"
+        }
+      },
+      "presets": {
+        "name": "Page - No Space"
+      }
+    },
     "product-recommendations": {
       "name": "Product recommendations",
       "settings": {
