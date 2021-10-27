@@ -16,6 +16,7 @@ table.pricing {
 
 table.pricing td:first-child {
   width: 15%;
+  text-align: left;
 }
 
 table.pricing td:last-child {
@@ -41,7 +42,6 @@ table {
 
 tr:first-child {
   background-color: #eee;
-  text-align: left;
 }
 
 table.wholesale th:first-child {
