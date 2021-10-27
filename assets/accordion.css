@@ -27,7 +27,7 @@
   max-height: none;
 }
 /* Icon */
-.so-tab label::after {
+.so-tab label::before {
   position: absolute;
   right: 0;
   top: 0;
@@ -36,15 +36,15 @@
   -o-transition: all .35s;
   transition: all .35s;
 }
-.so-tab input[type=checkbox] + label::after {
+.so-tab input[type=checkbox] + label::before {
   content: "+";
 }
-.so-tab input[type=radio] + label::after {
+.so-tab input[type=radio] + label::before {
   content: "\25BC";
 }
-.so-tab input[type=checkbox]:checked + label::after {
+.so-tab input[type=checkbox]:checked + label::before {
   transform: rotate(315deg);
 }
-.so-tab input[type=radio]:checked + label::after {
+.so-tab input[type=radio]:checked + label::before {
   transform: rotateX(180deg);
 }

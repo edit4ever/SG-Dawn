@@ -264,7 +264,7 @@
           "name": "Accordion",
           "settings": {
             "section": {
-              "label": "Question"
+              "label": ""
             },
             "accordion_size": {
               "options__1": {
