@@ -7,7 +7,7 @@
         {%- case block.type -%}
           {%- when 'accordion' -%}
       		<div class="so-tab" {{ block.shopify_attributes }}>
-              <input id="so-tab-{{forloop.index}}" type="checkbox" name="tabs" />
+              <input class="{{ block.settings.accordion_size }} id="so-tab-{{forloop.index}}" type="checkbox" name="tabs" />
     		  <label class="{{ block.settings.accordion_size }}" for="so-tab-{{forloop.index}}">{{ block.settings.section | escape }}</label>
               <div class="so-tab-content">
                 <div class="content rich-text__text rte {% if block.settings.margin %}p-nomargin{% endif %} {% if block.settings.indent %}p-indent{% endif %}" {{ block.shopify_attributes }}>
