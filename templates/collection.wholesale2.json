@@ -21,14 +21,6 @@
         "show_title": true
       }
     },
-    "163536604968c5381c": {
-      "type": "page",
-      "disabled": true,
-      "settings": {
-        "page": "wholesale-text",
-        "show_title": false
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid-wholesale",
       "settings": {
@@ -50,7 +42,6 @@
     "banner",
     "1635367156f092840d",
     "1635370320447ac348",
-    "163536604968c5381c",
     "product-grid"
   ]
 }
