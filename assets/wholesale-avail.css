@@ -67,7 +67,7 @@ table.wholesale td {
   text-align: center;
 }
 
-table.wholesale td:first-child, td:last-child {
+table.wholesale td:first-child, table.wholesale td:last-child {
   text-align: left;
 }
 
