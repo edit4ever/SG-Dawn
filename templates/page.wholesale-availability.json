@@ -1,12 +1,5 @@
 {
   "sections": {
-    "163536624485befd54": {
-      "type": "page",
-      "settings": {
-        "page": "wholesale-text",
-        "show_title": false
-      }
-    },
     "main": {
       "type": "main-wholesale-availability",
       "settings": {
@@ -15,7 +8,6 @@
     }
   },
   "order": [
-    "163536624485befd54",
     "main"
   ]
 }
