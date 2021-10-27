@@ -166,12 +166,12 @@ table.wholesale-seasonal td {
   
   table, th, td {
     border: .25pt solid #666;
-    width: 100%
   }
   
   table {
     font-size: 1.2vw;
     font-family: "Arial Narrow", Arial, sans-serif;
+    width: 100%;
   }
   
   .print-head {
