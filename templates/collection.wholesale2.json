@@ -1,1 +1,38 @@
-{"sections":{"banner":{"type":"main-collection-banner","settings":{"show_collection_description":true,"show_collection_image":false}},"product-grid":{"type":"main-collection-product-grid-wholesale","settings":{"layout":"list","products_per_page":16,"image_ratio":"square","show_secondary_image":false,"add_image_padding":false,"show_image_outline":false,"show_vendor":false,"show_rating":false,"enable_filtering":true,"enable_sorting":true,"collapse_on_larger_devices":false}}},"order":["banner","product-grid"]}
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
+      }
+    },
+    "163536604968c5381c": {
+      "type": "page",
+      "settings": {
+        "page": "wholesale-text"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid-wholesale",
+      "settings": {
+        "layout": "list",
+        "products_per_page": 16,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "163536604968c5381c",
+    "product-grid"
+  ]
+}
