@@ -40,14 +40,17 @@
 </div>
 </div>
 
-<script src="{{ 'jquery_accordion.js' | asset_url }}">
-<script>
-  $(document).ready(function() {
-  $('.accordion').accordion({
-  defaultOpen: 'section1',
-  cookieName: 'accordion_nav'
-  });
-  });
+<script type="text/javascript" src="{{ 'jquery_accordion.js' | asset_url }}">
+  
+<script type="text/javascript">
+(function($){
+$(document).ready(function() {
+$('.accordion').accordion({
+defaultOpen: 'section1',
+cookieName: 'accordion_nav'
+});
+});
+})(jQuery);
 </script>
 
 {% schema %}
