@@ -69,8 +69,9 @@ table.wholesale th:last-child {
 }
 
 table.wholesale td {
-  width: 5%;
+  width: 4%;
   text-align: center;
+  padding: 0;
 }
 
 table.wholesale td:first-child, table.wholesale td:last-child {
