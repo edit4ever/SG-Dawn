@@ -8,7 +8,6 @@
   position: relative;
   display: block;
   padding: 0 25px 0 0;
-  margin-bottom: 15px;
   line-height: normal;
   cursor: pointer;
 }
@@ -30,6 +29,7 @@
 .so-tab label::before {
   position: relative;
   display: inline-block;
+  margin-right: 15px;
   -webkit-transition: all .35s;
   -o-transition: all .35s;
   transition: all .35s;
