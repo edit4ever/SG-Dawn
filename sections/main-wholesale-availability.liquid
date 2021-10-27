@@ -50,7 +50,7 @@
         <tr>
           <td>{{ product.title }}</td>
           {% for variant in product.variants %}
-            <td>{{variant.title}} - {{variant.price}}</td>
+            <td>{{variant.title}} - {{variant.price | money}}</td>
           {% endfor %}
         </tr>
         {%- endfor -%}
