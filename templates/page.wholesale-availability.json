@@ -1,13 +1,9 @@
 {
   "sections": {
-    "1635276199328bd954": {
-      "type": "image-with-text",
-      "disabled": true,
+    "163536624485befd54": {
+      "type": "page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/SG-Logo.png",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
+        "page": "wholesale-text"
       }
     },
     "main": {
@@ -18,7 +14,7 @@
     }
   },
   "order": [
-    "1635276199328bd954",
+    "163536624485befd54",
     "main"
   ]
 }
