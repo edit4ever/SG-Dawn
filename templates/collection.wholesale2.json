@@ -1,5 +1,11 @@
 {
   "sections": {
+    "1635367156f092840d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<a href=\"\/pages\/wholesale-availability\" target=\"_blank\" style=\"color:#fff;text-decoration: none;\">\n        <div class=\"avail-sheet button\" style=\"float:right;\">\n        Print Availability Sheet\n      \t<\/div><\/a>"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -10,7 +16,8 @@
     "163536604968c5381c": {
       "type": "page",
       "settings": {
-        "page": "wholesale-text"
+        "page": "wholesale-text",
+        "show_title": false
       }
     },
     "product-grid": {
@@ -31,6 +38,7 @@
     }
   },
   "order": [
+    "1635367156f092840d",
     "banner",
     "163536604968c5381c",
     "product-grid"

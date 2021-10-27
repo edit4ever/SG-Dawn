@@ -3,7 +3,8 @@
     "163536624485befd54": {
       "type": "page",
       "settings": {
-        "page": "wholesale-text"
+        "page": "wholesale-text",
+        "show_title": false
       }
     },
     "main": {
