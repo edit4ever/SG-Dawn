@@ -29,7 +29,7 @@
 /* Icon */
 .so-tab label::before {
   position: relative;
-  display: block;
+  display: inline-block;
   -webkit-transition: all .35s;
   -o-transition: all .35s;
   transition: all .35s;
