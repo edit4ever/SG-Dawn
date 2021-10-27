@@ -260,11 +260,11 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Heading",
+        "accordion": {
+          "name": "Accordion",
           "settings": {
             "heading": {
-              "label": "Heading"
+              "label": "Question"
             },
             "heading_size": {
               "options__1": {
@@ -276,13 +276,8 @@
               "options__3": {
                 "label": "Large"
               },
-              "label": "Heading font size"
-            }
-          }
-        },
-        "text": {
-          "name": "Text",
-          "settings": {
+              "label": "Question font size"
+            },
             "text": {
               "label": "Description"
             },
@@ -291,20 +286,6 @@
             },
             "indent": {
               "label": "Indent text"
-            }
-          }
-        },
-        "button": {
-          "name": "Button",
-          "settings": {
-            "button_label": {
-              "label": "Button label"
-            },
-            "button_link": {
-              "label": "Button link"
-            },
-            "button_style_secondary": {
-              "label": "Use outline button style"
             }
           }
         }
