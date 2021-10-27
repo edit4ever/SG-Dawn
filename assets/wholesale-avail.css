@@ -14,6 +14,10 @@ table.pricing {
   line-height: 1.2;
 }
 
+table.pricing td {
+  text-align: center;
+}
+
 table.pricing td:first-child {
   width: 15%;
   text-align: left;
