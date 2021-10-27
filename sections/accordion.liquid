@@ -10,8 +10,12 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'accordion' -%}
-     		 <div class="accordion" id="section1">Question 1<span></span></div>
-            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+      		<div class="accordion" id="section{{forloop.index}}"><h2 class="{{ block.settings.heading_size }}">{{ block.settings.section | escape }}<span></span></h2></div>
+            <div class="container">
+              <div class="content">
+                <p>{{ block.settings.text | escape }}</p>
+              </div>
+			</div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
