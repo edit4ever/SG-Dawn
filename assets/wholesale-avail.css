@@ -41,6 +41,7 @@ table {
 
 tr:first-child {
   background-color: #eee;
+  text-align: left;
 }
 
 table.wholesale th:first-child {
