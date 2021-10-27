@@ -263,7 +263,7 @@
         "accordion": {
           "name": "Accordion",
           "settings": {
-            "accordion": {
+            "section": {
               "label": "Question"
             },
             "accordion_size": {
