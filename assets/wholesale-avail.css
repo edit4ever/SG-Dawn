@@ -92,6 +92,11 @@ table.wholesale-seasonal td {
 .image-with-text {
   margin-top:0;
   display: none;
+  padding: 0;
+}
+
+.image-with-text .media {
+  background: none;
 }
 
 .image-with-text__grid {
