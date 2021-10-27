@@ -39,6 +39,10 @@ table {
   padding-right: 0;
 }
 
+tr:first-child {
+  background-color: #ddd;
+}
+
 th:first-child {
   width:25%;
   text-align: left;
