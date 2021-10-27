@@ -153,13 +153,13 @@ table.wholesale-seasonal td {
   #AvailabilityGrid {
     line-height: 1.2;
   }
-  
-  table {
-    border: .25pt solid #000;
-  }
-  
+
   th, td {
     border: .25pt solid #aaa;
+  }
+
+  table {
+    border: .25pt solid #000;
   }
   
   table {
