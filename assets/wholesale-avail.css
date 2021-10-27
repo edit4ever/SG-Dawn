@@ -154,7 +154,11 @@ table.wholesale-seasonal td {
     line-height: 1.2;
   }
   
-  table, th, td {
+  table {
+    border: .25pt solid #000;
+  }
+  
+  th, td {
     border: .25pt solid #666;
   }
   
