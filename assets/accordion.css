@@ -28,9 +28,7 @@
 }
 /* Icon */
 .so-tab label::before {
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: relative;
   display: block;
   -webkit-transition: all .35s;
   -o-transition: all .35s;
