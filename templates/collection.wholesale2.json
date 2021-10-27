@@ -16,17 +16,9 @@
     },
     "163536604968c5381c": {
       "type": "page",
-      "disabled": true,
       "settings": {
         "page": "wholesale-text",
         "show_title": false
-      }
-    },
-    "163536979557dd3952": {
-      "type": "page-no-space",
-      "settings": {
-        "page-no-space": "wholesale-text",
-        "show_title": true
       }
     },
     "product-grid": {
@@ -50,7 +42,6 @@
     "banner",
     "1635367156f092840d",
     "163536604968c5381c",
-    "163536979557dd3952",
     "product-grid"
   ]
 }
