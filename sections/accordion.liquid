@@ -6,8 +6,8 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'accordion' -%}
-      		<div class="accordion" id="section{{forloop.index}} {{ block.settings.accordion_size }}" {{ block.shopify_attributes }}>
-              {{ block.settings.section | escape }}<span></span>
+      		<div class="accordion" id="section{{forloop.index}}" {{ block.shopify_attributes }}>
+              <h2 class="{{ block.settings.accordion_size }}">{{ block.settings.section | escape }}<span></span></h2>
       		</div>
             <div class="container">
               <div class="content rich-text__text rte {% if block.settings.margin %}p-nomargin{% endif %} {% if block.settings.indent %}p-indent{% endif %}" {{ block.shopify_attributes }}>
