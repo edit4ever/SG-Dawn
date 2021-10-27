@@ -43,22 +43,22 @@ tr:first-child {
   background-color: #eee;
 }
 
-th:first-child {
+table.wholesale th:first-child {
   width:25%;
   text-align: left;
 }
 
-th:last-child {
+table.wholesale th:last-child {
   width:20%;
   text-align: left;
 }
 
-td {
+table.wholesale td {
   width: 4%;
   text-align: center;
 }
 
-td:first-child, td:last-child {
+table.wholesale td:first-child, td:last-child {
   text-align: left;
 }
 
