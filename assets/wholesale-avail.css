@@ -80,36 +80,6 @@ table.wholesale td:first-child, td:last-child {
   max-width: 25%;
 }
 
-.p-nomargin p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.rich-text h1, .rich-text h2, .rich-text h3 {
-  margin-bottom: 1rem;
-}
-
-.rich-text .h2 {
-  font-size: 120%;
-}
-
-.rich-text .h1 {
-  font-size: 150%;
-}
-
-.rich-text .h0 {
-  font-size: 200%;
-}
-
-.p-indent {
-  margin-left: 30px;
-}
-
-.rich-text--full-width.color-background-1, .rich-text:not(.rich-text--full-width) {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .columns2 {
   display: flex;
   justify-content: space-between;
