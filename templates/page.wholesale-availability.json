@@ -14,17 +14,10 @@
       "settings": {
         "title": ""
       }
-    },
-    "1635297894d702350d": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<script>window.print();<\/script>"
-      }
     }
   },
   "order": [
     "1635276199328bd954",
-    "main",
-    "1635297894d702350d"
+    "main"
   ]
 }
