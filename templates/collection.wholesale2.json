@@ -21,7 +21,7 @@
         "16353774641392c087-0": {
           "type": "accordion",
           "settings": {
-            "section": "Question text",
+            "section": "Click here to read our ordering information",
             "accordion_size": "h2",
             "text": "<p>This is the answer to the question.<\/p>",
             "margin": false,
@@ -33,7 +33,7 @@
         "16353774641392c087-0"
       ],
       "settings": {
-        "color_scheme": "accent-2",
+        "color_scheme": "background-1",
         "full_width": true,
         "align": "left"
       }
