@@ -219,7 +219,7 @@
     }
   },
   "sections": {
-    "accordian": {
+    "accordion": {
       "name": "Accordion",
       "settings": {
         "color_scheme": {
