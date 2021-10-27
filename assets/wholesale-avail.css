@@ -132,6 +132,7 @@ td:first-child, td:last-child {
 
 table.wholesale-seasonal td {
   text-align: left;
+  white-space: nowrap;
 }
 
 
