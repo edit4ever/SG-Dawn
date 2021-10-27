@@ -220,7 +220,7 @@
   },
   "sections": {
     "accordian": {
-      "name": "Accordian",
+      "name": "Accordion",
       "settings": {
         "color_scheme": {
           "options__1": {
@@ -310,7 +310,7 @@
         }
       },
       "presets": {
-        "name": "Accordian"
+        "name": "Accordion"
       }
     },
     "announcement-bar": {
