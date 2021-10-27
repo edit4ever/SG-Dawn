@@ -4,6 +4,12 @@
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
      <h1 class="collection-hero__title">
+        {%- if collection.title == "Wholesale Inventory" -%}
+        <a href="/pages/wholesale-availability" target="_blank" style="color:#fff;text-decoration: none;">
+        <div class="avail-sheet button" style="float:right;">
+        Print Availability Sheet
+      	</div></a>
+        {%- endif -%}
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
