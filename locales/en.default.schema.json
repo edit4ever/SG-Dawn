@@ -263,10 +263,10 @@
         "accordion": {
           "name": "Accordion",
           "settings": {
-            "heading": {
+            "accordion": {
               "label": "Question"
             },
-            "heading_size": {
+            "accordion_size": {
               "options__1": {
                 "label": "Small"
               },
