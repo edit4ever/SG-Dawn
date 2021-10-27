@@ -71,6 +71,11 @@ table.wholesale td:first-child, td:last-child {
   text-align: left;
 }
 
+table.wholesale-seasonal td {
+  text-align: left;
+  white-space: nowrap;
+}
+
 .print-head {
   display: none;
 }
@@ -109,10 +114,7 @@ table.wholesale td:first-child, td:last-child {
   margin-bottom: 2rem;
 }
 
-table.wholesale-seasonal td {
-  text-align: left;
-  white-space: nowrap;
-}
+
 
 
 
