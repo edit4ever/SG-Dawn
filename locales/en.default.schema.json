@@ -1985,7 +1985,7 @@
       "name": "Page No Space",
       "settings": {
         "page": {
-          "label": "Page No Space"
+          "label": "Page"
         },
         "show_title": {
           "label": "Show Page Title"
