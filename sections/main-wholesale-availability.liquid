@@ -41,6 +41,19 @@
         </tr>
           {%- endfor -%}
       </table>
+      <table class="avail-grid wholesale-seasonal">
+        <tr>
+          <th colspan="5">Seasonal Products</th>
+        </tr>
+        {%- for product in collections.wholesale-seasonal.products -%}
+        <tr>
+          <td>{{ product.title }}</td>
+          {% for variant in product.variants %}
+          <td>{{variant.title}} - {{variant.price | money}}</td>
+          {% endfor %}
+        </tr>
+        {%- endfor -%}
+      </table>
     </div>
 	<div class="column2">
       <table class="avail-grid wholesale-specialty">
@@ -60,19 +73,7 @@
     </div>  
   </div>
   <div class="columns2">
-    <table class="avail-grid wholesale-seasonal">
-      <tr>
-        <th colspan="5">Seasonal Products</th>
-      </tr>
-      {%- for product in collections.wholesale-seasonal.products -%}
-      <tr>
-        <td>{{ product.title }}</td>
-        {% for variant in product.variants %}
-        <td>{{variant.title}} - {{variant.price | money}}</td>
-        {% endfor %}
-      </tr>
-      {%- endfor -%}
-    </table>
+
   </div>
   <div class= "spacer">&nbsp;</div>
   <table class="avail-grid wholesale">
