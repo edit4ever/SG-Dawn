@@ -52,6 +52,8 @@ th:last-child {
 td {
   width: 4%;
   text-align: center;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 td:first-child, td:last-child {
