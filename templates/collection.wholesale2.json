@@ -27,10 +27,21 @@
             "margin": false,
             "indent": false
           }
+        },
+        "1f07354d-9e53-4f96-9480-8671b5d1c35b": {
+          "type": "accordion",
+          "settings": {
+            "section": "Question text",
+            "accordion_size": "h2",
+            "text": "<p>This is the answer to the question.<\/p>",
+            "margin": false,
+            "indent": false
+          }
         }
       },
       "block_order": [
-        "16353774641392c087-0"
+        "16353774641392c087-0",
+        "1f07354d-9e53-4f96-9480-8671b5d1c35b"
       ],
       "settings": {
         "color_scheme": "background-1",
