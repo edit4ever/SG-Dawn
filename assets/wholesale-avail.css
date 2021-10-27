@@ -48,6 +48,10 @@ tr:first-child {
   background-color: #eee;
 }
 
+th:first-child {
+  text-align: left;
+}
+
 table.wholesale th:first-child {
   width:25%;
   text-align: left;
