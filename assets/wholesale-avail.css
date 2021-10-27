@@ -155,13 +155,12 @@ table.wholesale-seasonal td {
   }
   
   table, th, td {
-    border: .25pt solid #aaa !important;
+    border: .25pt solid #aaa;
   }
   
   table {
     font-size: 1.2vw;
     font-family: "Arial Narrow", Arial, sans-serif;
-    empty-cells: show;
   }
   
   .print-head {
