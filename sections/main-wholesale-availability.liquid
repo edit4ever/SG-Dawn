@@ -130,16 +130,14 @@
 </script>
 {% endcomment %}
 
-<script src="{{ 'jquery_accordion.js' | asset_url }}" defer="defer"></script>
-<script defer="defer">
-  (function($){
-    $(document).ready(function() {
-      $('.accordion').accordion({
-        defaultOpen: 'section1',
-        cookieName: 'accordion_nav'
-      });
-    });
-  })(jQuery);
+<script type="text/javascript" src="{{ 'jquery_accordion.js' | asset_url }}"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('.accordion').accordion({
+defaultOpen: 'section1',
+cookieName: 'accordion_nav'
+});
+});
 </script>
 
 {% schema %}
