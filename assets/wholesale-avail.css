@@ -32,11 +32,15 @@ table.pricing td:last-child {
 
 table, th, td {
   border: 1px solid rgba(0,0,0,.2);
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 table {
   empty-cells: show;
   border-collapse: collapse;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 th:first-child {
@@ -52,8 +56,6 @@ th:last-child {
 td {
   width: 4%;
   text-align: center;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
 }
 
 td:first-child, td:last-child {
