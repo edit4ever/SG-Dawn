@@ -9,6 +9,7 @@
     },
     "1635371132e1dbc210": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "page": "wholesale-text",
         "show_title": false
