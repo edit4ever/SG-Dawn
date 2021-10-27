@@ -46,7 +46,15 @@
 </div>
 </div>
 
-<script type="text/javascript" src="{{ 'jquery_accordion.js' | asset_url }}">
+<script src="{{ 'jquery_accordion.js' | asset_url }}">
+<script>
+  $(document).ready(function() {
+  $('.accordion').accordion({
+  defaultOpen: 'section1',
+  cookieName: 'accordion_nav'
+  });
+  });
+</script>
 
 {% schema %}
 {
@@ -178,7 +186,7 @@
 }
 {% endschema %}
 
-{% stylesheet %}
+<style>
 .accordion {
 margin: 0;
 padding:10px;
@@ -240,7 +248,7 @@ padding:3px;
 list-style-position:inside;
 line-height:25px;
 }
-{% endstylesheet %}
+</style>
 
 {% javascript %}
 $(document).ready(function() {
