@@ -5,22 +5,37 @@
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="{% unless section.settings.full_width %}page-width{% endunless %}">
-  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% else %}rich-text__blocks{% endif %}">
+  <div class="accordion-section color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% else %}rich-text__blocks{% endif %}">
     <div class="page-width" style="text-align:{{ section.settings.align }};">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {%- when 'heading' -%}
+          {%- when 'accordion' -%}
+     		 <div class="accordion" id="section1">Question 1<span></span></div>
             <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
-          {%- when 'text' -%}
-            <div class="rich-text__text rte {% if block.settings.margin %}p-nomargin{% endif %} {% if block.settings.indent %}p-indent{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-          {%- when 'button' -%}
-            <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-              {{ block.settings.button_label | escape }}
-            </a>
         {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
+</div>
+
+
+<div class="accordion" id="section1">Question 1<span></span></div>
+<div class="container">
+<div class="content">
+<p>This is the answer to question 1.</p>
+</div>
+</div>
+<div class="accordion" id="section2">Question 2<span></span></div>
+<div class="container">
+<div class="content">
+<p>This is the answer to question 2.</p>
+</div>
+</div>
+<div class="accordion" id="section3">Question 3<span></span></div>
+<div class="container">
+<div class="content">
+<p>This is the answer to question 3.</p>
+</div>
 </div>
 
 
@@ -92,14 +107,14 @@
   ],
   "blocks": [
     {
-      "type": "heading",
-      "name": "t:sections.accordion.blocks.heading.name",
+      "type": "accordion",
+      "name": "t:sections.accordion.blocks.accordion.name",
       "settings": [
         {
           "type": "text",
-          "id": "heading",
-          "default": "Talk about your brand",
-          "label": "t:sections.accordion.blocks.heading.settings.heading.label"
+          "id": "section",
+          "default": "Question",
+          "label": "t:sections.accordion.blocks.accordian.settings.heading.label"
         },
         {
           "type": "select",
@@ -120,30 +135,12 @@
           ],
           "default": "h1",
           "label": "t:sections.accordion.blocks.heading.settings.heading_size.label"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "name": "t:sections.accordion.blocks.text.name",
-      "settings": [
-        {
+        },
+		{
           "type": "richtext",
           "id": "text",
-          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "default": "<p>This is the answer to the question.</p>",
           "label": "t:sections.accordion.blocks.text.settings.text.label"
-        },
-		{
-          "type": "checkbox",
-          "id": "margin",
-          "default": false,
-          "label": "t:sections.accordion.blocks.text.settings.margin.label"
-        },
-		{
-          "type": "checkbox",
-          "id": "indent",
-          "default": false,
-          "label": "t:sections.accordion.blocks.text.settings.indent.label"
         }
       ]
     }
@@ -153,10 +150,7 @@
       "name": "t:sections.accordion.presets.name",
       "blocks": [
         {
-          "type": "heading"
-        },
-        {
-          "type": "text"
+          "type": "accordion"
         }
       ]
     }
