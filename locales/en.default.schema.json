@@ -1972,6 +1972,9 @@
       "settings": {
         "page": {
           "label": "Page"
+        },
+        "show_title": {
+          "label": "Show Page Title"
         }
       },
       "presets": {
