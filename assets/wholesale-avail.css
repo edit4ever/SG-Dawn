@@ -177,4 +177,8 @@ table.wholesale-seasonal td {
   .print-head {
     display: block;
   }
+  
+  .wholesale table td:last-child {
+    font-size: 8pt;
+  }
 }
