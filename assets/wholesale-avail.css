@@ -71,7 +71,7 @@ table.wholesale td:first-child, table.wholesale td:last-child {
   text-align: left;
 }
 
-table.wholesale td:nth-child(2n) {
+table.wholesale th:nth-child(2n) {
   padding: 0;
 }
 
