@@ -15,7 +15,7 @@
       		</div>
             <div class="container">
               <div class="content rich-text__text rte {% if block.settings.margin %}p-nomargin{% endif %} {% if block.settings.indent %}p-indent{% endif %}" {{ block.shopify_attributes }}>
-                {{ block.settings.text | escape }}
+                {{ block.settings.text }}
               </div>
 			</div>
         {%- endcase -%}
