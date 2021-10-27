@@ -130,6 +130,17 @@
 </script>
 {% endcomment %}
 
+<script defer="defer">
+  (function($){
+    $(document).ready(function() {
+      $('.accordion').accordion({
+        defaultOpen: 'section1',
+        cookieName: 'accordion_nav'
+      });
+    });
+  })(jQuery);
+</script>
+
 {% schema %}
   {
     "name": "t:sections.main-wholesale-availability.name",
