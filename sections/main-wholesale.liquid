@@ -7,6 +7,10 @@
 {{ 'wholesale-avail.css' | asset_url | stylesheet_tag }}
 
 
+{%- for collection in collections -%}
+{%- if collection.title contains "wholesale" -%}
+
+
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
@@ -544,6 +548,8 @@
     {%- endpaginate -%}        
   </div>
 
+
+
   <script type="text/javascript">
     function myFunction(product) {
       var selectOption = "variant" + product;
@@ -654,7 +660,8 @@
 
 
 {%- endif -%}
-
+{%- endif -%}
+{%- endfor -%}
 
 
 
