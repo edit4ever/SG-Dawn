@@ -1504,6 +1504,49 @@
         }
       }
     },
+    "main-collection-product-grid-wholesale-assortment": {
+      "name": "Wholesale Assortment Product grid",
+      "settings": {
+        "image_ratio": {
+          "label": "Image ratio",
+          "options__1": {
+            "label": "Adapt to image"
+          },
+          "options__2": {
+            "label": "Portrait"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
+        "show_secondary_image": {
+          "label": "Show second image on hover"
+        },
+        "add_image_padding": {
+          "label": "Add image padding"
+        },
+        "show_image_outline": {
+          "label": "Show image border"
+        },
+        "show_vendor": {
+          "label": "Show vendor"
+        },
+        "show_rating": {
+          "label": "Show product rating",
+          "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-grid-show-product-rating)"
+        },
+        "header__1": {
+          "content": "Filtering and sorting"
+        },
+        "header__3": {
+          "content": "Product card"
+        },
+        "enable_tags": {
+          "label": "Enable filtering",
+          "info": "[Customize filters](\/admin\/menus)"
+        }
+      }
+    },
     "main-list-collections": {
       "name": "Collections list page",
       "settings": {
