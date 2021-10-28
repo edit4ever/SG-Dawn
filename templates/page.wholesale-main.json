@@ -3,6 +3,17 @@
     "main": {
       "type": "main-wholesale",
       "settings": {
+        "layout": "list",
+        "products_per_page": 16,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
       }
     }
   },
