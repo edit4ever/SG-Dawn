@@ -518,11 +518,12 @@
 
 {%- else -%}
   <div id="CollectionProductGrid">
-  {%- paginate collection.products by section.settings.products_per_page -%}
+    {% assign grouped_products = collection.products | where: "tag", "wholesale-seasonal" %}
+  {%- paginate grouped_products by section.settings.products_per_page -%}
     <div class="collection page-width">
       <div class="loading-overlay gradient"></div>
           <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="negative-margin">
-            {%- for product in collection.products -%}
+            {%- for product in grouped_products -%}
               <li class="list__item">
                 {% render 'product-card-list-wholesale',
                   product_card_product: product,
