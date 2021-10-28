@@ -9,7 +9,7 @@
 
 {%- for collection in collections -%}
 {%- if collection.title contains "wholesale" -%}
-
+{{collection.title}}
 
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
