@@ -518,7 +518,7 @@
 
 {%- else -%}
   <div id="CollectionProductGrid">
-    {% assign grouped_products = collection.products | where: "tag", "wholesale-seasonal" %}
+    {% assign grouped_products = collection.products | where: "type", "Seasonal" %}
   {%- paginate grouped_products by section.settings.products_per_page -%}
     <div class="collection page-width">
       <div class="loading-overlay gradient"></div>
