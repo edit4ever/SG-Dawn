@@ -8,9 +8,11 @@
 
 
 {%- for collection in collections -%}
-{{colection.title}}
+{{collection.title}}
 {%- if collection.title contains "wholesale" -%}
-{{colection.title}}
+{{collection.title}}
+{%- endif -%}
+{%- endfor -%}
 
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -661,8 +663,7 @@
 
 
 {%- endif -%}
-{%- endif -%}
-{%- endfor -%}
+
 
 
 
