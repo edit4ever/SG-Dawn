@@ -51,9 +51,9 @@
       {%- endif -%}
       {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
       {% if flatAvail > 0 %}
-      <span class="list-view-item__variant">{% unless forloop.index == 1 %}&nbsp;|&nbsp;{% endunless %}{{ variant.title }}<span style="font-style:italic;" > - {{ flatAvail }} available{% if variant.metafields.my_fields.landscape_quality %}(L){% endif %}</span></span>
+      <span class="list-view-item__variant">{% unless forloop.index == 1 %}&nbsp;|&nbsp;&nbsp;{% endunless %}{{ variant.title }}<span style="font-style:italic;" > - {{ flatAvail }} available{% if variant.metafields.my_fields.landscape_quality %}(L){% endif %}</span></span>
       {% else %}
-        <span class="list-view-item__variant no-stock">{% unless forloop.index == 1 %}&nbsp;|&nbsp;{% endunless %}{{ variant.title }}<span style="font-style:italic;" > - {{ flatAvail }} available</span></span>
+        <span class="list-view-item__variant no-stock">{% unless forloop.index == 1 %}&nbsp;|&nbsp;&nbsp;{% endunless %}{{ variant.title }}<span style="font-style:italic;" > - {{ flatAvail }} available</span></span>
       {% endif %}
       {% endfor %}
       {% if product_card_product.metafields.my_fields.stock_notes %}
