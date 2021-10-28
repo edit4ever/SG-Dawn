@@ -1,5 +1,16 @@
 {
   "sections": {
+    "1635453516938f05d8": {
+      "type": "wholesale-assortment",
+      "settings": {
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "main": {
       "type": "main-wholesale",
       "settings": {
@@ -18,6 +29,7 @@
     }
   },
   "order": [
+    "1635453516938f05d8",
     "main"
   ]
 }

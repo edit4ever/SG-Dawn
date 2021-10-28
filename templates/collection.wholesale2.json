@@ -38,6 +38,17 @@
         "align": "left"
       }
     },
+    "163545353451d6dd02": {
+      "type": "wholesale-assortment",
+      "settings": {
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid-wholesale",
       "settings": {
@@ -59,6 +70,7 @@
     "banner",
     "1635371132e1dbc210",
     "16353774641392c087",
+    "163545353451d6dd02",
     "product-grid"
   ]
 }
