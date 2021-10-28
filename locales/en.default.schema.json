@@ -1540,10 +1540,6 @@
         },
         "header__3": {
           "content": "Product card"
-        },
-        "enable_tags": {
-          "label": "Enable filtering",
-          "info": "[Customize filters](\/admin\/menus)"
         }
       }
     },
