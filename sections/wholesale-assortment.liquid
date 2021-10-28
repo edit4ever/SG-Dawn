@@ -15,7 +15,6 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
   <div id="CollectionProductGrid">
-  {%- paginate collection.products by section.settings.products_per_page -%}
     <div class="collection page-width">
       <div class="loading-overlay gradient"></div>
           <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="negative-margin">
@@ -33,12 +32,7 @@
               </li>
             {%- endfor -%}
           </ul>
-
-      {%- if paginate.pages > 1 -%}
-      {% render 'pagination', paginate: paginate, anchor: '' %}
-      </div>
-      {%- endif -%}
-    {%- endpaginate -%}        
+    </div>
   </div>
 
 {%- endif -%}
