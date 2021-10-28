@@ -41,6 +41,12 @@
     "16354584686c6e8806": {
       "type": "collection-list",
       "blocks": {
+        "16354584686c6e8806-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-inventory"
+          }
+        },
         "16354584686c6e8806-0": {
           "type": "featured_collection",
           "settings": {
@@ -52,18 +58,12 @@
           "settings": {
             "collection": "wholesale-assortment"
           }
-        },
-        "16354584686c6e8806-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wholesale-specialty"
-          }
         }
       },
       "block_order": [
+        "16354584686c6e8806-1",
         "16354584686c6e8806-0",
-        "16354584686c6e8806-2",
-        "16354584686c6e8806-1"
+        "16354584686c6e8806-2"
       ],
       "settings": {
         "title": "",
