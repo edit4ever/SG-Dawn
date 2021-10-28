@@ -34,7 +34,7 @@
 
     <div class="list-view-item__title-column" style="vertical-align:top;">
       <div class="list-view-item__title" aria-hidden="true">
-        <span class="product-card__title">{{ product_card_product.title }}</span>
+        <span class="product-card__title">{{ product_card_product.title | remove: "1 - " }}</span>
       </div>
       {% if show_vendor %}
       <div class="list-view-item__vendor">{{ product_card_product.vendor }}</div>
