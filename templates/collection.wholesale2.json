@@ -15,6 +15,43 @@
         "show_title": false
       }
     },
+    "16354584686c6e8806": {
+      "type": "collection-list",
+      "blocks": {
+        "16354584686c6e8806-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-seasonal"
+          }
+        },
+        "16354584686c6e8806-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-assortment"
+          }
+        },
+        "16354584686c6e8806-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-specialty"
+          }
+        }
+      },
+      "block_order": [
+        "16354584686c6e8806-0",
+        "16354584686c6e8806-2",
+        "16354584686c6e8806-1"
+      ],
+      "settings": {
+        "title": "Collections",
+        "layout": "grid",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
     "16353774641392c087": {
       "type": "accordion",
       "blocks": {
@@ -53,50 +90,13 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
-    },
-    "16354584686c6e8806": {
-      "type": "collection-list",
-      "blocks": {
-        "16354584686c6e8806-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wholesale-seasonal"
-          }
-        },
-        "16354584686c6e8806-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wholesale-assortment"
-          }
-        },
-        "16354584686c6e8806-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wholesale-specialty"
-          }
-        }
-      },
-      "block_order": [
-        "16354584686c6e8806-0",
-        "16354584686c6e8806-2",
-        "16354584686c6e8806-1"
-      ],
-      "settings": {
-        "title": "Collections",
-        "layout": "grid",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
     }
   },
   "order": [
     "banner",
     "1635371132e1dbc210",
+    "16354584686c6e8806",
     "16353774641392c087",
-    "product-grid",
-    "16354584686c6e8806"
+    "product-grid"
   ]
 }
