@@ -1,12 +1,271 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-list.css' | asset_url | stylesheet_tag }}
+{{ 'wholesale-avail.css' | asset_url | stylesheet_tag }}
+
+
+{%- for collection in collections -%}
+{%- if collection.title == "Wholesale Assortment" -%}
+
+<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+  <div id="CollectionProductGrid">
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    <div class="collection page-width">
+      <div class="loading-overlay gradient"></div>
+          <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="negative-margin">
+            {%- for product in collection.products -%}
+              <li class="list__item">
+                {% render 'product-card-list-wholesale-assortment',
+                  product_card_product: product,
+                  media_size: section.settings.image_ratio,
+                  show_secondary_image: section.settings.show_secondary_image,
+                  add_image_padding: section.settings.add_image_padding,
+                  show_vendor: section.settings.show_vendor,
+                  show_image_outline: section.settings.show_image_outline,
+                  show_rating: section.settings.show_rating
+                %}
+              </li>
+            {%- endfor -%}
+          </ul>
+
+      {%- if paginate.pages > 1 -%}
+      {% render 'pagination', paginate: paginate, anchor: '' %}
+      </div>
+      {%- endif -%}
+    {%- endpaginate -%}        
+  </div>
+
+{%- endif -%}
+{%- endfor -%}
+
+
+  <script type="text/javascript">
+    function myFunction(product) {
+      var selectOption = "variant" + product;
+      var selectTitle = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].title;
+      var selectVariant = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].value;
+      var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
+      var selectMult = 1;
+      var inputOption = "option" + product;
+      var length = document.getElementById(inputOption).length;
+      for (i = length-1; i >= 0; i--) {
+        document.getElementById(inputOption).remove(i);
+      }
+      if (selectTitle == "2 in" ) {
+        selectMult = 64;
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half');
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('¼ Flat', 'quarter');
+      }
+      else if (selectTitle == "4 in") {
+        selectMult = 15;
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅔ Flat', '2third');
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅓ Flat', 'third');
+      }
+      else if (selectTitle == "6 in") {
+        selectMult = 6;
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half'); 
+      }
+      else {
+        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
+      }
+      document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("multiplier", selectMult);
+      document.getElementById("form-" + product).querySelector('input[name="quantity"]').setAttribute("title", selectVariant);
+      document.getElementById("form-" + product).querySelector('input[name="quantity"]').max = selectMax * selectMult;
+      document.getElementById("form-" + product).querySelector('input[name="var-mult"]').max = selectMax;
+      document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = "";
+      document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "1";
+
+      var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
+      var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
+      if (selectVariant2 == "half") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .5);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(selectMult * .5) + " plants)"
+
+      }
+      else if (selectVariant2 == "quarter") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .25);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(selectMult * .25) + " plants)"
+      }
+      else if (selectVariant2 == "third") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .33);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(selectMult * .33) + " plants)"
+      }
+      else if (selectVariant2 == "2third") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .67);
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(selectMult * .67) + " plants)"
+      }
+      else {
+        document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = selectMult;
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + selectMult + " plants)"
+      }
+    }
+  </script>
+
+  <script type="text/javascript">
+    function myFunction2(product) {
+      var selectOption2 = "option" + product;
+      var selectVariant2 = document.getElementById(selectOption2).options[document.getElementById(selectOption2).selectedIndex].value;
+      var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
+      if (selectVariant2 == "half") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .5);
+        document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .5) + " plants)"
+      }
+      else if (selectVariant2 == "quarter") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .25);
+        document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .25) + " plants)"
+      }
+      else if (selectVariant2 == "third") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .33);
+        document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .33) + " plants)"
+      }
+      else if (selectVariant2 == "2third") {
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .67);
+        document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .67) + " plants)"
+      }
+      else {
+        document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
+        document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult;
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + variantMult + " plants)"
+      }
+    }
+  </script>
+
+<script type="text/javascript">
+  function myFunction3(product) {
+    var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
+    var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
+    document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult * variantValue;
+    document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + variantMult * variantValue + " plants)"
   }
+</script>
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "t:sections.main-collection-product-grid-wholesale.name",
+  "class": "spaced-section collection-grid-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.main-collection-product-grid-wholesale.settings.layout.options__1.label"
+        },
+        {
+          "value": "list",
+          "label": "t:sections.main-collection-product-grid-wholesale.settings.layout.options__2.label"
+        }
+      ],
+      "default": "grid",
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.layout.label"
+    },
+	{
+      "type": "range",
+      "id": "products_per_page",
+      "min": 8,
+      "max": 24,
+      "step": 4,
+      "default": 16,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.products_per_page.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid-wholesale.settings.header__3.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-collection-product-grid-wholesale.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.main-collection-product-grid-wholesale.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-collection-product-grid-wholesale.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_image_padding",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.add_image_padding.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image_outline",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.show_image_outline.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.show_rating.label",
+      "info": "t:sections.main-collection-product-grid-wholesale-wholesale.settings.show_rating.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid-wholesale.settings.header__1.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_filtering",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.enable_filtering.label",
+      "info": "t:sections.main-collection-product-grid-wholesale.settings.enable_filtering.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sorting",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.enable_sorting.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "collapse_on_larger_devices",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid-wholesale.settings.collapse_on_larger_devices.label"
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
