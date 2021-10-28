@@ -18,7 +18,8 @@
     <div class="collection page-width">
       <div class="loading-overlay gradient"></div>
           <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="negative-margin">
-            {%- for product in collection.products -%}
+            {%- assign productsAll = collection.products | sort: 'title'-%}
+            {%- for product in productsAll -%}
               <li class="list__item">
                 {% render 'product-card-list-wholesale-assortment',
                   product_card_product: product,
