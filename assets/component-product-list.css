@@ -104,7 +104,7 @@ li.list__item {
   letter-spacing: 0.04rem; }
 
 .list-view-item__variant::after { 
-   content: "| ";
+   content: " | ";
 }
 .list-view-item__variant:last-of-type::after { 
    content: "";
