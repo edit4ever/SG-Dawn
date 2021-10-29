@@ -103,6 +103,13 @@ li.list__item {
   font-size: 1.4rem;
   letter-spacing: 0.04rem; }
 
+.list-view-item__variant::after { 
+   content: "| ";
+}
+.list-view-item__variant:last-of-type::after { 
+   content: "";
+}
+
 .list-view-item__variant.no-stock {
   color:rgba(var(--color-foreground),.5); }
 
