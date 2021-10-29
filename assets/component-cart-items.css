@@ -408,6 +408,7 @@ span.cart-item__flat-qty-heading {
 
   .cart-item.total {
     gap: 0;
+    display: grid;
   }
   
   .cart-item.total .hide-mobile {
