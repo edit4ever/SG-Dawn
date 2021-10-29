@@ -19,6 +19,7 @@
     line-height: 1.2;
     width: 50%;
     margin-top: 10px;
+    float:left;
 }
 
 .btn:hover {
