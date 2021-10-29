@@ -35,8 +35,8 @@
   padding: 10px 0;
 }
 
-.ajaxified-cart-feedback::before {
-  clear: both;
+.ajaxified-cart-feedback {
+  display:table;
 }
 
 .collection-grid-section .collection-filters {
