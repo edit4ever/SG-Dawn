@@ -295,6 +295,7 @@
     {%- assign cartTotalFloor = cartTotal | floor -%}
     {%- assign cartTotalRemain = cartTotal | minus: cartTotalFloor -%} 
     {%- if cartTotalRemain == 0.99 -%}{%- assign cartTotal = cartTotal | plus: 1 -%}{%- assign cartTotalRemain = 0 -%} {%- endif -%}
+    {%- if cartTotalRemain == 0.67 -%}{%- assign cartTotalRemain = 0.66 -%} {%- endif -%}
     <div class="cart-total__flat"><span class="cart-total-flat-qty">{%- if cartTotal >= 1 -%}{{ cartTotal | floor }}{%- endif -%} | {{cartTotalRemain}}
         {%- if cartTotalRemain == 0.75 -%} ¾ 
         {%- elsif cartTotalRemain == 0.66 -%} ⅔
