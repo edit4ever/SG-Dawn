@@ -410,7 +410,7 @@ span.cart-item__flat-qty-heading {
     padding-left: 1rem;
   }
   
-  .cart-item.total td.cart-item__quantity {
+  .cart-item.total td.cart-item__variety {
     padding-left: 0;
   }
 }
