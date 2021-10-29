@@ -88,7 +88,7 @@
     min-height: 20rem;
   }
   
-  .avail-sheet.button-link {
+  .avail-sheet.button {
     float: right;
     margin-top: 0;
   }
@@ -97,9 +97,10 @@
 .avail-sheet.button-link {
   color: #fff;
   text-decoration: none;
-  margin-top:1rem;
+
 }
 
 .avail-sheet.button {
   vertical-align: top;
+  margin-top:1rem;
 }
