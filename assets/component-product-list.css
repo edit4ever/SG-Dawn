@@ -185,18 +185,14 @@ option {
   .list-view-item__variant-column {
     width: 35%
   }
-  .list-view-item__variant-column form {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-  }
+
   .list-view-item__variant-column form select {
     width: 100%;
     max-width: none !important;
   }
   
   .list-view-item__variant-column form select.opt {
-    width: 70%;
+    width: 65%;
     margin-top: 5px;
     margin-right: 1rem;
   }
