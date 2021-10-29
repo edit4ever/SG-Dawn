@@ -94,3 +94,7 @@
   text-decoration: none;
   float: right;
 }
+
+.avail-sheet.button {
+  vertical-align: top;
+}
