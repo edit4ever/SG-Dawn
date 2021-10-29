@@ -372,20 +372,20 @@ span.cart-item__flat-qty-heading {
    gap: 0;
  }
   
-  .cart-item.total .cart-item__media, .cart-item.total .cart-item__totals {
+  .cart-item.total td.cart-item__media, .cart-item.total td.cart-item__totals {
     display: none;
   }
   
-  .cart-item.total .cart-item__variety {
+  .cart-item.total td.cart-item__variety {
     padding-left: 1rem;
   }
   
-  .cart-item.total .cart-item__quantity {
+  .cart-item.total td.cart-item__quantity {
     grid-column: 2/3;
     padding-right: 1rem;
   }
   
-  .cart-item.total .cart-item__flat-qty {
+  .cart-item.total td.cart-item__flat-qty {
     grid-column: 3/3;
   }
   
