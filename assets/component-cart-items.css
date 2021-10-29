@@ -369,6 +369,7 @@ span.cart-item__flat-qty-heading {
 @media screen and (max-width: 989px) {
  .cart-item.total {
    grid-template: auto/auto auto auto;
+   gap: 0;
  }
   
   .cart-item.total .cart-item__media, .cart-item.total .cart-item__totals {
