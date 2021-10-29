@@ -35,6 +35,11 @@
   padding: 10px 0;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 .collection-grid-section .collection-filters {
   border-top: .1rem solid rgba(var(--color-foreground),.08);
