@@ -89,13 +89,15 @@
   }
   
   .avail-sheet.button-link {
-  float: right;
-}
+    float: right;
+    margin-top: 0;
+  }
 }
 
 .avail-sheet.button-link {
   color: #fff;
   text-decoration: none;
+  margin-top:1rem;
 }
 
 .avail-sheet.button {
