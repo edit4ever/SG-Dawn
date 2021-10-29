@@ -51,7 +51,7 @@
       {%- endif -%}
       {%- if flatAvail < 0 -%}{%- assign flatAvail = 0 -%}{%- endif -%}
       {% if flatAvail > 0 %}
-        <span class="list-view-item__variant">{% unless forloop.index == 1 %} | {% endunless %}{% unless variant.title == "Default Title" %}{{ variant.title }} - {% endunless %}<span style="font-style:italic;" >{{ flatAvail }}{% if variant.title == "2 in" or variant.title == "4 in" or variant.title == "6 in" %}{{ flatAvail | pluralize: ' flat', ' flats'}}{% else %}{% endif %} in-stock {% if variant.metafields.my_fields.landscape_quality %}(L) {% endif %}</span></span>
+        <span class="list-view-item__variant">{% unless forloop.index == 1 %} | {% endunless %}{% unless variant.title == "Default Title" %}{{ variant.title }} - {% endunless %}<span style="font-style:italic;" >{{ flatAvail }}{% if variant.title == "2 in" or variant.title == "4 in" or variant.title == "6 in" %}{{ flatAvail | pluralize: ' flat', ' flats'}}{% else %}{% endif %} available {% if variant.metafields.my_fields.landscape_quality %}(L) {% endif %}</span></span>
       {% else %}
         <span class="list-view-item__variant no-stock">{% unless forloop.index == 1 %} | {% endunless %}{% if variant.title %}{{ variant.title }}{% endif %}<span style="font-style:italic;" > - {{ flatAvail }} available</span></span>
       {% endif %}
