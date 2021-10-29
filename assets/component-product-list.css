@@ -35,7 +35,7 @@
   padding: 10px 0;
 }
 
-.ajaxified-cart-feedback {
+.list-view-item__variant-column .ajaxified-cart-feedback {
   display:table;
 }
 
