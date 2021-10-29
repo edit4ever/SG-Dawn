@@ -376,7 +376,7 @@ span.cart-item__flat-qty-heading {
   }
   
   .cart-item.total td.cart-item__variety {
-    grid-column: 1/4;    
+    grid-column: 1/3;    
     padding-left: 1rem;
   }
   
