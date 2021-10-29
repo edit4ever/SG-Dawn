@@ -406,7 +406,9 @@ span.cart-item__flat-qty-heading {
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
 
-
+  .cart-item>td+td {
+    padding-left: 1rem;
+  }
   
   
 }
