@@ -4,14 +4,15 @@
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
      <h1 class="collection-hero__title">
-        {%- if collection.title == "Wholesale Inventory" -%}
-        <a class="avail-sheet button-link" href="/pages/wholesale-availability" target="_blank">
-        <div class="avail-sheet button">
-        Print Availability Sheet
-      	</div></a>
-        {%- endif -%}
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
+        
+       <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+       {{- collection.title | escape -}}
+       {%- if collection.title == "Wholesale Inventory" -%}
+       <a class="avail-sheet button-link" href="/pages/wholesale-availability" target="_blank">
+         <div class="avail-sheet button">
+           Print Availability Sheet
+         </div></a>
+       {%- endif -%}
       </h1>
 
       {%- if section.settings.show_collection_description -%}
