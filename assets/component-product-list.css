@@ -37,6 +37,7 @@
 
 .list-view-item__variant-column .ajaxified-cart-feedback {
   display:table;
+  width: 100%;
 }
 
 .collection-grid-section .collection-filters {
