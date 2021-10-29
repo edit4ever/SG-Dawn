@@ -36,9 +36,7 @@
 }
 
 .ajaxified-cart-feedback::before {
-  content: "";
   clear: both;
-  display: table;
 }
 
 .collection-grid-section .collection-filters {
