@@ -41,11 +41,7 @@
       {% endif %}
       {% for variant in product_card_product.variants %}
       {% if product_card_product.tags contains "wholesale-specialty" %}
-      	{%- if variant.title == "4 in" -%}
-          {%- assign flatAvail = variant.inventory_quantity | divided_by: 25 -%}
-        {%- else -%}
-      	  {%- assign flatAvail = variant.inventory_quantity -%}
-        {%- endif -%}
+      	{%- assign flatAvail = variant.inventory_quantity -%}
       {% else %}
         {%- if variant.title == "2 in" -%}
           {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
