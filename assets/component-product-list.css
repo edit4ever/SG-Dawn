@@ -250,7 +250,7 @@ option {
     margin-top: 10px;
   }
   
-  .list-view-item__variant-column form input.qty
+  .list-view-item__variant-column form input.qty {
     float: left;
     margin-right: 1rem;
   }
