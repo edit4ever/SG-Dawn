@@ -365,19 +365,15 @@ span.cart-item__flat-qty-heading {
   }
 }
 
-/*
-@media screen and (min-width: 990px) {
-  .cart-item .cart-item__quantity,
-  .cart-items .cart-items__heading--wide {
-    padding-left: 6rem;
-  }
 
-  .cart-item__details {
-    width: 50rem;
+@media screen and (max-width: 989px) {
+ .cart-item.total {
+   grid-template: auto/auto auto auto;
+ }
+  
+  .cart-item.total .cart-item__media, .cart-item.total .cart-item__totals {
+    display: none;
   }
-
-  .cart-items thead th:first-child {
-    width: 60%;
-  }
+  
+  
 }
-*/
