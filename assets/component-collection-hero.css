@@ -88,3 +88,9 @@
     min-height: 20rem;
   }
 }
+
+.avail-sheet .button-link {
+  color: #fff;
+  text-decoration: none;
+  float: right;
+}
