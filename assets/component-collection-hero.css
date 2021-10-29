@@ -75,6 +75,17 @@
   }
 }
 
+.avail-sheet.button-link {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.avail-sheet.button {
+  vertical-align: top;
+  margin-top:1rem;
+}
+
 @media screen and (min-width: 750px) {
   .collection-hero--with-image .collection-hero__text-wrapper {
     padding: 4rem 2rem 4rem 0;
@@ -94,13 +105,4 @@
   }
 }
 
-.avail-sheet.button-link {
-  color: #fff;
-  text-decoration: none;
 
-}
-
-.avail-sheet.button {
-  vertical-align: top;
-  margin-top:1rem;
-}
