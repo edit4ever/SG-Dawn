@@ -64,7 +64,8 @@ li.list__item {
 .list-view-item__link {
   display: table;
   table-layout: fixed;
-  width: 100%; }
+  width: 100%;
+  border-spacing: 1rem;}
 
 .list-view-item__image {
   max-height: 95px; }
