@@ -390,5 +390,8 @@ span.cart-item__flat-qty-heading {
     padding-right: 1rem;
   }
   
+  .cart-item.spacer {
+    display: none;
+  }
   
 }
