@@ -297,7 +297,7 @@
     {%- if cartTotalRemain == 0.99 -%}{%- assign cartTotal = cartTotal | plus: 1 -%}{%- assign cartTotalRemain = 0 -%}{%- endif -%}
     {%- if cartTotalRemain < 0.25 -%}{%- assign cartTotalRemain = 0 -%}{%- endif -%}
     {%- if cartTotalRemain > 0.33 and cartTotalRemain < 0.49 -%}{%- assign cartTotalRemain = 0 -%}{%- endif -%}
-    <div class="cart-total__flat"><span class="cart-total-flat-qty">{%- if cartTotal >= 1 -%}{{ cartTotal | floor }}{%- endif -%} | {{cartTotalRemain}}
+    <div class="cart-total__flat"><span class="cart-total-flat-qty">{%- if cartTotal >= 1 -%}{{ cartTotal | floor }}{%- endif -%}
         {%- if cartTotalRemain == 0.75 -%} ¾ 
         {%- elsif cartTotalRemain == 0.66 -%} ⅔
       	{%- elsif cartTotalRemain == 0.67 -%} ⅔
