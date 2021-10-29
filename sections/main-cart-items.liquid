@@ -53,7 +53,7 @@
               {%- endfor -%}
               
               {%- for item in items -%}
-              {%- unless item.product.tags contains "wholesale" -%}
+              {%- unless item.product.tags contains "wholesale" or "wholesale-assortment" -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     {% if item.image %}
@@ -192,7 +192,7 @@
                         aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                         id="Quantity-{{ item.index | plus: 1 }}"
                         data-index="{{ item.index | plus: 1 }}"
-                        {%- if item.product.tags contains "wholesale" -%}
+                        {%- if item.product.tags contains "wholesale" or "wholesale-assortment" -%}
                              {%- if item.variant.title == "2 in" -%}step="16"
                              {%- elsif item.variant.title == "4 in" -%}step="5"
                              {%- elsif item.variant.title == "6 in" -%}step="3"
@@ -222,7 +222,7 @@
                       </div>
                     </div>
                     <div class="cart-item__flat">
-                    {%- if item.product.tags contains "wholesale" -%}
+                    {%- if item.product.tags contains "wholesale" or "wholesale-assortment" -%}
                       {%- if item.variant.title == "2 in" -%}{% assign multiplier = 64.0 %}
                       {%- elsif item.variant.title == "4 in" -%}{% assign multiplier = 15.0 %}
                       {%- elsif item.variant.title == "6 in" -%}{% assign multiplier = 6.0 %}
