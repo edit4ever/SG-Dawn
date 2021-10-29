@@ -375,8 +375,12 @@ span.cart-item__flat-qty-heading {
     display: none;
   }
   
-  .cart-item__quantity {
+  .cart-item.total .cart-item__quantity {
     grid-column: 2/3;
+  }
+  
+  .cart-item.total .cart-item__flat-qty {
+    grid-column: 3/3;
   }
   
   
