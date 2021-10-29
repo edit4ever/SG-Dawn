@@ -8,10 +8,9 @@
        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
        {{- collection.title | escape -}}
        {%- if collection.title == "Wholesale Inventory" -%}
-       <a class="avail-sheet button-link" href="/pages/wholesale-availability" target="_blank"></a>
-       <div class="avail-sheet button">
-		Print Availability Sheet
-       </div>
+       <a class="avail-sheet button-link" href="/pages/wholesale-availability" target="_blank">
+       	<div class="avail-sheet button">Print Availability Sheet</div>
+       </a>
        {%- endif -%}
       </h1>
 
