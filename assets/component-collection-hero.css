@@ -89,7 +89,7 @@
   }
 }
 
-.avail-sheet .button-link {
+.avail-sheet.button-link {
   color: #fff;
   text-decoration: none;
   float: right;
