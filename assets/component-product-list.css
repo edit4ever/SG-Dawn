@@ -20,6 +20,7 @@
     width: 50%;
     margin-top: 10px;
     float:left;
+    margin-right: 1rem;
 }
 
 .btn:hover {
@@ -123,8 +124,7 @@ li.list__item {
 
 .list-view-item__variant-column input.qty {
   width: 15%;
-  max-width: 20%;
-  margin-left: 1rem; }
+  max-width: 20%; }
 
 .list-view-item__vendor {
   color: rgba(var(--color-foreground),.75);
