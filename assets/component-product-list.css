@@ -223,6 +223,7 @@ option {
   }
   .plant-submit {
     width: 40%;
+    float: right;
   }
   
 }
