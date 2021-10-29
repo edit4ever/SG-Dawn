@@ -35,7 +35,7 @@
   padding: 10px 0;
 }
 
-.clearfix::after {
+.ajaxified-cart-feedback::before {
   content: "";
   clear: both;
   display: table;
