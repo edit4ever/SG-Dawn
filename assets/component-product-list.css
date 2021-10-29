@@ -69,7 +69,7 @@ li.list__item {
 
 .list-view-item__image-column {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   width: 130px;
   min-height: 44px; }
   @media only screen and (max-width: 749px) {
