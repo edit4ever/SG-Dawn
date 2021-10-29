@@ -15,7 +15,7 @@
 {%- assign cartTotal = 0 -%}
 {%- assign qtyRaw = 0 -%}
 {%- for item in items -%}
-{%- if item.product.tags contains "wholesale" or "wholesale-assortment"-%}
+{%- if item.product.tags contains "wholesale" or item.product.tags contains "wholesale-assortment"-%}
 {%- if item.variant.title == variantSize -%}           
 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
   <td class="cart-item__media">
@@ -189,7 +189,7 @@
       </div>
     </div>
     <div class="cart-item__flat">
-      {%- if item.product.tags contains "wholesale" -%}
+      {%- if item.product.tags contains "wholesale" or item.product.tags contains "wholesale-assortment" -%}
       {%- if item.variant.title == "2 in" -%}{% assign multiplier = 64.0 %}
       {%- elsif item.variant.title == "4 in" -%}{% assign multiplier = 15.0 %}
       {%- elsif item.variant.title == "6 in" -%}{% assign multiplier = 6.0 %}
