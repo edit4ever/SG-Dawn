@@ -387,6 +387,7 @@ span.cart-item__flat-qty-heading {
   
   .cart-item.total td.cart-item__flat-qty {
     grid-column: 3/3;
+    padding-right: 1rem;
   }
   
   
