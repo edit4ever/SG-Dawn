@@ -73,14 +73,14 @@
     background: #7fa39c;
     padding: 1vw;
     -webkit-print-color-adjust: exact;
+    display: flex;
   }
   .print-header h1 {
     margin-bottom: 0;
     color: #fff;
   }
   .sglogo {
-    float:right;
-    height: 6vw;
+    width: 20%;
   }
   .sglogo img {
     max-height: 100%;
