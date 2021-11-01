@@ -2,11 +2,17 @@
   width: 50%;
   background-color: rgba(var(--color-base-background-2),1);
   box-shadow: none;
-    }
+}
 
 .print-btn.profile .button:hover {
   box-shadow: 0 0 0 0.2rem rgba(var(--color-base-background-2),var(--alpha-button-border));
   background-color: rgba(var(--color-base-background-2),.75);
+}
+
+@media only screen and (max-width: 749px) {
+  .print-btn.profile .button {
+    width: 100%;
+  }
 }
 
 
@@ -14,7 +20,7 @@
   margin: 2rem 0;
   height: 1px;
   background-color: rgba(var(--color-base-background-2),.75);
-    }
+}
 
 .collection-filters__sort, .collection-filters__sort:hover {
     padding: 0 1rem;
