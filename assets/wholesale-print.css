@@ -11,6 +11,10 @@
     display: none;
   }
   
+  .page-width {
+    padding: 0;
+  }
+  
   .spaced-section {
     margin-top: 0;
   }
