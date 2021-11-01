@@ -45,7 +45,7 @@
   }
   
   .meta-title {
-    color: rgba(var(--color-foreground),.75);
+    color: rgba(var(-base-text-alt),.75);
       }
   
   .meta-field {
