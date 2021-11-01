@@ -74,6 +74,7 @@
     padding: 1vw;
     -webkit-print-color-adjust: exact;
     display: flex;
+    height: 6vw;
   }
   .print-header h1 {
     margin-bottom: 0;
