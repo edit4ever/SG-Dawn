@@ -2273,7 +2273,7 @@ details-disclosure > details {
 }
   
 @media screen and (min-width: 750px) {
-  body {
-    font-size: 1.7rem;
+  html {
+    font-size: 100%;
   }
 }
