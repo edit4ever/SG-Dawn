@@ -16,12 +16,7 @@
 }
 
 
-.spacer hr {
-  display: none;
-  margin: 2rem 0;
-  height: 1px;
-  background-color: rgba(var(--color-base-background-2),.75);
-}
+
 
 .collection-filters__sort, .collection-filters__sort:hover {
     padding: 0 1rem;
@@ -175,7 +170,7 @@ li.list__item {
   font-size: 1.2rem; }
 
 
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 1023px) {
   .list-view-item__price-column {
       font-size: calc(((var(--font-size-base) - 1) / (var(--font-size-base))) * 1em); } }
   .list-view-item__price-column .price {
