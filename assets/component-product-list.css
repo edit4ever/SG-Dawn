@@ -184,6 +184,10 @@ li.list__item {
     padding-left: 0;
     padding-bottom: 0;
 	}
+  .product__media-wrapper slider-component {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+	}
 }
 
 
