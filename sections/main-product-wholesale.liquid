@@ -23,12 +23,12 @@
 
 <section class="page-width">
   <div class="print-header print-show">
-    <div class="sglogo print-show">
-    	<img src="//cdn.shopify.com/s/files/1/0654/1643/files/logo_cf7af7f6-0fe0-4136-8a67-3d9fbeb83a34_410x.png?v=1526044892" alt="Succulent Gardens">
-    </div>
     <h1 class="product__title print-show" {{ block.shopify_attributes }}>
       {{ product.title | escape }}
     </h1>
+    <div class="sglogo print-show">
+      <img src="//cdn.shopify.com/s/files/1/0654/1643/files/logo_cf7af7f6-0fe0-4136-8a67-3d9fbeb83a34_410x.png?v=1526044892" alt="Succulent Gardens">
+    </div>
   </div>
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
