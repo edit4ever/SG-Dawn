@@ -169,25 +169,7 @@ li.list__item {
   width: 20%;
   font-size: 1.2rem; }
 
-@media only screen and (min-width: 750px) and (max-width: 1023px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
-  	}
-  .grid--1-col .grid__item {
-    max-width: 100%;
-    width: 100%;
-	}
-  .product__info-wrapper {
-    padding-left: 0;
-    padding-bottom: 0;
-	}
-  .slider.product__media-list .product__media-item:first-of-type {
-    padding-left: 1.5rem;
-	}
-}
+
 
 
 @media only screen and (max-width: 749px) {
