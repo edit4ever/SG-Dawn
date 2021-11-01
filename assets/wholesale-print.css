@@ -72,6 +72,7 @@
   .print-header {
     background: #7fa39c;
     padding: 1vw;
+    -webkit-print-color-adjust: exact;
   }
   .print-header h1 {
     margin-bottom: 0;
