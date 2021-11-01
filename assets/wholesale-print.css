@@ -1,6 +1,3 @@
-.print-hidden {
-  display: none;
-}
 
 @media print {
     
@@ -51,4 +48,10 @@
   .meta-field {
     color: rgba(var(--color-foreground),1);
       }
+  .print-hidden {
+  	display: none;
+  }
+  .print-show {
+  	display: block;
+  }
 }
