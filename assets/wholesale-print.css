@@ -1,3 +1,7 @@
+.print-hidden {
+  display: none;
+}
+
 @media print {
     
   .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide,
