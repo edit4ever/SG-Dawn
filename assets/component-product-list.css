@@ -1,6 +1,7 @@
 .spacer hr {
   margin: 2rem 0;
-  background-color: rgb(var(--color-base-background-2));
+  height: 1px;
+  background-color: rgba(var(--color-base-background-2),.75);
     }
 
 .collection-filters__sort, .collection-filters__sort:hover {
