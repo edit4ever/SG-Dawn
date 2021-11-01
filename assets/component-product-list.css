@@ -176,6 +176,9 @@ li.list__item {
   .product__info-wrapper.grid__item {
     width: 75%;
   }
+  .print-btn.profile .button {
+    width: 100%;
+  }
   
 }
 
