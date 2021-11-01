@@ -16,18 +16,18 @@
               </div>
      		</div>
      	  {%- when 'accordion-page' -%}
-      		{%- if section.settings.show_title -%}
+      		{%- if block.settings.show_title -%}
             <h2 class="page-title">
-              {%- if section.settings.page.title != blank -%}
-                {{ section.settings.page.title | escape }}
+              {%- if block.settings.page.title != blank -%}
+                {{ block.settings.page.title | escape }}
               {%- else -%}
                 Page title
               {%- endif -%}
             </h2>
             {%- endif -%}
             <div class="rte">
-              {%- if section.settings.page.content != blank -%}
-                {{ section.settings.page.content }}
+              {%- if block.settings.page.content != blank -%}
+                {{ block.settings.page.content }}
               {%- else -%}
                 <div class='page-placeholder-wrapper placeholder'>
                   {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
