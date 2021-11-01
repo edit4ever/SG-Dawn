@@ -816,7 +816,7 @@ a.product__text {
   
   .meta-field {
     font-style: normal;
-    color: rgb(var(--color-base-text));
+    color: rgba(var(--color-base-text),.75);
   }
   
   
