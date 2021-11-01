@@ -77,6 +77,9 @@
           {{ 'products.product.xr_button' | t }}
         </button>
       {%- endif -%}
+      {% if customer.tags contains "wholesale" %}
+      	<div class="print-btn"><button onclick="window.print()" class="button">Print Profile</button></div>
+      {% endif %}
     </div>
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
