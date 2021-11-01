@@ -264,7 +264,7 @@
           "name": "Accordion Text",
           "settings": {
             "section": {
-              "label": ""
+              "label": "Accordion Question Text"
             },
             "accordion_size": {
               "options__1": {
@@ -287,6 +287,20 @@
             "indent": {
               "label": "Indent text"
             }
+          }
+        },
+        "accordion-page": {
+          "name": "Accordion Page",
+          "settings": {
+            "page": {
+              "label": "Page"
+            },
+            "show_title": {
+              "label": "Show Page Title"
+            }
+          },
+          "presets": {
+            "name": "Page"
           }
         }
       },
