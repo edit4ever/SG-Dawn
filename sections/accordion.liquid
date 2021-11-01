@@ -5,7 +5,7 @@
     <div class="page-width so-accordion-wrapper" style="text-align:{{ section.settings.align }};">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {%- when 'accordion' -%}
+          {%- when 'accordion-text' -%}
       		<div class="so-tab" {{ block.shopify_attributes }}>
               <input id="so-tab-{{forloop.index}}" type="checkbox" name="tabs" />
     		  <label class="{{ block.settings.accordion_size }}" for="so-tab-{{forloop.index}}">{{ block.settings.section | escape }}</label>
@@ -91,14 +91,14 @@
   ],
   "blocks": [
     {
-      "type": "accordion",
-      "name": "t:sections.accordion.blocks.accordion.name",
+      "type": "accordion-text",
+      "name": "t:sections.accordion.blocks.accordion-text.name",
       "settings": [
         {
           "type": "text",
           "id": "section",
           "default": "Question text",
-          "label": "t:sections.accordion.blocks.accordion.settings.section.label"
+          "label": "t:sections.accordion.blocks.accordion-text.settings.section.label"
         },
         {
           "type": "select",
@@ -106,37 +106,37 @@
           "options": [
             {
               "value": "h3",
-              "label": "t:sections.accordion.blocks.accordion.settings.accordion_size.options__1.label"
+              "label": "t:sections.accordion.blocks.accordion-text.settings.accordion_size.options__1.label"
             },
             {
               "value": "h2",
-              "label": "t:sections.accordion.blocks.accordion.settings.accordion_size.options__2.label"
+              "label": "t:sections.accordion.blocks.accordion-text.settings.accordion_size.options__2.label"
             },
             {
               "value": "h1",
-              "label": "t:sections.accordion.blocks.accordion.settings.accordion_size.options__3.label"
+              "label": "t:sections.accordion.blocks.accordion-text.settings.accordion_size.options__3.label"
             }
           ],
           "default": "h3",
-          "label": "t:sections.accordion.blocks.accordion.settings.accordion_size.label"
+          "label": "t:sections.accordion.blocks.accordion-text.settings.accordion_size.label"
         },
 		{
           "type": "richtext",
           "id": "text",
           "default": "<p>This is the answer to the question.</p>",
-          "label": "t:sections.accordion.blocks.accordion.settings.text.label"
+          "label": "t:sections.accordion.blocks.accordion-text.settings.text.label"
         },
 		{
           "type": "checkbox",
           "id": "margin",
           "default": false,
-          "label": "t:sections.accordion.blocks.accordion.settings.margin.label"
+          "label": "t:sections.accordion.blocks.accordion-text.settings.margin.label"
         },
 		{
           "type": "checkbox",
           "id": "indent",
           "default": false,
-          "label": "t:sections.accordion.blocks.accordion.settings.indent.label"
+          "label": "t:sections.accordion.blocks.accordion-text.settings.indent.label"
         }
       ]
     }
@@ -146,7 +146,13 @@
       "name": "t:sections.accordion.presets.name",
       "blocks": [
         {
-          "type": "accordion"
+          "type": "accordion-text"
+        },
+		{
+          "type": "accordion-text"
+        },
+		{
+          "type": "accordion-text"
         }
       ]
     }
