@@ -409,6 +409,9 @@
     <div class="product__description rte print-show">
       {{ product.description }}
     </div>
+  <div class="print-footer print-show">
+    <p class="footer-text">Copyright {{ "now" | date: "%Y" }} Succulent Gardens. All rights reserved. Usable only with permission.</p>
+  </div>
   {%- endif -%}
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
