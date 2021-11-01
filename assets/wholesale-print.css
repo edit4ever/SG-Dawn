@@ -47,10 +47,12 @@
   .meta-title {
     color: #7fa39c;
     margin: 2rem 0;
+    font-weight: 700;
   }
   
   .meta-field {
     color: rgba(var(--color-foreground),1);
+    font-weight: 400;
   }
   .print-hidden {
   	display: none;
