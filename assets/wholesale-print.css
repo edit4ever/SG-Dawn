@@ -6,7 +6,7 @@
     
   .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide,
   .shopify-section.spaced-section:not(:first-of-type), .footer, .header, #shopify-section-header,
-  .product__media-icon
+  .product__media-icon, #admin-bar-iframe
   {
     display: none;
   }
