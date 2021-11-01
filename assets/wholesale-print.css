@@ -71,7 +71,7 @@
   	display: block;
   }
   .print-header {
-    background: rgba(var(--color-base-background-1),1)
+    background: rgb(var(--gradient-base-background-2));
     padding: 1vw;
     -webkit-print-color-adjust: exact;
     display: flex;
