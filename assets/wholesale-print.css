@@ -15,6 +15,10 @@
     padding: 0;
   }
   
+  body {
+    font-size: 1vw;
+  }
+  
   .spaced-section {
     margin-top: 0;
   }
