@@ -99,7 +99,7 @@
 	}
   
   .print-footer {
-    color: rgb(var(--color-base-accent-2));
+    color: rgba(var(--color-base-accent-2),.75);
     font-size:80%;
       position:absolute;
       bottom:0;
