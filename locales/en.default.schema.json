@@ -264,7 +264,7 @@
           "name": "Accordion Text",
           "settings": {
             "section": {
-              "label": "Accordion Question Text"
+              "label": "Accordion Topline Text"
             },
             "accordion_size": {
               "options__1": {
@@ -276,7 +276,7 @@
               "options__3": {
                 "label": "Large"
               },
-              "label": "Question font size"
+              "label": "Topline font size"
             },
             "text": {
               "label": "Description"
@@ -292,11 +292,23 @@
         "accordion-page": {
           "name": "Accordion Page",
           "settings": {
+            "section": {
+              "label": "Accordion Topline Text"
+            },
+            "accordion_size": {
+              "options__1": {
+                "label": "Small"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Large"
+              },
+              "label": "Question font size"
+            },
             "page": {
               "label": "Page"
-            },
-            "show_title": {
-              "label": "Show Page Title"
             }
           },
           "presets": {
