@@ -58,18 +58,18 @@
             "indent": false
           }
         },
-        "5d2be412-85a7-4d75-91cc-0167af55d4de": {
+        "bb0a1f40-57db-4b89-9f35-4b9b65e4902b": {
           "type": "accordion-page",
           "settings": {
             "page": "wholesale-text",
-            "topline": "Accordion Topline",
+            "topline": "",
             "accordion_size": "h3"
           }
         }
       },
       "block_order": [
         "4a56151b-c5d2-4a13-a96d-3e78d6e79213",
-        "5d2be412-85a7-4d75-91cc-0167af55d4de"
+        "bb0a1f40-57db-4b89-9f35-4b9b65e4902b"
       ],
       "settings": {
         "color_scheme": "background-1",
