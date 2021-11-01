@@ -87,6 +87,7 @@
     width: 20%;
     text-align: right;
     height: 100%;
+    margin-right:2rem;
   }
   .sglogo img {
     max-height: 100%;
