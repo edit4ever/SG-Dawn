@@ -137,7 +137,7 @@
         
           {%- when 'description' -%}
             {%- if product.description != blank -%}
-              <div class="product__description rte">
+              <div class="product__description rte print-hidden">
                 {{ product.description }}
               </div>
             {%- endif -%}
@@ -395,7 +395,7 @@
     </div>
   </div>
   {%- if product.description != blank -%}
-    <div class="product__description rte print-hidden">
+    <div class="product__description rte print-show">
       {{ product.description }}
     </div>
   {%- endif -%}
