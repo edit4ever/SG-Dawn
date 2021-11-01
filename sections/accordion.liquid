@@ -18,26 +18,18 @@
      	  {%- when 'accordion-page' -%}
       		<div class="so-tab" {{ block.shopify_attributes }}>
               <input id="so-tab-{{forloop.index}}" type="checkbox" name="tabs" />
-              <label class="{{ block.settings.accordion_size }}" for="so-tab-{{forloop.index}}">{{ block.settings.section | escape }}</label>
-              
-      		{%- if block.settings.show_title -%}
-            <h2 class="page-title">
-              {%- if block.settings.page.title != blank -%}
-                {{ block.settings.page.title | escape }}
-              {%- else -%}
-                Page title
-              {%- endif -%}
-            </h2>
-            {%- endif -%}
-            <div class="rte">
-              {%- if block.settings.page.content != blank -%}
-                {{ block.settings.page.content }}
-              {%- else -%}
-                <div class='page-placeholder-wrapper placeholder'>
-                  {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
+              <label class="{{ block.settings.accordion_size }}" for="so-tab-{{forloop.index}}">{%- if block.settings.show_title -%}{{ block.settings.page.title | escape }}{% else %}{{ block.settings.topline | escape }}{% endif %}</label>
+              <div class="so-tab-content">
+                <div class="content rich-text__text rte {% if block.settings.margin %}p-nomargin{% endif %} {% if block.settings.indent %}p-indent{% endif %}" {{ block.shopify_attributes }}>
+                  {%- if block.settings.page.content != blank -%}
+                	{{ block.settings.page.content }}
+              	  {%- else -%}
+                    <div class='page-placeholder-wrapper placeholder'>
+                      {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
+                    </div>
+              	  {%- endif -%}
                 </div>
-              {%- endif -%}
-      		</div>
+              </div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
