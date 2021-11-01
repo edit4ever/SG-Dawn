@@ -75,6 +75,8 @@
     -webkit-print-color-adjust: exact;
     display: flex;
     height: 6vw;
+    align-items: center;
+    justify-content: space-between;
   }
   .print-header h1 {
     margin-bottom: 0;
