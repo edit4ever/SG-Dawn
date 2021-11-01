@@ -26,7 +26,7 @@
         "5bef1cb5-8555-4727-9433-69798039506c": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%- if product.tags contains \"wholesale\" -%}\n<h3 class=\"meta-title\">FORM: <span class=\"meta-field\">{{ product.metafields.my_fields.form }}<\/span><\/h3>\n<h3 class=\"meta-title\">HARDINESS: <span class=\"meta-field\">{{ product.metafields.my_fields.hardiness }}°F<\/span><\/h3>\n<h3 class=\"meta-title\">LIGHT REQUIREMENTS: <span class=\"meta-field\">{{ product.metafields.my_fields.light_requirements }}<\/span><\/h3>\n<h3 class=\"meta-title\">FOLIAGE COLOR: <span class=\"meta-field\">{{ product.metafields.my_fields.foliage_color }}<\/span><\/h3>\n<h3 class=\"meta-title\">FLOWER: <span class=\"meta-field\">{{ product.metafields.my_fields.flower }}<\/span><\/h3>\n<h3 class=\"meta-title\">ORIGIN: <span class=\"meta-field\">{{ product.metafields.my_fields.origin }}<\/span><\/h3>  \n<\/div>\n{%- endif -%}"
+            "custom_liquid": "{%- if product.tags contains \"wholesale\" -%}\n<h3 class=\"meta-title\">FORM: <span class=\"meta-field\">{{ product.metafields.my_fields.form }}<\/span><\/h3>\n<h3 class=\"meta-title\">HARDINESS: <span class=\"meta-field\">{{ product.metafields.my_fields.hardiness }}°F<\/span><\/h3>\n<h3 class=\"meta-title\">LIGHT REQUIREMENTS: <span class=\"meta-field\">{{ product.metafields.my_fields.light_requirements }}<\/span><\/h3>\n<h3 class=\"meta-title\">FOLIAGE COLOR: <span class=\"meta-field\">{{ product.metafields.my_fields.foliage_color }}<\/span><\/h3>\n<h3 class=\"meta-title\">FLOWER: <span class=\"meta-field\">{{ product.metafields.my_fields.flower }}<\/span><\/h3>\n<h3 class=\"meta-title\">ORIGIN: <span class=\"meta-field\">{{ product.metafields.my_fields.origin }}<\/span><\/h3>  \n<\/div>\n<div class=\"spacer\">&nbsp;\n<\/div>\n{%- endif -%}"
           }
         },
         "description": {
@@ -110,7 +110,7 @@
     "16343293493d60a5f4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if collection.title %}\n{% if collection.previous_product %}\n{% assign productPrev = collection.previous_product %}\n{% else %}\n{% assign productPrev = collection.products | last %}\n{% endif %}\n{% if collection.next_product %}\n{% assign productNext = collection.next_product %}\n{% else %}\n{% assign productNext = collection.products | first %}\n{% endif %}\n\n{% render 'library-nav',\nprev_product: productPrev,prev_product_url:productPrevURL,next_product: productNext\nproduct: product\n%}\n\n{% endif %}"
+        "custom_liquid": "{% if collection.title %}\n{% if collection.previous_product %}\n{% assign productPrev = collection.previous_product %}\n{% else %}\n{% assign productPrev = collection.products | last %}\n{% endif %}\n{% if collection.next_product %}\n{% assign productNext = collection.next_product %}\n{% else %}\n{% assign productNext = collection.products | first %}\n{% endif %}\n\n{% render 'library-nav',\nprev_product: productPrev,next_product: productNext\nproduct: product\n%}\n\n{% endif %}"
       }
     },
     "product-recommendations": {
