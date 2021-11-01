@@ -62,4 +62,9 @@
     color: #fff;
     padding: 1rem;
   }
+  .print-header h1 {
+    margin-bottom: 0;
+  }
+  
+  
 }
