@@ -179,6 +179,9 @@ li.list__item {
   .print-btn.profile .button {
     width: 100%;
   }
+  .grid {
+    margin-left: 0;
+  }
   
 }
 
