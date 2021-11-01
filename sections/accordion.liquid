@@ -8,7 +8,7 @@
           {%- when 'accordion-text' -%}
       		<div class="so-tab" {{ block.shopify_attributes }}>
               <input id="so-tab-{{forloop.index}}" type="checkbox" name="tabs" />
-    		  <label class="{{ block.settings.accordion_size }}" for="so-tab-{{forloop.index}}">{{ block.settings.section | escape }}</label>
+    		  <label class="{{ block.settings.accordion_size }}" for="so-tab-{{forloop.index}}">{{ block.settings.topline | escape }}</label>
               <div class="so-tab-content">
                 <div class="content rich-text__text rte {% if block.settings.margin %}p-nomargin{% endif %} {% if block.settings.indent %}p-indent{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.text }}
@@ -119,7 +119,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "section",
+          "id": "topline",
           "default": "Accordion Topline",
           "label": "t:sections.accordion.blocks.accordion-text.settings.section.label"
         },
@@ -174,7 +174,7 @@
         },
   		{
           "type": "text",
-          "id": "section",
+          "id": "topline",
           "default": "Accordion Topline",
           "label": "t:sections.accordion.blocks.accordion-page.settings.section.label"
         },
