@@ -22,6 +22,9 @@
 {%- endif -%}
 
 <section class="page-width">
+  <h1 class="product__title print-show" {{ block.shopify_attributes }}>
+    {{ product.title | escape }}
+  </h1>
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">
@@ -83,7 +86,7 @@
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
-            <h1 class="product__title" {{ block.shopify_attributes }}>
+            <h1 class="product__title print-hidden" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
