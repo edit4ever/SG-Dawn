@@ -295,6 +295,9 @@
             "topline": {
               "label": "Accordion Topline Text"
             },
+            "show-title": {
+              "label": "Replace topline text with page title"
+            },
             "accordion_size": {
               "options__1": {
                 "label": "Small"
