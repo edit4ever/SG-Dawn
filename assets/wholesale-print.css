@@ -71,7 +71,7 @@
   	display: block;
   }
   .print-header {
-    background: #7fa39c;
+    background: rgba(var(--color-base-background-2),1)
     padding: 1vw;
     -webkit-print-color-adjust: exact;
     display: flex;
@@ -97,5 +97,8 @@
   .product__media-list .product__modal-opener {
     border: none;
 	}
+  
+  .print-footer {
+    color: #7fa39c;
   
 }
