@@ -57,6 +57,7 @@
     color: #7fa39c;
     margin: 2vw 0;
     font-weight: 700;
+    -webkit-print-color-adjust: exact !important;
   }
   
   .meta-field {
