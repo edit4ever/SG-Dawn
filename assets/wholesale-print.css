@@ -46,11 +46,12 @@
   
   .meta-title {
     color: #7fa39c;
-      }
+    margin: 2rem 0;
+  }
   
   .meta-field {
     color: rgba(var(--color-foreground),1);
-      }
+  }
   .print-hidden {
   	display: none;
   }
