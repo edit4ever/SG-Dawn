@@ -36,7 +36,7 @@
   
   .product__info-wrapper.grid__item {
     width: 49%;
-    margin-top:1vw;
+    margin-top:2vw;
   }
   
   h1 {
@@ -55,7 +55,7 @@
   
   .meta-title {
     color: #7fa39c;
-    margin: 1vw 0;
+    margin: 2vw 0;
     font-weight: 700;
   }
   
