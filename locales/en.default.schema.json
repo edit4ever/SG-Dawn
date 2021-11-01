@@ -260,8 +260,8 @@
         }
       },
       "blocks": {
-        "accordion": {
-          "name": "Accordion",
+        "accordion-text": {
+          "name": "Accordion Text",
           "settings": {
             "section": {
               "label": ""
