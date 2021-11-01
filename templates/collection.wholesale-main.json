@@ -62,7 +62,7 @@
           "type": "accordion-page",
           "settings": {
             "page": "wholesale-text",
-            "topline": "",
+            "topline": "Click here to read our ordering information",
             "accordion_size": "h3"
           }
         }
