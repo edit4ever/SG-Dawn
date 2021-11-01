@@ -15,6 +15,25 @@
                 </div>
               </div>
      		</div>
+     	  {%- when 'accordion-page' -%}
+      		{%- if section.settings.show_title -%}
+            <h2 class="page-title">
+              {%- if section.settings.page.title != blank -%}
+                {{ section.settings.page.title | escape }}
+              {%- else -%}
+                Page title
+              {%- endif -%}
+            </h2>
+            {%- endif -%}
+            <div class="rte">
+              {%- if section.settings.page.content != blank -%}
+                {{ section.settings.page.content }}
+              {%- else -%}
+                <div class='page-placeholder-wrapper placeholder'>
+                  {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
+                </div>
+              {%- endif -%}
+      		</div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
@@ -139,7 +158,24 @@
           "label": "t:sections.accordion.blocks.accordion-text.settings.indent.label"
         }
       ]
-    }
+    },
+	{
+	  "type": "accordion-page",
+	  "name": "t:sections.accordion.blocks.accordion-page.name",
+      "settings": [
+	    {
+          "type": "page",
+          "id": "page",
+          "label": "t:sections.accordion.blocks.accordion-page.settings.page.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_title",
+          "default": true,
+          "label": "t:sections.accordion.blocks.accordion-page.settings.show_title.label"
+        }
+	  ]
+	}
   ],
   "presets": [
     {
