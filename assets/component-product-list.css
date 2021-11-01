@@ -1,3 +1,8 @@
+.print-btn.profile {
+  width: 100%;
+  background-color: rgba(var(--color-base-background-2),1);
+    }
+
 .spacer hr {
   margin: 2rem 0;
   height: 1px;
