@@ -48,16 +48,6 @@
     "16353774641392c087": {
       "type": "accordion",
       "blocks": {
-        "4a56151b-c5d2-4a13-a96d-3e78d6e79213": {
-          "type": "accordion-text",
-          "settings": {
-            "topline": "Click here to read our ordering information",
-            "accordion_size": "h3",
-            "text": "<p><br\/><strong>Phone: (831) 632-0482 FAX: (831) 633-5280<br\/><\/strong>We take orders by phone, fax, or email (wholesale@sgplants.com).<br\/>If you need a special order or want particular photos, please contact us at wholesale@sgplants.com.<br\/><br\/><strong>Recent and Upcoming Changes<br\/><\/strong>Policy and Price Changes - Fuel Charge, $450 minimum<br\/>Please let us know if you have any suggestions for format changes.<br\/><br\/><strong>Order Minimums<br\/><\/strong>2\", 4\", and 6\" sold as flats and you must order a full flat of the size (but not of each species).<br\/><br\/>2\" - 64 to a flat - Ordering options: ¼ Flat (16) | ½ Flat (32) | Whole Flat (64)<br\/>4\" - 15 to a flat - Ordering options: ⅓ Flat (5) | ⅔ Flat (10) | Whole Flat (15)<br\/>6\" - 6 to a flat - Ordering options: ½ Flat (3) | Whole Flat (6)<br\/><br\/>All other sizes sold individually.<br\/>$100 minimum order total for plants - seasonal products do not count towards order minimum.<br\/><br\/><strong>Deliveries<\/strong><br\/>We have a delivery truck that services the Bay Area with a $450 minimum order.<br\/>Need the plants delivered to your clients home? Jobsite delivery fee is $50. Curbside pick-up only.<br\/>Delivery\/fuel charge for San Mateo County, Santa Cruz County, Santa Clara County and San Francisco County and the greater Oakland area - $25.<br\/>Delivery\/fuel charge for other locations in the greater Bay Area - $35.<br\/>Other pricing for special deliveries vary based on location and order size.<br\/><br\/>Call us for special delivery needs. (831) 632-0482<br\/><br\/><strong>Common Carrier<br\/><\/strong>No minimum. Plants are boxed and shrink wrapped on a pallet and generally arrive within 1-2 days.<br\/>Rates are typically $150-$175\/pallet for delivery throughout California, with surcharges for rural destinations. Boxes are $3.25\/each.<br\/><br\/><strong>Preticketing \/ Barcoding<br\/><\/strong>We sticker pots 4” and up including your pricing and logo.<br\/>We need 7 days for initial setup and after that, order as normal. No additional cost.<br\/><br\/><br\/>We will happily curate a retail-ready assortment for you if you specify the number of total flats in each size.<br\/>If you'd like to specify some varieties and have us curate the rest, we can deliver a retail-ready assortment.<br\/>When we curate an assortment, we may include premium priced plants unless you specify otherwise.<br\/><br\/><strong>Quality<\/strong><br\/>All plant stock are retail quality unless otherwise noted with an (L) for landscape quality.<br\/><br\/><\/p>",
-            "margin": false,
-            "indent": false
-          }
-        },
         "bb0a1f40-57db-4b89-9f35-4b9b65e4902b": {
           "type": "accordion-page",
           "settings": {
@@ -69,7 +59,6 @@
         }
       },
       "block_order": [
-        "4a56151b-c5d2-4a13-a96d-3e78d6e79213",
         "bb0a1f40-57db-4b89-9f35-4b9b65e4902b"
       ],
       "settings": {
