@@ -57,10 +57,18 @@
             "margin": false,
             "indent": false
           }
+        },
+        "5d2be412-85a7-4d75-91cc-0167af55d4de": {
+          "type": "accordion-page",
+          "settings": {
+            "page": "wholesale-text",
+            "show_title": false
+          }
         }
       },
       "block_order": [
-        "4a56151b-c5d2-4a13-a96d-3e78d6e79213"
+        "4a56151b-c5d2-4a13-a96d-3e78d6e79213",
+        "5d2be412-85a7-4d75-91cc-0167af55d4de"
       ],
       "settings": {
         "color_scheme": "background-1",
