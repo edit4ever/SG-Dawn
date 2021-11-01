@@ -36,7 +36,7 @@
   
   .product__info-wrapper.grid__item {
     width: 49%;
-    margin-top:2rem;
+    margin-top:1vw;
   }
   
   h1 {
@@ -55,7 +55,7 @@
   
   .meta-title {
     color: #7fa39c;
-    margin: 2rem 0;
+    margin: 1vw 0;
     font-weight: 700;
   }
   
@@ -71,7 +71,7 @@
   }
   .print-header {
     background: #7fa39c;
-    padding: 1rem;
+    padding: 1vw;
   }
   .print-header h1 {
     margin-bottom: 0;
