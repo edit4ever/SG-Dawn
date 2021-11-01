@@ -263,7 +263,7 @@
         "accordion-text": {
           "name": "Accordion Text",
           "settings": {
-            "section": {
+            "topline": {
               "label": "Accordion Topline Text"
             },
             "accordion_size": {
@@ -292,7 +292,7 @@
         "accordion-page": {
           "name": "Accordion Page",
           "settings": {
-            "section": {
+            "topline": {
               "label": "Accordion Topline Text"
             },
             "accordion_size": {
