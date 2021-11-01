@@ -80,7 +80,10 @@
   }
   .sglogo {
     float:right;
-    height: 100%;
+    height: 6vw;
+  }
+  .sglogo img {
+    max-height: 100%;
   }
   
   
