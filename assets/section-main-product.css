@@ -811,10 +811,12 @@ a.product__text {
   
   .meta-title {
     font-style: italic;
+    color: rgb(var(--color-base-background-2));
   }
   
   .meta-field {
     font-style: normal;
+    color: rgb(var(--color-base-text));
   }
   
   
