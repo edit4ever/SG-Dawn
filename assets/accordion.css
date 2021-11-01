@@ -48,3 +48,7 @@
 .so-tab input[type=radio]:checked + label::after {
   transform: rotateX(180deg);
 }
+
+.so-accordion-wrapper {
+  margin-bottom: 2rem'
+}
