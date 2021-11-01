@@ -1,6 +1,7 @@
 .print-btn.profile .button {
   width: 100%;
   background-color: rgba(var(--color-base-background-2),1);
+  border: none;
     }
 
 .print-btn.profile .button:hover {
