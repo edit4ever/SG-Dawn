@@ -82,6 +82,7 @@
   .print-header h1 {
     margin-bottom: 0;
     color: #fff;
+    line-height: 1;
   }
   .sglogo {
     width: 20%;
