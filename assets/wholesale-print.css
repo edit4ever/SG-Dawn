@@ -36,12 +36,12 @@
   }
   
   h1 {
-    font-size: 5vw;
+    font-size: 300%;
     margin-top: 0;
   }
   
   h3 {
-    font-size: 3vw;
+    font-size: 150%;
   }
   
   .product__description.rte {
