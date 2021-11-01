@@ -30,12 +30,12 @@
     width: 49%;
   }
   
-  .product__info-container h1 {
+  h1 {
     font-size: 300%;
     margin-top: 0;
   }
   
-  .product__info-container h3 {
+  h3 {
     font-size: 150%;
   }
   
