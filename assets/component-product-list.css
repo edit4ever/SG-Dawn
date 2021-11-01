@@ -176,6 +176,10 @@ li.list__item {
       padding: 0;
       list-style: none;
   }
+  .grid--1-col .grid__item {
+    max-width: 100%;
+    width: 100%;
+	}
 }
 
 
