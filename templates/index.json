@@ -34,13 +34,13 @@
         "1634233157f38aa622-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_3973.jpg",
+        "image": "shopify:\/\/shop_images\/slideshow_1_df8c106f-4ebb-4eea-a400-6d127879ca45.jpg",
         "parallax": true,
         "parallax_speed": -10,
         "adapt_height_first_image": false,
         "min_height": 60,
         "image_overlay_color": "#000000",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 20,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "color_scheme": "background-1",
@@ -54,7 +54,7 @@
         "16340779564c41bffb-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/feature1_600x_41924683-b770-4176-98fb-b3160b2ae395.jpg",
+            "image": "shopify:\/\/shop_images\/feature1.jpg",
             "link_1": "shopify:\/\/collections\/shop",
             "color_scheme": "accent-2",
             "title": "SHOP ONLINE",
@@ -64,7 +64,7 @@
         "16340779564c41bffb-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/feature2_600x_8a1eadfe-8764-4550-8e13-89b27a1c8012.jpg",
+            "image": "shopify:\/\/shop_images\/feature2_73225e7b-edb0-4b34-ab52-7150e7d9488c.jpg",
             "link_1": "shopify:\/\/pages\/about-us",
             "color_scheme": "accent-2",
             "title": "VISIT SUCCULENT GARDENS",
@@ -74,7 +74,7 @@
         "16340779564c41bffb-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sg1705-062.jpg",
+            "image": "shopify:\/\/shop_images\/sg1705-062-web.jpg",
             "link_1": "shopify:\/\/collections\/classes-workshops",
             "color_scheme": "accent-2",
             "title": "CLASSES & WORKSHOPS",
@@ -135,7 +135,7 @@
         "16342335048d2e7306-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/wholesale.jpg",
+        "image": "shopify:\/\/shop_images\/sg1705-573.jpg",
         "parallax": true,
         "parallax_speed": -10,
         "adapt_height_first_image": false,
@@ -176,7 +176,9 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. <br\/><br\/><em>Updated Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>"
+            "text": "<p>Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. <br\/><br\/><em>Updated Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>",
+            "margin": false,
+            "indent": false
           }
         },
         "button": {
@@ -195,7 +197,8 @@
       ],
       "settings": {
         "color_scheme": "accent-2",
-        "full_width": true
+        "full_width": true,
+        "align": "center"
       }
     },
     "1634321013de552146": {
