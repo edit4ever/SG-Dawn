@@ -23,7 +23,7 @@
         "163424943823a26eab-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "planter"
+            "collection": "planters"
           }
         },
         "163424943823a26eab-2": {
@@ -35,7 +35,7 @@
         "e779fcb7-978a-4bc2-9c72-200fd1464ccb": {
           "type": "featured_collection",
           "settings": {
-            "collection": "wholesale-inventory"
+            "collection": "wholesale"
           }
         }
       },
