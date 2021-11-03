@@ -147,6 +147,11 @@ li.list__item {
   display: table-cell;
   vertical-align: middle; }
 
+.list-view-item__variant-column select {
+  background-color: #fff;
+}
+
+
 .list-view-item__variant-column select.var {
   min-width: 35%; }
 
