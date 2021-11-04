@@ -20,7 +20,7 @@
         </tr>
         {%- for product in collections.wholesale-assortment.products -%}
         <tr>
-          <td>{{ product.title }}</td>
+          <td>{{ product.title }}{%- if product_card_product.metafields.my_fields.common_name -%}<span class="common-name">{{ product_card_product.metafields.my_fields.common_name }}</span>{% endif %}</td>
           {% for variant in product.variants %}
             {%- if variant.title == "2 in" -%}
               {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
