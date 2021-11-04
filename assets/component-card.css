@@ -319,7 +319,7 @@
 }
 
 .common-name {
-  white-space: no-break;
+  white-space: nowrap;
 }
 
 .common-name:before, .common-name:after {
