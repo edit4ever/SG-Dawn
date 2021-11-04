@@ -81,8 +81,8 @@
           {%- when 'title' -%}
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
-              {%- if product.metafields.my_fields.common-name -%}
-                <br>{{ product.metafields.my_fields.common-name }}
+              {%- if product.metafields.my_fields.common_name -%}
+                <br>{{ product.metafields.my_fields.common_name }}
               {%- endif -%}
             </h1>
           {%- when 'price' -%}
