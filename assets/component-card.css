@@ -317,3 +317,7 @@
 .grid__item.next {
   text-align: right;
 }
+
+.common-name:before, .common-name:after {
+  content: '"';
+}
