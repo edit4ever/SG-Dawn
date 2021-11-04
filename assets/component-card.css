@@ -320,7 +320,6 @@
 
 .common-name {
   white-space: nowrap;
-  margin: 0 3.5rem;
 }
 
 .common-name:before, .common-name:after {
