@@ -62,8 +62,8 @@
           <div class="overlay-card"></div>
           <div class="card__text-spacing card__text-hover">
             <h2 class="h1">
-              {%- if prev_product.description == blank -%}<span class="icon-wrap"></span>{% endif %}{{- next_product.title -}} 
-              {%- if next_product.metafields.my_fields.common_name -%}<span class="common-name">{{ next_product.metafields.my_fields.common_name }}</span>
+              {%- if prev_product.description == blank -%}<span class="icon-wrap"></span>{% endif %}
+              {{- next_product.title -}} {%- if next_product.metafields.my_fields.common_name -%}<span class="common-name">{{ next_product.metafields.my_fields.common_name }}</span>
               {%- endif -%}
             </h2>
 
