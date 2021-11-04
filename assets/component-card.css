@@ -326,3 +326,7 @@
 .common-name:before, .common-name:after {
   content: '"';
 }
+
+.library-nav .common-name {
+  margin: 0 3.5rem;
+}
