@@ -25,6 +25,9 @@
   <div class="print-header print-show">
     <h1 class="product__title print-show" {{ block.shopify_attributes }}>
       {{ product.title | escape }}
+      {%- if product.metafields.my_fields.common_name -%}
+      <br>{{ product.metafields.my_fields.common_name }}
+      {%- endif -%}
     </h1>
     <div class="sglogo print-show">
       <img src="//cdn.shopify.com/s/files/1/0654/1643/files/sg-logo-white-2.png?v=1623782797" alt="Succulent Gardens">
