@@ -96,6 +96,9 @@
           {%- when 'title' -%}
             <h1 class="product__title print-hidden" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
+              {%- if product.metafields.my_fields.common_name -%}
+                <br>{{ product.metafields.my_fields.common_name }}
+              {%- endif -%}
             </h1>
           {%- when 'price' -%}
         	{%- unless product.tags contains "wholesale" -%}
