@@ -318,6 +318,10 @@
   text-align: right;
 }
 
+.common-name {
+  white-space: nowrap;
+}
+
 .common-name:before, .common-name:after {
   content: '"';
 }
