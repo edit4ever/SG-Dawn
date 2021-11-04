@@ -98,6 +98,9 @@
 
           <span class="card-information__text h3">
             {{ product_card_product.title | escape }}
+            {%- if product.metafields.my_fields.common_name -%}
+            <br>{{ product.metafields.my_fields.common_name }}
+            {%- endif -%}
           </span>
 
 
