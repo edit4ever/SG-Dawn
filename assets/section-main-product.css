@@ -218,7 +218,7 @@ fieldset.product-form__input .form__label {
   --color-button: var(--color-base-accent-1);
   --color-button-text: var(--color-base-solid-button-labels);
   --alpha-button-background: 1;
-    }
+}
 
 .product-form__submit[aria-disabled="true"] + .shopify-payment-button,
 .product-form__submit[disabled] + .shopify-payment-button {
@@ -864,6 +864,15 @@ a.product__text {
   background: transparent;
   padding: 10px 0;
 }
+  
+  .common-name {
+  white-space: nowrap;
+}
+
+.common-name:before, .common-name:after {
+  content: '"';
+}
+  
 
   @media only screen and (min-width: 750px) and (max-width: 1023px) {
   .list-view-item__variant-column {
