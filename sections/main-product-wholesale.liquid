@@ -100,7 +100,7 @@
             <h1 class="product__title print-hidden" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
               {%- if product.metafields.my_fields.common_name -%}
-                <br>{{ product.metafields.my_fields.common_name }}
+              <br><span class="common-name">{{ product.metafields.my_fields.common_name }}</span>
               {%- endif -%}
             </h1>
           {%- when 'price' -%}
