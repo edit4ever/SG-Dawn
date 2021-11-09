@@ -818,6 +818,7 @@ a.product__text {
   .meta-field {
     font-style: normal;
     color: rgba(var(--color-base-text),.75);
+    text-transform: capitalize;
   }
   
   
