@@ -48,6 +48,10 @@
     font-size: 150%;
   }
   
+  .common-name:after, .common-name:before {
+    content: '"';
+  }
+  
   .product__description.rte {
     font-size: 150%;
     color: rgba(var(--color-foreground),1);
