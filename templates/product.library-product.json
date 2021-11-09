@@ -16,13 +16,6 @@
           "settings": {
           }
         },
-        "subtitle": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "5bef1cb5-8555-4727-9433-69798039506c": {
           "type": "custom_liquid",
           "settings": {
@@ -84,7 +77,6 @@
       "block_order": [
         "vendor",
         "title",
-        "subtitle",
         "5bef1cb5-8555-4727-9433-69798039506c",
         "description",
         "c578d5df-20ac-42eb-9ed7-071faec58581",
