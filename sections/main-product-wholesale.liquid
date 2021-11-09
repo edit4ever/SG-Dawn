@@ -116,7 +116,7 @@
             </div>
           	{%- endunless -%}
           {%- when 'wholesale_buy' -%}
-        {%- if customer.tags contains "wholesale" -%}
+        {%- if customer.tags contains "wholesale" and product.available -%}
             <div class="wholesale list-view-item__variant-column">
               <form id="form-{{ product.id }}" name="wholesale_add" action="/cart/add" method="post">
                 <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
