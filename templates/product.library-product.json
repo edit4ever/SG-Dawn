@@ -36,8 +36,9 @@
         },
         "c578d5df-20ac-42eb-9ed7-071faec58581": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<br>",
+            "text": "",
             "text_style": "body"
           }
         },
