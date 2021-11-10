@@ -967,3 +967,8 @@ a.product__text {
   }
   
 }
+
+
+.product__media-item.grid__item.slider__slide:not(:first-child) {
+  max-width: 25%;
+}
