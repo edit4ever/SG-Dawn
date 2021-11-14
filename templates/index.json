@@ -55,7 +55,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/feature1.jpg",
-            "link_1": "shopify:\/\/collections\/shop",
+            "link_1": "shopify:\/\/pages\/shop",
             "color_scheme": "accent-2",
             "title": "SHOP ONLINE",
             "text": ""
