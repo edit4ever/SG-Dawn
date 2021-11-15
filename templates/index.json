@@ -149,6 +149,26 @@
         "show_text_below": false
       }
     },
+    "1637000342d82e5494": {
+      "type": "apps",
+      "blocks": {
+        "10e4a83f-bbac-46e0-a041-a8a906500cf9": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_font": "helvetica_n4",
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "10e4a83f-bbac-46e0-a041-a8a906500cf9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "16343190312a7c8af8": {
       "type": "featured-blog",
       "settings": {
@@ -270,6 +290,7 @@
     "1634233157f38aa622",
     "16340779564c41bffb",
     "16342335048d2e7306",
+    "1637000342d82e5494",
     "16343190312a7c8af8",
     "rich_text",
     "1634321013de552146",
