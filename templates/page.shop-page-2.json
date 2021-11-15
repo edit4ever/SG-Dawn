@@ -8,6 +8,12 @@
     "1637011935856d5f50": {
       "type": "collection-list",
       "blocks": {
+        "90c82a74-2408-49a8-83ce-7cbad7ee89b5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "seasonal-products"
+          }
+        },
         "1637011935fc27b910-0": {
           "type": "featured_collection",
           "settings": {
@@ -24,12 +30,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "planters"
-          }
-        },
-        "7114b64e-8132-4142-9f47-af3cc08f4922": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "gift-card"
           }
         },
         "0a344663-20da-4ce3-b4ce-e6e7e7d37afa": {
@@ -49,16 +49,23 @@
           "settings": {
             "collection": "cuttings"
           }
+        },
+        "7114b64e-8132-4142-9f47-af3cc08f4922": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gift-card"
+          }
         }
       },
       "block_order": [
+        "90c82a74-2408-49a8-83ce-7cbad7ee89b5",
         "1637011935fc27b910-0",
         "1637011935fc27b910-1",
         "1637011935fc27b910-2",
-        "7114b64e-8132-4142-9f47-af3cc08f4922",
         "0a344663-20da-4ce3-b4ce-e6e7e7d37afa",
         "d6a3b513-fd39-4119-9b32-10011eda1b8f",
-        "bc0463d8-ae63-419f-9d78-d8aa069e9f16"
+        "bc0463d8-ae63-419f-9d78-d8aa069e9f16",
+        "7114b64e-8132-4142-9f47-af3cc08f4922"
       ],
       "settings": {
         "title": "Collections",
