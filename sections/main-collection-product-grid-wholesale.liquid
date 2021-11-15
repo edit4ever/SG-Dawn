@@ -523,6 +523,7 @@
       <div class="loading-overlay gradient"></div>
           <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="negative-margin">
             {%- for product in collection.products -%}
+            {%- if product.available -%}
               <li class="list__item">
                 {% render 'product-card-list-wholesale',
                   product_card_product: product,
@@ -534,6 +535,7 @@
                   show_rating: section.settings.show_rating
                 %}
               </li>
+            {%- endif -%}
             {%- endfor -%}
           </ul>
 
