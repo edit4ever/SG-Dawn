@@ -37,6 +37,12 @@
           "settings": {
             "collection": "wholesale-inventory"
           }
+        },
+        "7f0c9e1e-4fb0-44c2-8aee-b424d306d487": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gift-card"
+          }
         }
       },
       "block_order": [
@@ -44,7 +50,8 @@
         "08441134-51f3-490c-b42f-35641e5e51e6",
         "163424943823a26eab-1",
         "163424943823a26eab-2",
-        "e779fcb7-978a-4bc2-9c72-200fd1464ccb"
+        "e779fcb7-978a-4bc2-9c72-200fd1464ccb",
+        "7f0c9e1e-4fb0-44c2-8aee-b424d306d487"
       ],
       "settings": {
         "title": "",
