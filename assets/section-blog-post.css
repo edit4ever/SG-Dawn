@@ -76,7 +76,7 @@
 }
 
 .article-template__content {
-  margin-top: 3rem;
+  margin-top: 0;
   margin-bottom: 3rem;
 }
 
@@ -247,5 +247,6 @@
 }
 
 .article-template__content.rte img {
-  margin-right: 2rem; 
+  margin-right: 2rem;
+  
 }
