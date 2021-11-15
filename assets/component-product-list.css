@@ -93,7 +93,9 @@ li.list__item {
   border-spacing: 1rem;}
 
 .list-view-item__image {
-  max-height: 95px; }
+  max-height: 95px;
+  aspect-ratio: 1 / 1;
+}
 
 .list-view-item__image-column {
   display: table-cell;
