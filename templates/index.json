@@ -155,10 +155,10 @@
         "10e4a83f-bbac-46e0-a041-a8a906500cf9": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_font": "helvetica_n4",
-            "heading_size": 20,
+            "heading_font": "raleway_n4",
+            "heading_size": 27,
             "feed_width": 100,
-            "html_area": ""
+            "html_area": "<style>\n#insta-feed {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  column-gap: 2rem;\n}\n\n#insta-feed h2 {\n  grid-column: 1 \/ 5;\n}\n\n#insta-feed .instafeed-container {\n  width: 100%;\n  padding-top: 100%;\n}\n\n#insta-feed img {\n  width: 100%;\n  height: 100%;\n}\n<\/style>"
           }
         }
       },
