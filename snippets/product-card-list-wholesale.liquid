@@ -77,7 +77,7 @@
             {%- else -%}
               {%- assign flatAvail = variant.inventory_quantity -%}
             {%- endif -%}
-            {% if flatAvail > 0 or variant.inventory_policy == "continue" %}
+            {% if flatAvail > 0 %}
             <option value="{{ variant.id }}" title="{{ variant.title }}" stock="{{ flatAvail }}">{% if variant.title == "Default Title" %}One Size{% else %}{{variant.title }}{% endif %} - {{ variant.price | money }}</option>
             {% else %}
             <option disabled="disabled" style="color:var(--color-btn-social-focus);">{{ variant.title }} - Sold Out</option>
