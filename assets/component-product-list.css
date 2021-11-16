@@ -162,7 +162,9 @@ li.list__item {
 
 .list-view-item__variant-column input.qty {
   width: 15%;
-  max-width: 20%; }
+  max-width: 20%;
+  vertical-align: top;
+}
 
 .list-view-item__vendor {
   color: rgba(var(--color-foreground),.75);
