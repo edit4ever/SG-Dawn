@@ -151,7 +151,6 @@ li.list__item {
 
 .list-view-item__variant-column select {
   background-color: #fff;
-  box-sizing: border-box;
 }
 
 
@@ -165,7 +164,6 @@ li.list__item {
   width: 15%;
   max-width: 20%;
   vertical-align: top;
-  box-sizing: border-box;
 }
 
 .list-view-item__vendor {
