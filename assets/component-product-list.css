@@ -128,7 +128,9 @@ li.list__item {
 .list-view-item__variant {
   white-space:nowrap;
   font-size: 1.4rem;
-  letter-spacing: 0.04rem; }
+  letter-spacing: 0.04rem;
+  color: rgba(var(--color-foreground),1);
+}
 
 .list-view-item__variant::after { 
    content: " | ";
