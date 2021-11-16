@@ -158,7 +158,7 @@
             "heading_font": "raleway_n4",
             "heading_size": 27,
             "feed_width": 100,
-            "html_area": "<style>\n#insta-feed {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  column-gap: 2rem;\n}\n\n#insta-feed h2 {\n  grid-column: 1 \/ 5;\n}\n\n#insta-feed img {\n  width: 100%;\n  height: 100%;\n}\n<\/style>"
+            "html_area": "<style>\n#insta-feed {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  column-gap: 2rem;\n}\n\n#insta-feed h2 {\n  grid-column: 1 \/ 5;\n}\n\n#insta-feed img {\n  width: 100%!important;\n  height: 100%!important;\n}\n<\/style>"
           }
         }
       },
