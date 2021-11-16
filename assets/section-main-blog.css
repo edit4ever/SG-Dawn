@@ -3,6 +3,7 @@
   grid-gap: 1rem;
 }
 
+/*
 @media screen and (min-width: 750px) {
   .blog-articles {
     grid-template-columns: 1fr 1fr 1fr;
@@ -15,3 +16,4 @@
     grid-column: span 1;
   }
 }
+*/
