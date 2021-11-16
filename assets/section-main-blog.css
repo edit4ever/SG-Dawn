@@ -4,9 +4,9 @@
 }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1023px) {
   .blog-articles {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 /*
   .blog-articles > *:first-child,
