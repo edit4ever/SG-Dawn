@@ -29,7 +29,7 @@
       {% unless product_card_product.featured_media == null %}
         <img class="list-view-item__image" src="{{ product_card_product.featured_media | img_url: '95x95', scale: 2 }}" alt="{{ product_card_product.featured_media.alt }}">
       {% else %}
-        {{ 'product-1' | placeholder_svg_tag: 'list-view-item__image' }}
+        {{ 'image' | placeholder_svg_tag: 'list-view-item__image' }}
       {% endunless %}
       </div>
     </div>
