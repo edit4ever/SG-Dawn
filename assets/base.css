@@ -2280,3 +2280,8 @@ details-disclosure > details {
     font-size: 70%;
   }
 }
+  
+.shopify-app-block #insta-feed .instafeed-container {
+  width: 100% !important;
+  padding-top: 100% !important;
+}
