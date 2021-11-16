@@ -638,6 +638,7 @@
         document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .67) + " plants)"
       }
       else {
+        document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "1"
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult;
         document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + variantMult + " plants)"
