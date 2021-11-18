@@ -44,7 +44,7 @@
       <div class="list-view-item__vendor">{{ product_card_product.vendor }}</div>
       {% endif %}
       {% for variant in product_card_product.variants %}
-      	<span class="list-view-item__variant">{{ variant.title }}<span style="font-style:italic;" > - available {% if variant.metafields.my_fields.landscape_quality %}(L){% endif %}</span>  |  </span>
+      	<span class="list-view-item__variant">{{ variant.title }}<span style="font-style:italic;" > - available {% if variant.metafields.my_fields.landscape_quality %}(L){% endif %}</span></span>
       {% endfor %}
       {% if product_card_product.metafields.my_fields.stock_notes %}
       	<div class="list-view-item__notes">Notes: {{ product_card_product.metafields.my_fields.stock_notes }}</div>
