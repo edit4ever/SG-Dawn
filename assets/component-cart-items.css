@@ -67,6 +67,8 @@ th.cart-items__heading--wide {
 .cart-item__image {
   height: auto;
   max-width: 10rem;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 750px) {
