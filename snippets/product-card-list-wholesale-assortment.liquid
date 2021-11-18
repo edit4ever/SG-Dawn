@@ -56,20 +56,8 @@
         <select id="variant{{ product_card_product.id }}" name="id" title="{{ product_card_product.id }}" class="var" placeholder="Select Size" onchange="myFunction4({{ product_card_product.id }})">
           <option value="" disabled selected hidden>Select Size</option>
           {% for variant in product_card_product.variants %}
-            {%- if variant.title == "2 in" -%}
-              {%- assign flatAvail = variant.inventory_quantity | divided_by: 64 -%}
-            {%- elsif variant.title == "4 in" -%}
-              {%- assign flatAvail = variant.inventory_quantity | divided_by: 15 -%}
-            {%- elsif variant.title == "6 in" -%}
-              {%- assign flatAvail = variant.inventory_quantity | divided_by: 6  -%}
-            {%- else -%}
-              {%- assign flatAvail = variant.inventory_quantity -%}
-            {%- endif -%}
-            {% if flatAvail > 0 %}
-            <option value="{{ variant.id }}" title="{{ variant.title }}" stock="{{ flatAvail }}">{{ variant.title }} - {{ variant.price | money }}</option>
-            {% else %}
-            <option disabled="disabled" style="color:var(--color-btn-social-focus);">{{ variant.title }} - Sold Out</option>
-            {% endif %}
+            {% assign varQTY = 99999 %}
+            <option value="{{ variant.id }}" title="{{ variant.title }}" stock="{{ varQTY }}">{{ variant.title }} - {{ variant.price | money }}</option>
           {% endfor %}
         </select>
         <select id="option{{ product_card_product.id }}" name="option" title="option-{{ product_card_product.id }}" class="opt" onchange="myFunction2({{ product_card_product.id }})">
