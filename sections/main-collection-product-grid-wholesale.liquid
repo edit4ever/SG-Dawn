@@ -667,7 +667,7 @@
     var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
     var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
     var plantSuffix = " plants)"
-    if (variantMult == 1) {var plantSuffix = " plant)"}
+    if (variantValue == 1) {var plantSuffix = " plant)"}
     document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult * variantValue;
     document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + variantMult * variantValue + plantSuffix
   }
