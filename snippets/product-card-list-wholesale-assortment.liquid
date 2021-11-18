@@ -72,7 +72,7 @@
             {% endif %}
           {% endfor %}
         </select>
-        <select id="option{{ product_card_product.id }}" name="option" title="option-{{ product_card_product.id }}" class="opt">
+        <select id="option{{ product_card_product.id }}" name="option" title="option-{{ product_card_product.id }}" class="opt" onchange="myFunction2({{ product_card_product.id }})">
           <option value="whole" title="Flat">Whole Flat</option>
         </select>
         <input id="var-quantity" type="number" name="var-mult" title="variant multiplier" class="qty" placeholder="QTY" min="0" step="1" multiplier="1" onchange="myFunction3({{ product_card_product.id }})">
