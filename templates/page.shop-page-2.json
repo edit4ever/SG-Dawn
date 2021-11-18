@@ -55,6 +55,12 @@
           "settings": {
             "collection": "gift-card"
           }
+        },
+        "36021c6a-1d08-44ec-80d7-372e6f2f11e6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "redwood-planters"
+          }
         }
       },
       "block_order": [
@@ -65,7 +71,8 @@
         "0a344663-20da-4ce3-b4ce-e6e7e7d37afa",
         "d6a3b513-fd39-4119-9b32-10011eda1b8f",
         "bc0463d8-ae63-419f-9d78-d8aa069e9f16",
-        "7114b64e-8132-4142-9f47-af3cc08f4922"
+        "7114b64e-8132-4142-9f47-af3cc08f4922",
+        "36021c6a-1d08-44ec-80d7-372e6f2f11e6"
       ],
       "settings": {
         "title": "Collections",
