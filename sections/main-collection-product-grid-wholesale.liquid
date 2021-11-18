@@ -631,31 +631,33 @@
       var selectOption2 = "option" + product;
       var selectVariant2 = document.getElementById(selectOption2).options[document.getElementById(selectOption2).selectedIndex].value;
       var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
+      var plantSuffix = " plants)"
+      if (variantMult == 1) {var plantSuffix = " plant)"}
       if (selectVariant2 == "half") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .5);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .5) + " plants)"
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .5) + plantSuffix
       }
       else if (selectVariant2 == "quarter") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .25);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .25) + " plants)"
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .25) + plantSuffix
       }
       else if (selectVariant2 == "third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .33);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .33) + " plants)"
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .33) + plantSuffix
       }
       else if (selectVariant2 == "2third") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(variantMult * .67);
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "hidden");
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .67) + " plants)"
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(variantMult * .67) + plantSuffix
       }
       else {
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value = "1"
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult;
-        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + variantMult + " plants)"
+        document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + variantMult + plantSuffix
       }
     }
   </script>
