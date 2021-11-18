@@ -67,7 +67,11 @@
     
     <div class="list-view-item__variant-column">
       <form id="form-{{ product_card_product.id }}" name="wholesale_add" action="/cart/add" method="post">
-        <select id="variant{{ product_card_product.id }}" name="id" title="{{ product_card_product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product_card_product.id }})">
+		{% if product.tags contains "wholesale-assortment" %}
+        <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction4({{ product.id }})">
+        {% else %}
+        <select id="variant{{ product.id }}" name="id" title="{{ product.id }}" class="var" placeholder="Select Size" onchange="myFunction({{ product.id }})">
+        {% endif %}
           <option value="" disabled selected hidden>Select Size</option>
           {% for variant in product_card_product.variants %}
             {%- if variant.title == "2 in" -%}
