@@ -65,6 +65,8 @@
                         height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
                         onclick="window.location.href='{{ item.url }}'"
                       >
+                    {% else %}
+                      <img class="list-view-item__image" src="{{ 'image' | placeholder_svg_tag: 'list-view-item__image' | img_url: '95x95', scale: 2 }}">
                     {% endif %}
                   </td>
 
