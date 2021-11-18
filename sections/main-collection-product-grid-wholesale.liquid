@@ -575,20 +575,24 @@
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half');
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('¼ Flat', 'quarter');
+        var plantSuffix = " plants)"
       }
       else if (selectTitle == "4 in") {
         selectMult = 15;
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅔ Flat', '2third');
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('⅓ Flat', 'third');
+        var plantSuffix = " plants)"
       }
       else if (selectTitle == "6 in") {
         selectMult = 6;
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('½ Flat', 'half'); 
+        var plantSuffix = " plants)"
       }
       else {
         document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
+        var plantSuffix = " plants)"
       }
       document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("multiplier", selectMult);
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').setAttribute("title", selectVariant);
@@ -599,7 +603,6 @@
 
       var selectVariant2 = document.getElementById(inputOption).options[document.getElementById(inputOption).selectedIndex].value;
       var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
-      var plantSuffix = " plants)"
       if (selectVariant2 == "half") {
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = Math.round(selectMult * .5);
         document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(selectMult * .5) + plantSuffix
