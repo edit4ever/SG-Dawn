@@ -618,7 +618,6 @@
         document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + Math.round(selectMult * .67) + plantSuffix
       }
       else {
-        if (variantValue == 1) {var plantSuffix = " plant)"}
         document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("class", "qty");
         document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = selectMult;
         document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + selectMult + plantSuffix
