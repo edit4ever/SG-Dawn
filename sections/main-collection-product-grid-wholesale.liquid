@@ -684,28 +684,6 @@
       var selectMult = 1;
       var inputOption = "option" + product;
       var length = document.getElementById(inputOption).length;
-      for (i = length-1; i >= 0; i--) {
-        document.getElementById(inputOption).remove(i);
-      }
-      if (selectTitle == "2 in" ) {
-        selectMult = 64;
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-        var plantSuffix = " plants)"
-      }
-      else if (selectTitle == "4 in") {
-        selectMult = 15;
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-        var plantSuffix = " plants)"
-      }
-      else if (selectTitle == "6 in") {
-        selectMult = 6;
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Whole Flat', 'whole');
-        var plantSuffix = " plants)"
-      }
-      else {
-        document.getElementById(inputOption).options[document.getElementById(inputOption).options.length] = new Option('Individual', 'whole');
-        var plantSuffix = " plant)"
-      }
       document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("multiplier", selectMult);
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').setAttribute("title", selectVariant);
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').max = selectMax * selectMult;
