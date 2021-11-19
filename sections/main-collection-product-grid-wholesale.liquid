@@ -683,7 +683,14 @@
       var selectMax = document.getElementById(selectOption).options[document.getElementById(selectOption).selectedIndex].getAttribute('stock');
       var selectMult = 1;
       var inputOption = "option" + product;
-      var length = document.getElementById(inputOption).length;
+      if (selectTitle == "2 in Assortment" ) {
+        selectMult = 64;
+        var plantSuffix = " plants)"
+      }
+      else if (selectTitle == "4 in Assortment") {
+        selectMult = 15;
+        var plantSuffix = " plants)"
+      }
       document.getElementById("form-" + product).querySelector('input[name="var-mult"]').setAttribute("multiplier", selectMult);
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').setAttribute("title", selectVariant);
       document.getElementById("form-" + product).querySelector('input[name="quantity"]').max = selectMax * selectMult;
