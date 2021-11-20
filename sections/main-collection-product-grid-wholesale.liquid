@@ -725,17 +725,6 @@
     }
 </script>
 
-<script type="text/javascript">
-  function myFunction5(product) {
-    var variantValue = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').value;
-    var variantMult = document.getElementById("form-" + product).querySelector('input[name="var-mult"]').getAttribute('multiplier');
-    var totalPlants = variantMult * variantValue
-    var plantSuffix = " plants)"
-    if (totalPlants == 1) {var plantSuffix = " plant)"}
-    document.getElementById("form-" + product).querySelector('input[name="quantity"]').value = variantMult;
-    document.getElementById("form-" + product).querySelector('input[name="plantSubmit"]').value = "(" + totalPlants + plantSuffix
-  }
-</script>
 
 {%- endif -%}
 
