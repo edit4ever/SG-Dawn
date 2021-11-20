@@ -46,7 +46,7 @@
             <tbody>
               {% assign items = cart.items | sort: 'title' %}
 
-              {% assign itemVariants = "2 in, 4 in, 6 in, 8 in, 1 gal, 2 gal, 5 gal, 10 gal, 15 gal"  | split: ', ' %}
+              {% assign itemVariants = "2 in, 2 in Assortment, 4 in, 4 in Assortment, 6 in, 8 in, 1 gal, 2 gal, 5 gal, 10 gal, 15 gal"  | split: ', ' %}
 
               {% for itemSize in itemVariants %}
               {%- render 'cart-item-wholesale', variantSize: itemSize -%}
