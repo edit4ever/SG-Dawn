@@ -10,6 +10,7 @@
       "blocks": {
         "90c82a74-2408-49a8-83ce-7cbad7ee89b5": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "seasonal-products"
           }
