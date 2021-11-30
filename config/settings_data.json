@@ -29,19 +29,10 @@
               "color_scheme": "background-1",
               "link": ""
             }
-          },
-          "233ab5f9-1abf-4b53-aa3e-68b436728e60": {
-            "type": "announcement",
-            "settings": {
-              "text": "BLACK FRIDAY SALE 🌵 20% off ALL ONLINE PRODUCTS 11\/26-11\/29",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "233ab5f9-1abf-4b53-aa3e-68b436728e60"
+          "announcement-bar-0"
         ],
         "settings": {
         }
