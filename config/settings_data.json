@@ -29,10 +29,19 @@
               "color_scheme": "background-1",
               "link": ""
             }
+          },
+          "744a0962-3941-44bf-a3de-bd5c202af422": {
+            "type": "announcement",
+            "settings": {
+              "text": "Last day to order online for Christmas is December 13th 🌟",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "744a0962-3941-44bf-a3de-bd5c202af422"
         ],
         "settings": {
         }
