@@ -272,8 +272,8 @@
     "featured_products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "collection": "all",
+        "title": "Featured Items",
+        "collection": "featured-items",
         "products_to_show": 4,
         "show_view_all": true,
         "swipe_on_mobile": false,
