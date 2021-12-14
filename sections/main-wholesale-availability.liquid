@@ -76,20 +76,22 @@
   </div>
   <div class= "spacer">&nbsp;</div>
   <table class="avail-grid wholesale">
-    <tr>
-      <th>Botanical</th>
-      <th>Pricing</th>
-      <th>2 in</th>
-      <th>4 in</th>
-      <th>6 in</th>
-      <th>8 in</th>
-      <th>1 gal</th>
-      <th>2 gal</th>
-      <th>5 gal</th>
-      <th>10 gal</th>
-      <th>15 gal</th>
-      <th>Notes/Comments</th>
-    </tr>
+    <thead>
+      <tr>
+        <th>Botanical</th>
+        <th>Pricing</th>
+        <th>2 in</th>
+        <th>4 in</th>
+        <th>6 in</th>
+        <th>8 in</th>
+        <th>1 gal</th>
+        <th>2 gal</th>
+        <th>5 gal</th>
+        <th>10 gal</th>
+        <th>15 gal</th>
+        <th>Notes/Comments</th>
+      </tr>
+    </thead>
     {% paginate collections.wholesale-inventory.products by 1000 %}
     {%- for product in collections.wholesale-inventory.products -%}
     <tr>
