@@ -23,7 +23,7 @@ table.pricing td {
 }
 
 table.pricing td:first-child {
-  width: 15%;
+  width: 20%;
   text-align: left;
 }
 
@@ -171,14 +171,17 @@ table.wholesale-seasonal td {
     line-height: 1.2;
   }
   
-  thead {display: table-header-group;}
-  
   table, th, td {
     border: .25pt solid #ddd;
   }
   
   table {
-    font-size: 1.2vw;  
+    font-size: 8pt;  
+  }
+  
+  thead {
+    display: table-header-group;
+    font-size: 6pt;
   }
   
   .print-head {
