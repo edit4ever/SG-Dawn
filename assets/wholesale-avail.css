@@ -69,8 +69,8 @@ table.wholesale th:first-child {
 table.wholesale th:last-child {
   width:20%;
   text-align: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 table.wholesale td {
@@ -81,8 +81,8 @@ table.wholesale td {
 
 table.wholesale td:first-child, table.wholesale td:last-child {
   text-align: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 table.wholesale-seasonal td {
