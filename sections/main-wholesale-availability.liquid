@@ -65,9 +65,11 @@
   </div>
   <div class="columns2">
     <table class="avail-grid wholesale-seasonal">
-      <tr>
-        <th colspan="5">Seasonal Products</th>
-      </tr>
+      <thead>
+        <tr>
+          <th colspan="5">Seasonal Products</th>
+        </tr>
+      </thead>
       {%- for product in collections.wholesale-seasonal.products -%}
       <tr>
         <td>{{ product.title }}</td>
