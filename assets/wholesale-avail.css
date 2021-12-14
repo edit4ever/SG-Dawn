@@ -48,7 +48,7 @@ table {
   padding-right: 0;
 }
 
-tr:first-child {
+thead {
   background-color: #eee;
 }
 
