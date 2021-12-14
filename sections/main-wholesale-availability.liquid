@@ -13,11 +13,13 @@
   <div class="columns2">
     <div class="column1">
       <table class="avail-grid wholesale-assorted">
-        <tr>
-          <th>Assortments Available</th>
-          <th>2 in</th>
-          <th>4 in</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>Assortments Available</th>
+            <th>2 in</th>
+            <th>4 in</th>
+          </tr>
+        </thead>
         {%- for product in collections.wholesale-assortment.products -%}
         <tr>
           <td>{{ product.title }}</td>
@@ -44,9 +46,11 @@
     </div>
 	<div class="column2">
       <table class="avail-grid wholesale-specialty">
-		<tr>
-        	<th colspan="2">Specialty 4" Succulents and Cacti - $8 each, 25 per flat</th>
-      	</tr>
+        <thead>
+          <tr>
+              <th colspan="2">Specialty 4" Succulents and Cacti - $8 each, 25 per flat</th>
+          </tr>
+        </thead>
         {% tablerow product in collections.wholesale-specialty.products cols:2 %}
           {{ product.title }}
           {% for variant in product.variants %}
