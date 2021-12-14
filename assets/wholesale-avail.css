@@ -182,10 +182,10 @@ table.wholesale-seasonal td {
   
   thead {
     display: table-header-group;
-    font-size: 6pt;
+    font-size: 7pt;
   }
   
-  table.wholesale td:last-child {
+  table.wholesale td:last-child, table.wholesale thead {
     font-size: 6pt;
   }
   
