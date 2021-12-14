@@ -35,8 +35,6 @@ table.pricing td:last-child {
   margin: 3rem auto;
 }
 
-thead {display: table-header-group;}
-
 table, th, td {
   border: 1px solid rgba(0,0,0,.2);
   padding-left: 1rem;
@@ -172,6 +170,8 @@ table.wholesale-seasonal td {
   #AvailabilityGrid {
     line-height: 1.2;
   }
+  
+  thead {display: table-header-group;}
   
   table, th, td {
     border: .25pt solid #ddd;
