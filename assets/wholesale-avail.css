@@ -56,10 +56,6 @@ th:first-child {
   text-align: left;
 }
 
-table.wholesale th:not(:first-child) {
-  padding: 0;
-}
-
 table.wholesale th:first-child {
   width:25%;
   text-align: left;
