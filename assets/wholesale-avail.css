@@ -184,6 +184,10 @@ table.wholesale-seasonal td {
     font-size: 6pt;
   }
   
+  table.wholesale td:last-child {
+    font-size: 6pt;
+  }
+  
   .print-head {
     display: block;
   }
