@@ -90,6 +90,7 @@
       <th>15 gal</th>
       <th>Notes/Comments</th>
     </tr>
+    {% paginate collections.wholesale-inventory.products by 1000 %}
     {%- for product in collections.wholesale-inventory.products -%}
     <tr>
       <td>{{ product.title }} {%- if product.metafields.my_fields.common_name -%}<span class="common-name">{{ product.metafields.my_fields.common_name }}</span>{% endif %}</td>
@@ -119,7 +120,8 @@
         <td>&nbsp;</td>
       {%- endif -%}
     </tr>
-      {%- endfor -%}
+    {%- endfor -%}
+    {% endpaginate %}
   </table>
 </div>
 
