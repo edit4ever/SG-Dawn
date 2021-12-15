@@ -95,6 +95,7 @@ li.list__item {
 .list-view-item__image {
   max-height: 95px;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .list-view-item__image-column {
