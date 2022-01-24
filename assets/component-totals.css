@@ -26,6 +26,10 @@
   margin-top: 2rem;
 }
 
+.cart__dynamic-checkout-buttons {
+  margin-top: 1rem;
+}
+
 @media all and (min-width: 750px) {
   .totals {
     justify-content: flex-end;
