@@ -25,6 +25,7 @@
         },
         "5bef1cb5-8555-4727-9433-69798039506c": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{%- if product.tags contains \"wholesale\" -%}\n<h3 class=\"meta-title\">FORM: <span class=\"meta-field\">{{ product.metafields.my_fields.form }}<\/span><\/h3>\n<h3 class=\"meta-title\">HARDINESS: <span class=\"meta-field\">{{ product.metafields.my_fields.hardiness }}°F<\/span><\/h3>\n<h3 class=\"meta-title\">LIGHT REQUIREMENTS: <span class=\"meta-field\">{{ product.metafields.my_fields.light_requirements }}<\/span><\/h3>\n<h3 class=\"meta-title\">FOLIAGE COLOR: <span class=\"meta-field\">{{ product.metafields.my_fields.foliage_color }}<\/span><\/h3>\n<h3 class=\"meta-title\">FLOWER: <span class=\"meta-field\">{{ product.metafields.my_fields.flower }}<\/span><\/h3>\n<h3 class=\"meta-title\">ORIGIN: <span class=\"meta-field\">{{ product.metafields.my_fields.origin }}<\/span><\/h3>  \n<\/div>\n{%- endif -%}"
           }
@@ -49,12 +50,20 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
+          }
+        },
+        "892a0fde-9750-486c-9dae-9c2ead29ed7d": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<p class=\"line-item-property__field\">\n<label for=\"custom-message\">Gift Card Note<\/label><br>\n<textarea style=\"width: 100%; padding: 10px; font-family: inherit;font-size: 90%;\" required id=\"gift-card-note\" name=\"properties[Gift Card Note]\"><\/textarea>\n<\/p>"
           }
         },
         "buy_buttons": {
@@ -80,6 +89,7 @@
         "variant_picker",
         "price",
         "quantity_selector",
+        "892a0fde-9750-486c-9dae-9c2ead29ed7d",
         "buy_buttons",
         "share"
       ],
@@ -98,6 +108,7 @@
     },
     "16343293493d60a5f4": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% if product.tags contains \"wholesale\" %}\n{% render 'library-nav',\nprev_product: collection.previous_product,next_product: collection.next_product\nproduct: product\n%}\n{% endif %}"
       }
