@@ -135,6 +135,9 @@ cart-items {
     margin-left: 4rem;
     margin-top: 0;
   }
+  
+  .cart__footer .cart__note.field {
+    width: 50%;
 }
 
 .cart__ctas button {
