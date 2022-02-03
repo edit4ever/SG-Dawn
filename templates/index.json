@@ -269,6 +269,22 @@
         "show_text_below": false
       }
     },
+    "16439188517c0389c2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "valentines-day",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
       "disabled": true,
@@ -285,22 +301,6 @@
         "show_vendor": false,
         "show_rating": false
       }
-    },
-    "16439188517c0389c2": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "valentines-day",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
     }
   },
   "order": [
@@ -311,7 +311,7 @@
     "16343190312a7c8af8",
     "rich_text",
     "1634321013de552146",
-    "featured_products",
-    "16439188517c0389c2"
+    "16439188517c0389c2",
+    "featured_products"
   ]
 }
