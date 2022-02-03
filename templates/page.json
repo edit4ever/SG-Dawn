@@ -4,9 +4,19 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "16439204002e2087cf": {
+      "type": "instafeed",
+      "settings": {
+        "heading_font": "helvetica_n4",
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16439204002e2087cf"
   ]
 }
