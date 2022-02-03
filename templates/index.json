@@ -48,6 +48,22 @@
         "show_text_below": false
       }
     },
+    "16439188517c0389c2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "valentines-day",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "16340779564c41bffb": {
       "type": "multicolumn",
       "blocks": {
@@ -169,19 +185,6 @@
         "include_margins": true
       }
     },
-    "16343190312a7c8af8": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "",
-        "blog": "news",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": false
-      }
-    },
     "1634321013de552146": {
       "type": "image-parallax-banner",
       "blocks": {
@@ -269,20 +272,17 @@
         "align": "center"
       }
     },
-    "16439188517c0389c2": {
-      "type": "featured-collection",
+    "16343190312a7c8af8": {
+      "type": "featured-blog",
       "settings": {
-        "title": "Featured collection",
-        "collection": "valentines-day",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
+        "heading": "",
+        "blog": "news",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": false
       }
     },
     "featured_products": {
@@ -305,13 +305,13 @@
   },
   "order": [
     "1634233157f38aa622",
+    "16439188517c0389c2",
     "16340779564c41bffb",
     "16342335048d2e7306",
     "1637000342d82e5494",
-    "16343190312a7c8af8",
     "1634321013de552146",
     "rich_text",
-    "16439188517c0389c2",
+    "16343190312a7c8af8",
     "featured_products"
   ]
 }
