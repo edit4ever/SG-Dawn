@@ -182,45 +182,6 @@
         "show_view_all": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "WE ARE OPEN!",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. <br\/><br\/><em>Updated Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>",
-            "margin": false,
-            "indent": false
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Visit Us",
-            "button_link": "shopify:\/\/pages\/about-us",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "color_scheme": "accent-2",
-        "full_width": true,
-        "align": "center"
-      }
-    },
     "1634321013de552146": {
       "type": "image-parallax-banner",
       "blocks": {
@@ -269,6 +230,45 @@
         "show_text_below": false
       }
     },
+    "rich_text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. <br\/><br\/><em>Updated Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>",
+            "margin": false,
+            "indent": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Visit Us",
+            "button_link": "shopify:\/\/pages\/about-us",
+            "button_style_secondary": false
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "WE ARE OPEN!",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "button",
+        "heading"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "align": "center"
+      }
+    },
     "16439188517c0389c2": {
       "type": "featured-collection",
       "settings": {
@@ -309,8 +309,8 @@
     "16342335048d2e7306",
     "1637000342d82e5494",
     "16343190312a7c8af8",
-    "rich_text",
     "1634321013de552146",
+    "rich_text",
     "16439188517c0389c2",
     "featured_products"
   ]
