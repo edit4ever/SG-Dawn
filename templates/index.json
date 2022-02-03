@@ -271,6 +271,7 @@
     },
     "featured_products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured Items",
         "collection": "featured-items",
@@ -278,6 +279,22 @@
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16439188517c0389c2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "valentines-day",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
@@ -294,6 +311,7 @@
     "16343190312a7c8af8",
     "rich_text",
     "1634321013de552146",
-    "featured_products"
+    "featured_products",
+    "16439188517c0389c2"
   ]
 }
