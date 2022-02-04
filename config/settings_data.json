@@ -25,8 +25,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "",
-              "color_scheme": "background-1",
+              "text": "To receive gifts for Valentine's Day, orders must be placed by Feb. 9th at 11:59pm. 💘",
+              "color_scheme": "accent-2",
               "link": ""
             }
           },
