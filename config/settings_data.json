@@ -25,7 +25,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Order by Feb. 9th at 11:59pm to receive gifts for Valentine's Day 💘",
+              "text": "",
               "color_scheme": "accent-2",
               "link": ""
             }
