@@ -17,6 +17,7 @@
         },
         "b4b62d91-f9cd-4098-a4d7-6eb615cbc300": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "valentines-day"
           }

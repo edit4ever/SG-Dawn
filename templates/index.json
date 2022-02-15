@@ -50,6 +50,7 @@
     },
     "16439188517c0389c2": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "valentines-day",
