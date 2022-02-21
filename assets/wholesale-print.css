@@ -108,4 +108,11 @@
   .print-footer p {
     margin: 0;
   }
+  
+  .pagebreak {
+    page-break-inside: avoid;
+    page-break-before: always; 
+    float: none;
+  }
+  
 }
