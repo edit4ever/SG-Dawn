@@ -151,7 +151,8 @@ table.wholesale-seasonal td {
   }
   
   .pagebreak {
-    page-break-after: always;
+    page-break-inside: avoid;
+    page-break-before: always; 
     float: none;
   }
   
