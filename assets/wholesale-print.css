@@ -62,6 +62,10 @@
     page-break-after: auto;
   }
 
+  .print-btn {
+    margin-top: 2em;
+  }
+
 @media print {
 
   .print-btn {
