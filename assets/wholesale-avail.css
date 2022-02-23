@@ -193,5 +193,21 @@ table.wholesale-seasonal td {
     font-size: 80%;
   }
   
-  thead {display: table-header-group;}
+  table {
+    page-break-inside: auto;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tfoot {
+    display: table-footer-group;
+  }
+  
 }
