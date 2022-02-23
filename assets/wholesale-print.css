@@ -66,19 +66,12 @@
     margin-top: 2em;
   }
 
-  .page-width {
-    margin-top: 2em;
-  }
-
 @media print {
 
   .print-btn {
     display: none;
   }
-  
-  .page-width {
-    margin-top: 0;
-  }
+
   
 }
 
