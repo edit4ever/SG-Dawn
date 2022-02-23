@@ -138,7 +138,7 @@ table.wholesale-seasonal td {
 
 
 
-
+@media print {
   
   .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, .header-wrapper, .skip-to-content-link, #admin-bar-iframe, .print-btn, #shopify-section-announcement-bar
   {
@@ -205,4 +205,4 @@ table.wholesale-seasonal td {
   }
   
   
-
+}
