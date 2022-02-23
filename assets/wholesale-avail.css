@@ -149,12 +149,6 @@ table.wholesale-seasonal td {
     color: #000;
   }
   
-  .pagebreak {
-    page-break-inside: avoid;
-    page-break-before: always; 
-    float: none;
-  }
-  
   .image-with-text {
     display: block;
   }
@@ -193,6 +187,12 @@ table.wholesale-seasonal td {
     font-size: 80%;
   }
   
+  .pagebreak {
+    page-break-inside: avoid;
+    page-break-after: always; 
+    float: none;
+  }
+  
   table {
     page-break-inside: auto;
   }
@@ -202,12 +202,5 @@ table.wholesale-seasonal td {
     page-break-after: auto;
   }
   
-  thead {
-    display: table-header-group;
-  }
-  
-  tfoot {
-    display: table-footer-group;
-  }
   
 }
