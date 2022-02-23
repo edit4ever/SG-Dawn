@@ -202,9 +202,9 @@ table.wholesale-seasonal td {
   tr {
     page-break-after: auto;
   }
-  
-  #AvailabilityGrid {
-    margin-bottom: 0;
+
+  tfoot {
+    display: none;
   }
   
 }
