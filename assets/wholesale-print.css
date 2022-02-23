@@ -1,3 +1,78 @@
+
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, .header-wrapper, .skip-to-content-link, #admin-bar-iframe, #shopify-section-announcement-bar {
+    display: none;
+  }
+  
+  body {
+    font-size: 9pt;
+    color: #000;
+  }
+  
+  .image-with-text {
+    display: block;
+  }
+
+   
+  #AvailabilityGrid {
+    line-height: 1.2;
+  }
+  
+  table, th, td {
+    border: 1pt solid #ddd;
+  }
+  
+  table {
+    font-size: 7pt;  
+  }
+  
+  thead {
+    display: table-header-group;
+    font-size: 7pt;
+  }
+ 
+  /*
+  table.wholesale td:last-child, table.wholesale thead {
+    font-size: 6pt;
+  }
+  */
+  
+  .print-head {
+    display: block;
+  }
+  
+  table.wholesale {
+    width: 100%;
+  }
+  
+  table.wholesale td:last-child {
+    font-size: 80%;
+  }
+  
+  .pagebreak {
+    page-break-inside: avoid;
+    page-break-after: always; 
+    float: none;
+  }
+  
+  table {
+    page-break-inside: auto;
+  }
+  
+  tr {
+    page-break-after: auto;
+  }
+
+@media print {
+
+  .print-btn {
+    display: none;
+  }
+  
+}
+
+
+
+/*
 .print-show {
   display: none;
 }
@@ -111,3 +186,5 @@
   
   
 }
+
+*/
