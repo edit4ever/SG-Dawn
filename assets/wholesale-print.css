@@ -66,6 +66,10 @@
     margin-top: 2em;
   }
 
+  #PageContent {
+    margin-top: 2em;
+  }
+
 @media print {
 
   .print-btn {
