@@ -63,6 +63,7 @@
       </table>
     </div>  
   </div>
+  {% if collections.wholesale-seasonal.all_products_count > 0 %}
   <div class="columns2">
     <table class="avail-grid wholesale-seasonal">
       <thead>
@@ -80,6 +81,7 @@
       {%- endfor -%}
     </table>
   </div>
+  {% endif %}
   <div class= "spacer">&nbsp;</div>
   <table class="avail-grid wholesale">
     <thead>
