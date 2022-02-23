@@ -133,23 +133,17 @@ table.wholesale-seasonal td {
   content: '"';
 }
 
+
+
+
+
+
+@media print {
   
-.pagebreak {
-  page-break-inside: avoid;
-  page-break-after: always; 
-  float: none;
-}
-
-table {
-  page-break-inside: auto;
-}
-
-tr {
-  page-break-after: auto;
-}
-
-
-
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, .header-wrapper, .skip-to-content-link, #admin-bar-iframe, .print-btn, #shopify-section-announcement-bar {
+    display: none;
+  }
+  
   body {
     font-size: 9pt;
     color: #000;
@@ -194,16 +188,20 @@ tr {
   table.wholesale td:last-child {
     font-size: 80%;
   }
-
-
-
-@media print {
   
-  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide, .footer, .product__media-icon, .header-wrapper, .skip-to-content-link, #admin-bar-iframe, .print-btn, #shopify-section-announcement-bar {
-    display: none;
+  .pagebreak {
+    page-break-inside: avoid;
+    page-break-after: always; 
+    float: none;
   }
   
-
+  table {
+    page-break-inside: auto;
+  }
+  
+  tr {
+    page-break-after: auto;
+  }
 
 
 }
