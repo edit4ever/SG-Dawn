@@ -196,3 +196,118 @@ table.wholesale-seasonal td {
 }
 
 */
+
+
+.print-show {
+  display: none;
+}
+
+@media print {
+    
+  .wholesale.list-view-item__variant-column, .slider-buttons.no-js-hidden.small-hide,
+  .shopify-section.spaced-section:not(:first-of-type), .footer, .header, #shopify-section-header,
+  .product__media-icon, #admin-bar-iframe, .product__media-item.grid__item.slider__slide:not(:first-child),
+  .slider-buttons.no-js-hidden, #shopify-section-announcement-bar 
+  {
+    display: none;
+  }
+  
+  .page-width {
+    padding: 0;
+  }
+  
+  body {
+    font-size: 1.5vw;
+  }
+  
+  .spaced-section {
+    margin-top: 0;
+  }
+  
+  .product.grid.grid--1-col.grid--2-col-tablet {
+    flex-wrap: nowrap;
+    align-items: top;
+  }
+  
+  .grid__item.product__media-wrapper {
+    max-width: 40%;
+    margin-right: 2%;
+
+  }
+  
+  .product__info-wrapper.grid__item {
+    width: 49%;
+    margin-top:2vw;
+  }
+  
+  h1 {
+    font-size: 300%;
+    margin-top: 0;
+  }
+  
+  h3 {
+    font-size: 150%;
+  }
+  
+  .product__description.rte {
+    font-size: 150%;
+    color: rgba(var(--color-foreground),1);
+  }
+  
+  .meta-title {
+    color: rgb(var(--color-base-accent-2));
+    margin: 2vw 0;
+    font-weight: 700;
+    -webkit-print-color-adjust: exact !important;
+  }
+  
+  .meta-field {
+    color: rgba(var(--color-foreground),1);
+    font-weight: 400;
+  }
+  .print-hidden {
+  	display: none;
+  }
+  .print-show {
+  	display: block;
+  }
+  .print-header {
+    background: rgb(var(--color-base-accent-2));
+    padding: 1vw;
+    -webkit-print-color-adjust: exact;
+    display: flex;
+    height: 10vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .print-header h1 {
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 1;
+  }
+  .sglogo {
+    width: 20%;
+    text-align: right;
+    height: 100%;
+    margin-right:2rem;
+  }
+  .sglogo img {
+    max-height: 100%;
+  }
+  
+  .product__media-list .product__modal-opener {
+    border: none;
+	}
+  
+  .print-footer {
+    color: rgba(var(--color-base-accent-2),.5);
+    font-size:80%;
+      position:absolute;
+      bottom:0;
+      }
+  .print-footer p {
+    margin: 0;
+  }
+  
+  
+}
