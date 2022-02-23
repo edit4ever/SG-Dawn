@@ -171,10 +171,12 @@ table.wholesale-seasonal td {
     display: table-header-group;
     font-size: 7pt;
   }
-  
+ 
+  /*
   table.wholesale td:last-child, table.wholesale thead {
     font-size: 6pt;
   }
+  */
   
   .print-head {
     display: block;
