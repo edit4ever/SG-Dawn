@@ -1,6 +1,13 @@
 {{ 'wholesale-avail.css' | asset_url | stylesheet_tag }}
 {{ 'wholesale-print.css' | asset_url | stylesheet_tag }}
-<body onload="window.print()">
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+    window.print();
+});
+
+</script>
   
 <div id="PageContent" class="page-width">
   <div class="rte">
