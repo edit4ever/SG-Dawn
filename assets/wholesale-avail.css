@@ -201,7 +201,6 @@ table.wholesale-seasonal td {
   }
   
   tr {
-    page-break-inside: avoid;
     page-break-after: auto;
   }
   
