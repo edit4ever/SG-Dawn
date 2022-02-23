@@ -1,6 +1,7 @@
 {{ 'wholesale-avail.css' | asset_url | stylesheet_tag }}
 {{ 'wholesale-print.css' | asset_url | stylesheet_tag }}
-
+<body onload="window.print()">
+  
 <div id="PageContent" class="page-width">
   <div class="rte">
     {{ page.content }}
