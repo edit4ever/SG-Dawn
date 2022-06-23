@@ -10,6 +10,10 @@
   background-color: rgba(var(--color-base-background-2),.75);
 }
 
+.print-show {
+  display: none;
+}
+
 @media only screen and (max-width: 749px) {
   .print-btn.profile .button {
     width: 100%;
