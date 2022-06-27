@@ -15,7 +15,7 @@
           <a href="{{ product.url }}" class="predictive-search__item predictive-search__item--link link link--text" tabindex="-1">
             {%- if product.featured_media != blank -%}
               <img class="predictive-search__image"
-                src="{{ product.featured_media | img_url: '150x' }}"
+                src="{{ product.featured_media | img_url: '100x100' }}"
                 alt="{{ product.featured_media.alt }}"
                 width="100%"
                 height="100%"
