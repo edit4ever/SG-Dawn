@@ -2285,3 +2285,11 @@ details-disclosure > details {
   width: 100% !important;
   padding-top: 100% !important;
 }
+  
+  
+.predictive-search__item-content {
+  grid-area: product-content;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
