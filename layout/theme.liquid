@@ -167,13 +167,12 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-{%- comment -%}
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-{%- endcomment -%}
-
-    
     {% render 'ajaxify-cart' %}
+
+{%- comment -%}
+
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
     
@@ -182,7 +181,8 @@
         center:true
       });
 	</script>
-  
+{%- endcomment -%}
+ 
   
 <!-- **BEGIN** Hextom QAB Integration // Main Include - DO NOT MODIFY -->
     {% render 'hextom_qab_main', product: product, customer: customer %}
