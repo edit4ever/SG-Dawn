@@ -119,6 +119,10 @@ li.list__item {
     .list-view-item__image-wrapper {
       margin-right: 17.5px; } }
 
+.product-new {
+  font-weight: 700;
+}
+
 .list-view-item__title-column {
   display: table-cell;
   vertical-align: middle;
