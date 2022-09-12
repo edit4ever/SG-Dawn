@@ -30,13 +30,13 @@
         <img class="list-view-item__image" src="{{ product_card_product.featured_media | img_url: '95x95', scale: 2 }}" alt="{{ product_card_product.featured_media.alt }}">
       {% else %}
         <img class="list-view-item__image" src="{{ 'image' | placeholder_svg_tag: 'list-view-item__image' | img_url: '95x95', scale: 2 }}">
+        {% if product_card_product.metafields.custom.new %}<span class="product-new">**NEW**</span>{% endif %}
       {% endunless %}
       </div>
     </div>
 
     <div class="list-view-item__title-column" style="vertical-align:top;">
       <div class="list-view-item__title" aria-hidden="true">
-        {% if product_card_product.metafields.custom.new %}<span class="product-new">**NEW**  </span>{% endif %}
         <span class="product-card__title">{{ product_card_product.title | remove: "1 - " | remove: "2 - " }}
         {%- if product_card_product.metafields.my_fields.common_name -%}<span class="common-name">{{ product_card_product.metafields.my_fields.common_name }}</span>{% endif %}
         </span>
