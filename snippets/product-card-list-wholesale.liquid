@@ -18,7 +18,7 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
-<div class="product-card product-card--list">
+<div class="product-card product-card--list" {% if product_card_product.metafields.custom.new %} style="background: rgba(0,255,0,.2);" {% endif %}>
   <a class="full-width-link" href="{{ product_card_product.type }}/products/{{ product_card_product.handle}}">
     <span class="visually-hidden">{{ product_card_product.title }}</span>
   </a>
