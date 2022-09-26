@@ -170,9 +170,8 @@
       "type": "apps",
       "blocks": {
         "10e4a83f-bbac-46e0-a041-a8a906500cf9": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_font": "raleway_n4",
             "heading_size": 27,
             "feed_width": 100,
             "html_area": "<style>\n#insta-feed {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  column-gap: 2vw;\n}\n\n#insta-feed h2 {\n  grid-column: 1 \/ 5;\n}\n\n#insta-feed img {\n  width: 100%!important;\n  height: 100%!important;\n}\n<\/style>"
@@ -199,7 +198,7 @@
         "1634321013de552146-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Currently the safety of our staff and community is of the utmost importance<br\/>so please be patient with us as we have implemented<br\/>new guidelines and precautions for visiting our nursery. <br\/><br\/><em>Updated Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>"
+            "text": "<p>Come visit us as our growing grounds! <\/p><p><br\/><em>Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>"
           }
         },
         "1634321013de552146-2": {
