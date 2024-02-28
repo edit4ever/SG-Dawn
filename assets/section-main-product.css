@@ -983,6 +983,12 @@ a.product__text {
     display: none;
   }
 
-  .sglogo.print-show {
+  .sglogo {
       background: var(--gradient-base-accent-2);
+  }
+
+  .print-header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
