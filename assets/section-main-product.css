@@ -982,4 +982,7 @@ a.product__text {
   .print-hidden {
     display: none;
   }
+
+  .sglogo.print-show {
+      background-color: rgb(var(--color-background));
 }
