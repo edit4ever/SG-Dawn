@@ -988,4 +988,9 @@ a.product__text {
     justify-content: space-between;
     background: var(--gradient-base-accent-2);
   }
+
+  .product__media-wrapper {
+    max-width: 45%;
+    margin-right: 2em;
+  }
 }
