@@ -972,3 +972,14 @@ a.product__text {
 .product__media-item.grid__item.slider__slide:not(:first-child) {
   max-width: 25%;
 }
+
+
+@media print {
+  .print-show {
+    display: block;
+  }
+
+  .print-hidden {
+    display: none;
+  }
+}
