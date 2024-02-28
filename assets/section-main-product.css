@@ -976,7 +976,7 @@ a.product__text {
 
 @media print {
   .print-show {
-    display: block;
+    display: block !important;
   }
 
   .print-hidden {
