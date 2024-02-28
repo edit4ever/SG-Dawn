@@ -984,5 +984,5 @@ a.product__text {
   }
 
   .sglogo.print-show {
-      background: var(--color-background));
+      background: var(--gradient-base-accent-2);
 }
