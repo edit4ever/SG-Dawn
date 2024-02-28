@@ -984,5 +984,5 @@ a.product__text {
   }
 
   .sglogo.print-show {
-      background-color: rgb(var(--color-background));
+      background: var(--color-background));
 }
