@@ -36,7 +36,10 @@
   }
 
   .grid--1-col .grid__item {
-    max-width: 45%;
-    margin-right: 2em;
+    max-width: 50%;
+  }
+
+  .grid__item.product__media-wrapper {
+    max-width: 100%;
   }
 }
