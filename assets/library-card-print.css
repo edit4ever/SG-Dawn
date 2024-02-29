@@ -1,6 +1,6 @@
 @media print {
 
-  .header-wrapper, .product__media-icon {
+  .header-wrapper, .product__media-icon, .product-media-modal.media-modal {
     display: none !important;
   }
 
