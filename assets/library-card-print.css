@@ -39,7 +39,7 @@
     max-width: 100%;
   }
   
-  .grid__item.product__media-wrapper, .product__info-wrapper.grid__item .product__info-wrapper {
+  .grid__item.product__media-wrapper, .product__info-wrapper.grid__item {
     max-width: 50%;
   }
 
