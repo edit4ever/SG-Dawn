@@ -1,0 +1,26 @@
+@media print {
+
+  .header-wrapper {
+    display: none !important;
+  }
+
+  
+  .print-show {
+    display: block !important;
+  }
+
+  .print-hidden {
+    display: none;
+  }
+
+  .print-header {
+    display: flex !important;
+    justify-content: space-between;
+    background: var(--gradient-base-accent-2);
+  }
+
+  .grid--1-col .grid__item .product__media-wrapper {
+    max-width: 45%;
+    margin-right: 2em;
+  }
+}
