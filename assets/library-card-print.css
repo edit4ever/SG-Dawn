@@ -38,8 +38,8 @@
   .product.grid.grid--1-col {
     max-width: 50%;
   }
-
-  .grid__item.product__media-wrapper {
+  
+  .grid__item.product__media-wrapper  {
     max-width: 45%;
     margin-right: 2em;
   }
