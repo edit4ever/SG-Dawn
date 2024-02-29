@@ -1,6 +1,6 @@
 @media print {
 
-  html {
+  html.content-for-layout {
     height: auto;
   }
   
