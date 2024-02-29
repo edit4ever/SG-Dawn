@@ -67,5 +67,13 @@
     font-weight: 700;
   }
 
+  .print-footer {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+    color: #ddd;
+  }
+
+
 
 }
