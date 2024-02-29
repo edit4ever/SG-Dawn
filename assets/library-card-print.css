@@ -1,5 +1,9 @@
 @media print {
 
+  html {
+    height: auto;
+  }
+  
   .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width, #shopify-section-footer, .spaced-section:last-child  {
     display: none !important;
   }
