@@ -42,4 +42,8 @@
   .grid__item.product__media-wrapper {
     max-width: 100%;
   }
+
+  .product__media-list .product__modal-opener {
+    border: none;
+  }
 }
