@@ -41,7 +41,7 @@
   }
   
   .grid__item.product__media-wrapper, .product__info-wrapper.grid__item {
-    max-width: 50%;
+    max-width: 49%;
   }
 
   .product__media-list .product__modal-opener {
