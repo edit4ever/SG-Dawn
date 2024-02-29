@@ -24,12 +24,14 @@
     display: flex !important;
     justify-content: space-between;
     background: var(--gradient-base-accent-2);
-    padding: 1em;
+    padding: 1em 1.5em;
   }
 
   h1.product__title {
-    color: white;
+    color: #fff;
     font-weight: 700;
+    font-size: 4em;
+    margin: 0;
   }
 
   .grid--1-col .grid__item .product__media-wrapper {
