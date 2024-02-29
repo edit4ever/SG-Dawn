@@ -11,7 +11,6 @@
   section.page-width {
     padding:0;
   }
-
   
   .print-show {
     display: block !important;
@@ -26,6 +25,11 @@
     justify-content: space-between;
     background: var(--gradient-base-accent-2);
     padding: 1em;
+  }
+
+  .product__title {
+    color: white;
+    font-weight: 700;
   }
 
   .grid--1-col .grid__item .product__media-wrapper {
