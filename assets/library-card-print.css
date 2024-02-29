@@ -27,7 +27,7 @@
     padding: 1em;
   }
 
-  .product__title {
+  h1.product__title {
     color: white;
     font-weight: 700;
   }
