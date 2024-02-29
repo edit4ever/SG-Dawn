@@ -35,7 +35,7 @@
   h1.product__title {
     color: #fff;
     font-weight: 700;
-    font-size: 4em;
+    font-size: 3em;
     margin: 0;
   }
 
@@ -44,8 +44,12 @@
     gap: 2em;
   }
   
-  .grid__item.product__media-wrapper, .product__info-wrapper.grid__item {
-    max-width: 49%;
+  .grid__item.product__media-wrapper {
+    max-width: 45%;
+  }
+
+  .product__info-wrapper.grid__item {
+    max-width: 50%;
   }
 
   .product__media-list .product__modal-opener {
@@ -57,7 +61,7 @@
   }
 
   .product__info-wrapper.grid__item h3 {
-    font-size: 2.5em;
+    font-size: 1.75em;
     font-weight: 700;
   }
 
