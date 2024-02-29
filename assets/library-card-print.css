@@ -52,7 +52,9 @@
     display: none;
   }
 
-
+  .product__info-wrapper.grid__item h3 {
+    font-size: 3em;
+  }
 
 
 }
