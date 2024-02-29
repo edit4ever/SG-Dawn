@@ -1,6 +1,6 @@
 @media print {
 
-  .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width {
+  .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width, #shopify-section-footer {
     display: none !important;
   }
 
