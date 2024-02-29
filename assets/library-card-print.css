@@ -4,8 +4,12 @@
     size: 11in 8.5in;
   }
 
-  .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width, #shopify-section-footer  {
+  .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width, #shopify-section-footer, .shopify-section.spaced-section  {
     display: none !important;
+  }
+
+  .shopify-section.spaced-section.product-section {
+    display: block;
   }
 
   .shopify-section.product-section.spaced-section {
