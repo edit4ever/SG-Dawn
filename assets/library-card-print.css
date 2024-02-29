@@ -1,6 +1,6 @@
 @media print {
 
-  html.content-for-layout {
+  .focus-none {
     height: auto;
   }
   
