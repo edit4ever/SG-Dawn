@@ -35,7 +35,7 @@
     margin: 0;
   }
 
-  .grid--1-col.grid__item {
+  .grid--1-col .grid__item {
     max-width: 45%;
     margin-right: 2em;
   }
