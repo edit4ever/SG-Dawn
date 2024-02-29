@@ -4,6 +4,10 @@
     display: none !important;
   }
 
+  .shopify-section.product-section.spaced-section {
+    margin-top: 0;
+  }
+
   
   .print-show {
     display: block !important;
