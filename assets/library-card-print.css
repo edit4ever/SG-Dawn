@@ -37,6 +37,7 @@
 
   .product.grid.grid--1-col {
     max-width: 100%;
+    gap: 2em;
   }
   
   .grid__item.product__media-wrapper, .product__info-wrapper.grid__item {
