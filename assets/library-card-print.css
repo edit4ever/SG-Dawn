@@ -1,5 +1,9 @@
 @media print {
 
+  @page {
+    size: 11in 8.5in;
+  }
+
   .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width, #shopify-section-footer {
     display: none !important;
   }
