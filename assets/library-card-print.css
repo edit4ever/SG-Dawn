@@ -47,6 +47,10 @@
     border: none !important;
   }
 
+  .grid__item.product__media-wrapper .slider-buttons {
+    display: none;
+  }
+
 
 
 
