@@ -44,6 +44,10 @@
   }
 
   .product__media-list .product__modal-opener {
-    border: none;
+    border: none !important;
   }
+
+
+
+
 }
