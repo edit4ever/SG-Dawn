@@ -25,6 +25,7 @@
     display: flex !important;
     justify-content: space-between;
     background: var(--gradient-base-accent-2);
+    padding: 1em;
   }
 
   .grid--1-col .grid__item .product__media-wrapper {
