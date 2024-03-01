@@ -1,6 +1,6 @@
 @media print {
 
-  html {
+  html.js {
     height: auto !important;
   }
   
