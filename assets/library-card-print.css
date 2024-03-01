@@ -4,7 +4,7 @@
     height: auto !important;
   }
   
-  .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width, #shopify-section-footer, .spaced-section:last-child  {
+  .header-wrapper, .product__media-icon, .product-media-modal.media-modal, .library-nav.page-width, #shopify-section-footer, .spaced-section:last-child, .wholesale.list-view-item__variant-column  {
     display: none !important;
   }
 
