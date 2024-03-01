@@ -70,6 +70,7 @@
   .product__info-wrapper.grid__item h3 {
     font-size: 1.5em;
     font-weight: 700;
+    margin-top: 2em;
   }
 
   .product__description {
