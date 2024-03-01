@@ -45,11 +45,11 @@
   }
   
   .grid__item.product__media-wrapper {
-    max-width: 35%;
+    max-width: 30%;
   }
 
   .product__info-wrapper.grid__item {
-    max-width: 62%;
+    max-width: 67%;
   }
 
   .product__media-list .product__modal-opener {
