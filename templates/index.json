@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1634233157f38aa622": {
@@ -13,14 +22,14 @@
         "1634233157f38aa622-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The best quality and most variety, from 2 inch to landscape specimens.<\/p>"
+            "text": "<p>The best quality and most variety, from 2 inch to landscape specimens.</p>"
           }
         },
         "1634233157f38aa622-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Free Shipping - SHOP NOW",
-            "button_link_1": "shopify:\/\/pages\/shop",
+            "button_link_1": "shopify://pages/shop",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -34,7 +43,7 @@
         "1634233157f38aa622-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/slideshow_1_df8c106f-4ebb-4eea-a400-6d127879ca45.jpg",
+        "image": "shopify://shop_images/slideshow_1_df8c106f-4ebb-4eea-a400-6d127879ca45.jpg",
         "parallax": true,
         "parallax_speed": -10,
         "adapt_height_first_image": false,
@@ -71,8 +80,8 @@
         "16340779564c41bffb-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/feature1.jpg",
-            "link_1": "shopify:\/\/pages\/shop",
+            "image": "shopify://shop_images/feature1.jpg",
+            "link_1": "shopify://pages/shop",
             "color_scheme": "accent-2",
             "title": "SHOP ONLINE",
             "text": ""
@@ -81,8 +90,8 @@
         "16340779564c41bffb-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/feature2_73225e7b-edb0-4b34-ab52-7150e7d9488c.jpg",
-            "link_1": "shopify:\/\/pages\/about-us",
+            "image": "shopify://shop_images/feature2_73225e7b-edb0-4b34-ab52-7150e7d9488c.jpg",
+            "link_1": "shopify://pages/about-us",
             "color_scheme": "accent-2",
             "title": "VISIT SUCCULENT GARDENS",
             "text": ""
@@ -91,8 +100,8 @@
         "16340779564c41bffb-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sg1705-062-web.jpg",
-            "link_1": "shopify:\/\/collections\/classes-workshops",
+            "image": "shopify://shop_images/sg1705-062-web.jpg",
+            "link_1": "shopify://collections/classes-workshops",
             "color_scheme": "accent-2",
             "title": "CLASSES & WORKSHOPS",
             "text": ""
@@ -131,14 +140,14 @@
         "16342335048d2e7306-1": {
           "type": "text",
           "settings": {
-            "text": "<p>If you're a reseller - signup and order wholesale directly online.<\/p>"
+            "text": "<p>If you're a reseller - signup and order wholesale directly online.</p>"
           }
         },
         "16342335048d2e7306-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Get Started",
-            "button_link_1": "shopify:\/\/pages\/wholesale-application",
+            "button_link_1": "shopify://pages/wholesale-application",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -152,7 +161,7 @@
         "16342335048d2e7306-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sg1705-573.jpg",
+        "image": "shopify://shop_images/sg1705-573.jpg",
         "parallax": true,
         "parallax_speed": -10,
         "adapt_height_first_image": false,
@@ -170,11 +179,13 @@
       "type": "apps",
       "blocks": {
         "10e4a83f-bbac-46e0-a041-a8a906500cf9": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 27,
-            "feed_width": 100,
-            "html_area": "<style>\n#insta-feed {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  column-gap: 2vw;\n}\n\n#insta-feed h2 {\n  grid-column: 1 \/ 5;\n}\n\n#insta-feed img {\n  width: 100%!important;\n  height: 100%!important;\n}\n<\/style>"
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "html_area": "<style>\n#insta-feed {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  column-gap: 2vw;\n}\n\n#insta-feed h2 {\n  grid-column: 1 / 5;\n}\n\n#insta-feed img {\n  width: 100%!important;\n  height: 100%!important;\n}\n</style>"
           }
         }
       },
@@ -198,14 +209,14 @@
         "1634321013de552146-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Come visit us as our growing grounds! <\/p><p><br\/><em>Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 4:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>"
+            "text": "<p>Come visit us as our growing grounds! </p><p><br/><em>Business Hours:</em><br/><strong>Monday - Saturday<br/>9:00am - 4:00pm</strong><br/><strong>Sundays<br/>11:00am - 3:00pm</strong><br/><em><strong>\"To plant a garden is to believe in a better tomorrow\"</strong></em><br/><strong>-Audrey Hepburn</strong></p>"
           }
         },
         "1634321013de552146-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Visit Us",
-            "button_link_1": "shopify:\/\/pages\/about-us",
+            "button_link_1": "shopify://pages/about-us",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -219,7 +230,7 @@
         "1634321013de552146-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sg1705-327.jpg",
+        "image": "shopify://shop_images/sg1705-327.jpg",
         "parallax": true,
         "parallax_speed": -10,
         "adapt_height_first_image": false,
@@ -235,12 +246,11 @@
     },
     "rich_text": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. <br\/><br\/><em>Updated Business Hours:<\/em><br\/><strong>Monday - Sunday<br\/>9:00am - 3:00pm<\/strong><br\/><br\/><br\/><em><strong>\"To plant a garden is to believe in a better tomorrow\"<\/strong><\/em><br\/><strong>-Audrey Hepburn<\/strong><\/p>",
+            "text": "<p>Currently the safety of our staff and community is of the utmost importance so please be patient with us as we have implemented new guidelines and precautions for visiting our nursery. <br/><br/><em>Updated Business Hours:</em><br/><strong>Monday - Sunday<br/>9:00am - 3:00pm</strong><br/><br/><br/><em><strong>\"To plant a garden is to believe in a better tomorrow\"</strong></em><br/><strong>-Audrey Hepburn</strong></p>",
             "margin": false,
             "indent": false
           }
@@ -249,7 +259,7 @@
           "type": "button",
           "settings": {
             "button_label": "Visit Us",
-            "button_link": "shopify:\/\/pages\/about-us",
+            "button_link": "shopify://pages/about-us",
             "button_style_secondary": false
           }
         },
@@ -266,6 +276,7 @@
         "button",
         "heading"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true,
